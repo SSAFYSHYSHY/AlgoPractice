@@ -129,6 +129,13 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pro_lv2_BFS_2.h" />
+    <ClInclude Include="pro_lv2_hash2.h" />
+    <ClInclude Include="pro_lv2_BFS_1.h" />
+    <ClInclude Include="pro_lv2_hash1.h" />
+    <ClInclude Include="pro_lv2_hash3.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
