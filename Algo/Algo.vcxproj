@@ -130,6 +130,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Backjoon_Dijk_Gold4.h" />
     <ClInclude Include="pro_lv2_BFS_2.h" />
     <ClInclude Include="pro_lv2_hash2.h" />
     <ClInclude Include="pro_lv2_BFS_1.h" />
