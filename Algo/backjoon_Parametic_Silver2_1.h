@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -30,7 +31,7 @@ int main() {
 	while (l <= r) {
 		long long mid = (l + r) / 2;
 		if (Calc(mid)) {
-			answer = mid; 
+			answer = mid;
 			r = mid - 1;
 		}
 		else {

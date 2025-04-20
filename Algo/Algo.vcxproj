@@ -132,6 +132,7 @@
   <ItemGroup>
     <ClInclude Include="Backjoon_Dijk_Gold4_1.h" />
     <ClInclude Include="Backjoon_Dijk_Gold4_2.h" />
+    <ClInclude Include="backjoon_Parametic_Silver2_1.h" />
     <ClInclude Include="Backjoon_Prefix_Gold5_1.h" />
     <ClInclude Include="pro_lv2_BFS_2.h" />
     <ClInclude Include="pro_lv2_DFS_1.h" />
