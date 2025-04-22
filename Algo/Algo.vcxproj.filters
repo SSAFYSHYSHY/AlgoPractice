@@ -59,10 +59,25 @@
     <ClInclude Include="Backjoon_Prefix_Gold5_1.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="backjoon_Parametic_Silver2_1.h">
+    <ClInclude Include="Backjoon_Parametic_Silver2_1.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Parametic_Silver1_1.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_Stack_2.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_DFS_2.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_BFS_3.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_Simul_1.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_Simul_2.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
