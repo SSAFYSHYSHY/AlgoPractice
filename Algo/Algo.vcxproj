@@ -140,16 +140,21 @@
     <ClInclude Include="pro_lv2_BFS_3.h" />
     <ClInclude Include="pro_lv2_DFS_1.h" />
     <ClInclude Include="pro_lv2_DFS_2.h" />
-    <ClInclude Include="pro_lv2_hash4.h" />
+    <ClInclude Include="pro_lv2_DP_1.h" />
+    <ClInclude Include="pro_lv2_hash_4.h" />
+    <ClInclude Include="pro_lv2_Priorityqueue_1.h" />
+    <ClInclude Include="pro_lv2_Set_1.h" />
     <ClInclude Include="pro_lv2_Simul_1.h" />
     <ClInclude Include="pro_lv2_Simul_2.h" />
     <ClInclude Include="pro_lv2_Stack_1.h" />
     <ClInclude Include="pro_lv2_Stack_2.h" />
+    <ClInclude Include="pro_lv2_Stack_3.h" />
+    <ClInclude Include="pro_lv2_String_1.h" />
     <ClInclude Include="pro_lv3_BFS_1.h" />
-    <ClInclude Include="pro_lv2_hash2.h" />
+    <ClInclude Include="pro_lv2_hash_2.h" />
     <ClInclude Include="pro_lv2_BFS_1.h" />
-    <ClInclude Include="pro_lv2_hash1.h" />
-    <ClInclude Include="pro_lv2_hash3.h" />
+    <ClInclude Include="pro_lv2_hash_1.h" />
+    <ClInclude Include="pro_lv2_hash_3.h" />
     <ClInclude Include="pro_lv3_BFS_2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
