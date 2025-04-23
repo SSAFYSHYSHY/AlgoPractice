@@ -145,6 +145,8 @@
     <ClInclude Include="pro_lv2_DFS_2.h" />
     <ClInclude Include="pro_lv2_DP_1.h" />
     <ClInclude Include="pro_lv2_DP_2.h" />
+    <ClInclude Include="pro_lv2_DP_3.h" />
+    <ClInclude Include="pro_lv2_DP_4.h" />
     <ClInclude Include="pro_lv2_hash_4.h" />
     <ClInclude Include="pro_lv2_Heap_1.h" />
     <ClInclude Include="pro_lv2_Priorityqueue_1.h" />
@@ -162,6 +164,7 @@
     <ClInclude Include="pro_lv2_hash_1.h" />
     <ClInclude Include="pro_lv2_hash_3.h" />
     <ClInclude Include="pro_lv3_BFS_2.h" />
+    <ClInclude Include="pro_lv3_BFS_3.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
