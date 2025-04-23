@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <queue>
 #include <vector>
@@ -48,10 +49,10 @@ void Dijkstra() {
 }
 
 int main() {
-    cin >> n >> sy >> sx >> ey >> ex;  // 🔁 x, y 반대로 주의!
+    cin >> n >> sy >> sx >> ey >> ex;
     sx--; sy--; ex--; ey--;
 
-    for (int i = 0; i < n; i++) {        // arr[y][x]
+    for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
             cin >> arr[i][j];
         }
