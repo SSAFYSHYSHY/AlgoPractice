@@ -13,6 +13,24 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="헤더 파일\Backjoon_Dijk">
+      <UniqueIdentifier>{ba8db504-4d80-462b-b60e-93d59b88dae3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Backjoon_Parametic">
+      <UniqueIdentifier>{88916df7-d0e5-4e7d-947c-9ccd273866bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\pro_BFS/DFS">
+      <UniqueIdentifier>{21b2483b-6f65-4d92-9c39-02c49d57fd23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\pro_DP">
+      <UniqueIdentifier>{71481c66-a416-4c33-a4d0-68651af96730}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\pro_Simul">
+      <UniqueIdentifier>{37800e25-4b24-45a9-8556-6c348f7eaa76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\pro_Algo">
+      <UniqueIdentifier>{8bb3e6e4-25ac-4152-9329-1223d2117dd7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -20,109 +38,166 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pro_lv2_BFS_1.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="pro_lv2_hash_1.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="pro_lv2_hash_2.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="pro_lv2_hash_3.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="pro_lv2_BFS_2.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Backjoon_Dijk_Gold4_1.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Backjoon_Dijk_Gold4_2.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="pro_lv3_BFS_1.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="pro_lv3_BFS_2.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="pro_lv2_hash_4.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="pro_lv2_DFS_1.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="pro_lv2_Stack_1.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Backjoon_Prefix_Gold5_1.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Backjoon_Parametic_Silver2_1.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="Backjoon_Dijk_Gold4_1.h">
+      <Filter>헤더 파일\Backjoon_Dijk</Filter>
     </ClInclude>
-    <ClInclude Include="Backjoon_Parametic_Silver1_1.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="pro_lv2_Stack_2.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="pro_lv2_DFS_2.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="pro_lv2_BFS_3.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="pro_lv2_Simul_1.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="pro_lv2_Simul_2.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="Backjoon_Dijk_Gold4_2.h">
+      <Filter>헤더 파일\Backjoon_Dijk</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Dijk_Gold4_4.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="pro_lv2_DP_1.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="pro_lv2_Set_1.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="pro_lv2_Priorityqueue_1.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="pro_lv2_Stack_3.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="pro_lv2_String_1.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Dijk</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Dijk_Gold5_1.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Dijk</Filter>
     </ClInclude>
-    <ClInclude Include="pro_lv2_Simul_3.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="Backjoon_Parametic_Silver1_1.h">
+      <Filter>헤더 파일\Backjoon_Parametic</Filter>
     </ClInclude>
-    <ClInclude Include="pro_lv2_Heap_1.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="Backjoon_Parametic_Silver2_1.h">
+      <Filter>헤더 파일\Backjoon_Parametic</Filter>
     </ClInclude>
-    <ClInclude Include="pro_lv2_DP_2.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="pro_lv2_BFS_8.h">
+      <Filter>헤더 파일\pro_BFS/DFS</Filter>
     </ClInclude>
-    <ClInclude Include="pro_lev2_Stack_4.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="pro_lv2_BFS_2.h">
+      <Filter>헤더 파일\pro_BFS/DFS</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_BFS_3.h">
+      <Filter>헤더 파일\pro_BFS/DFS</Filter>
     </ClInclude>
     <ClInclude Include="pro_lv2_BFS_4.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\pro_BFS/DFS</Filter>
     </ClInclude>
-    <ClInclude Include="pro_lv2_DP_3.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="pro_lv2_BFS_5.h">
+      <Filter>헤더 파일\pro_BFS/DFS</Filter>
     </ClInclude>
-    <ClInclude Include="pro_lv2_DP_4.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="pro_lv2_BFS_6.h">
+      <Filter>헤더 파일\pro_BFS/DFS</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_BFS_7.h">
+      <Filter>헤더 파일\pro_BFS/DFS</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_DFS_1.h">
+      <Filter>헤더 파일\pro_BFS/DFS</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_DFS_2.h">
+      <Filter>헤더 파일\pro_BFS/DFS</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv3_BFS_1.h">
+      <Filter>헤더 파일\pro_BFS/DFS</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_BFS_1.h">
+      <Filter>헤더 파일\pro_BFS/DFS</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv3_BFS_2.h">
+      <Filter>헤더 파일\pro_BFS/DFS</Filter>
     </ClInclude>
     <ClInclude Include="pro_lv3_BFS_3.h">
+      <Filter>헤더 파일\pro_BFS/DFS</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv3_BFS_4.h">
+      <Filter>헤더 파일\pro_BFS/DFS</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_DP_1.h">
+      <Filter>헤더 파일\pro_DP</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_DP_2.h">
+      <Filter>헤더 파일\pro_DP</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_DP_3.h">
+      <Filter>헤더 파일\pro_DP</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_DP_4.h">
+      <Filter>헤더 파일\pro_DP</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_DP_5.h">
+      <Filter>헤더 파일\pro_DP</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_Simul_1.h">
+      <Filter>헤더 파일\pro_Simul</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_Simul_2.h">
+      <Filter>헤더 파일\pro_Simul</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_Simul_3.h">
+      <Filter>헤더 파일\pro_Simul</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_Simul_4.h">
+      <Filter>헤더 파일\pro_Simul</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_Simul_5.h">
+      <Filter>헤더 파일\pro_Simul</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_Simul_6.h">
+      <Filter>헤더 파일\pro_Simul</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv3_MST_1.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_Stack_4.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_Back_1.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_hash_4.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_Heap_1.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_Priorityqueue_1.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_Priorityqueue_2.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_Priorityqueue_3.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_Set_1.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_Sort_1.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_Sort_2.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_Stack_1.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_Stack_2.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_Stack_3.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_String_1.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_hash_2.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_hash_1.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_hash_3.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv3_Greedy_1.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv3_Greedy_2.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv3_hash_1.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_DP_Silver2_1.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

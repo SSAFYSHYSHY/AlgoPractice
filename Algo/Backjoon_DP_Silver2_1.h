@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 
 using namespace std;
 
@@ -14,13 +15,13 @@ int Calc(int a, int b, int c) {
 		return arr[a][b][c];
 	}
 
-	arr[a][b][c] = Calc(a - 1, b, c) + Calc(a - 1, b - 1, c) + Calc(a - 1, b, c - 1) - Calc(a -1, b -1, c- 1);
+	arr[a][b][c] = Calc(a - 1, b, c) + Calc(a - 1, b - 1, c) + Calc(a - 1, b, c - 1) - Calc(a - 1, b - 1, c - 1);
 	return arr[a][b][c];
 }
 
 int main() {
 	int a, b, c;
-	
+
 	while (1) {
 		cin >> a >> b >> c;
 
