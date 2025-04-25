@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <vector>
 
@@ -18,7 +19,7 @@ int main() {
 
 	vector<int> v(n + 1, 1);
 	vector<int> v2(n + 1, 1);
-	
+
 	int ans = 1;
 	for (int i = 1; i < n; i++) {
 		if (arr[i] >= arr[i - 1]) {
