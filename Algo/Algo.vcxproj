@@ -143,6 +143,10 @@
     <ClInclude Include="Backjoon_Parametic_Silver1_1.h" />
     <ClInclude Include="Backjoon_Parametic_Silver2_1.h" />
     <ClInclude Include="Backjoon_Prefix_Gold5_1.h" />
+    <ClInclude Include="pro_lv2_DP_6.h" />
+    <ClInclude Include="pro_lv2_Greedy_3.h" />
+    <ClInclude Include="pro_lv2_Greedy_4.h" />
+    <ClInclude Include="pro_lv2_Greedy_5.h" />
     <ClInclude Include="pro_lv2_Parametic_5.h" />
     <ClInclude Include="pro_lv2_Parametic_6.h" />
     <ClInclude Include="pro_lv2_Stack_4.h" />

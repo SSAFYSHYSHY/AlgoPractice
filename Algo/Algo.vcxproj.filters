@@ -215,23 +215,23 @@
     <ClInclude Include="Backjoon_DP_Silver5_1.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="pro_lv2_Parametic_5.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="pro_lv2_Parametic_6.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="pro_lv2_DP_6.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\pro_Algo</Filter>
     </ClInclude>
     <ClInclude Include="pro_lv2_Greedy_3.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\pro_Algo</Filter>
     </ClInclude>
     <ClInclude Include="pro_lv2_Greedy_4.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\pro_Algo</Filter>
     </ClInclude>
     <ClInclude Include="pro_lv2_Greedy_5.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_Parametic_5.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_Parametic_6.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
