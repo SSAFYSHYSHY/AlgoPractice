@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -138,10 +138,13 @@
     <ClInclude Include="Backjoon_DP_Silver2_2.h" />
     <ClInclude Include="Backjoon_DP_Silver2_3.h" />
     <ClInclude Include="Backjoon_DP_Silver3_1.h" />
+    <ClInclude Include="Backjoon_DP_Silver4_1.h" />
     <ClInclude Include="Backjoon_DP_Silver5_1.h" />
     <ClInclude Include="Backjoon_Parametic_Silver1_1.h" />
     <ClInclude Include="Backjoon_Parametic_Silver2_1.h" />
     <ClInclude Include="Backjoon_Prefix_Gold5_1.h" />
+    <ClInclude Include="pro_lv2_Parametic_5.h" />
+    <ClInclude Include="pro_lv2_Parametic_6.h" />
     <ClInclude Include="pro_lv2_Stack_4.h" />
     <ClInclude Include="pro_lv2_Back_1.h" />
     <ClInclude Include="pro_lv2_BFS_2.h" />
