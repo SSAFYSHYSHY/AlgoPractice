@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 #include <queue>
 #include <climits>
@@ -13,7 +14,7 @@ int main() {
     int n;
     cin >> n;
 
-    vector<Cow> cows(n + 1); // ì†Œ ë²ˆí˜¸ëŠ” 1ë²ˆë¶€í„°
+    vector<Cow> cows(n + 1); // ¼Ò ¹øÈ£´Â 1¹øºÎÅÍ
     for (int i = 1; i <= n; ++i) {
         int m;
         cin >> cows[i].lapTime >> m;
@@ -24,11 +25,11 @@ int main() {
         }
     }
 
-    vector<int> startTime(n + 1, INT_MAX); // ì†Œê°€ ì‹œìž‘í•˜ëŠ” ì‹œê°„
+    vector<int> startTime(n + 1, INT_MAX); // ¼Ò°¡ ½ÃÀÛÇÏ´Â ½Ã°£
     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
 
     startTime[1] = 0;
-    pq.push(make_pair(0, 1)); // (ì‹œìž‘ì‹œê°„, ì†Œë²ˆí˜¸)
+    pq.push(make_pair(0, 1)); // (½ÃÀÛ½Ã°£, ¼Ò¹øÈ£)
 
     while (!pq.empty()) {
         pair<int, int> top = pq.top();
