@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <queue>
 #include <string>
@@ -7,8 +8,8 @@
 
 using namespace std;
 
-vector<char> v;           // í˜„ìž¬ ê²½ë¡œ
-vector<char> result;      // ìµœì¢… ì •ë‹µ ê²½ë¡œ
+vector<char> v;           // ÇöÀç °æ·Î
+vector<char> result;      // ÃÖÁ¾ Á¤´ä °æ·Î
 char arr[11][11];
 int n, m, ans = 11;
 
@@ -64,13 +65,13 @@ int BFS(vector<char> dirs) {
         Move(red_x, red_y, dir_idx, r_cnt);
         Move(blue_x, blue_y, dir_idx, b_cnt);
 
-        // íŒŒëž€ êµ¬ìŠ¬ì´ êµ¬ë©ì— ë¹ ì§€ë©´ ì‹¤íŒ¨
+        // ÆÄ¶õ ±¸½½ÀÌ ±¸¸Û¿¡ ºüÁö¸é ½ÇÆÐ
         if (arr[blue_x][blue_y] == 'O') return 11;
 
-        // ë¹¨ê°„ êµ¬ìŠ¬ì´ êµ¬ë©ì— ë¹ ì§€ë©´ ì„±ê³µ
+        // »¡°£ ±¸½½ÀÌ ±¸¸Û¿¡ ºüÁö¸é ¼º°ø
         if (arr[red_x][red_y] == 'O') return d + 1;
 
-        // ë‘˜ì´ ê°™ì€ ì¹¸ì— ìžˆì„ ìˆ˜ ì—†ìŒ â†’ ë” ë§Žì´ ì´ë™í•œ êµ¬ìŠ¬ì„ í•œ ì¹¸ ë’¤ë¡œ
+        // µÑÀÌ °°Àº Ä­¿¡ ÀÖÀ» ¼ö ¾øÀ½ ¡æ ´õ ¸¹ÀÌ ÀÌµ¿ÇÑ ±¸½½À» ÇÑ Ä­ µÚ·Î
         if (red_x == blue_x && red_y == blue_y) {
             if (r_cnt > b_cnt) {
                 red_x -= dx[dir_idx];
@@ -83,7 +84,7 @@ int BFS(vector<char> dirs) {
         }
     }
 
-    return 11; // ì‹¤íŒ¨
+    return 11; // ½ÇÆÐ
 }
 
 void Back(int now, int tar, vector<char> v) {
@@ -92,7 +93,7 @@ void Back(int now, int tar, vector<char> v) {
         if (res <= 10) {
             if (res < ans) {
                 ans = res;
-                result = v; // ì •ë‹µ ê²½ë¡œë¥¼ ì €ìž¥
+                result = v; // Á¤´ä °æ·Î¸¦ ÀúÀå
                 return;
             }
         }
@@ -114,7 +115,7 @@ int main() {
     if (ans == 11) cout << -1;
     else {
         cout << ans << "\n";
-        for (int i = 0; i < ans; i++) {  // ì •ë‹µ ê²½ë¡œ ì¶œë ¥
+        for (int i = 0; i < ans; i++) {  // Á¤´ä °æ·Î Ãâ·Â
             cout << result[i];
         }
     }
