@@ -31,6 +31,9 @@
     <Filter Include="헤더 파일\pro_Algo">
       <UniqueIdentifier>{8bb3e6e4-25ac-4152-9329-1223d2117dd7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\Backjoon_DP">
+      <UniqueIdentifier>{980de3ac-c8a3-47a2-8556-0b727976a4dc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -197,24 +200,6 @@
     <ClInclude Include="pro_lv3_hash_1.h">
       <Filter>헤더 파일\pro_Algo</Filter>
     </ClInclude>
-    <ClInclude Include="Backjoon_DP_Silver2_1.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Backjoon_DP_Silver2_2.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Backjoon_DP_Silver2_3.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Backjoon_DP_Silver3_1.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Backjoon_DP_Silver4_1.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Backjoon_DP_Silver5_1.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="pro_lv2_DP_6.h">
       <Filter>헤더 파일\pro_Algo</Filter>
     </ClInclude>
@@ -246,6 +231,39 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Twop_Silver2_1.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Twop_Silver2_2.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_DP_Silver2_1.h">
+      <Filter>헤더 파일\Backjoon_DP</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_DP_Silver2_2.h">
+      <Filter>헤더 파일\Backjoon_DP</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_DP_Silver2_3.h">
+      <Filter>헤더 파일\Backjoon_DP</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_DP_Silver3_1.h">
+      <Filter>헤더 파일\Backjoon_DP</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_DP_Silver4_1.h">
+      <Filter>헤더 파일\Backjoon_DP</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_DP_Silver5_1.h">
+      <Filter>헤더 파일\Backjoon_DP</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Sliding_Silver4_1.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Sliding_Silver4_2.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Sliding_Silver5_1.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Sliding_Silver5_2.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
