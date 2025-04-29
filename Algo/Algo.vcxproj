@@ -150,6 +150,7 @@
     <ClInclude Include="Backjoon_Sliding_Silver4_2.h" />
     <ClInclude Include="Backjoon_Sliding_Silver5_1.h" />
     <ClInclude Include="Backjoon_Sliding_Silver5_2.h" />
+    <ClInclude Include="Backjoon_Sliding_Silver5_3.h" />
     <ClInclude Include="Backjoon_Twop_Silver2_1.h" />
     <ClInclude Include="Backjoon_Twop_Silver2_2.h" />
     <ClInclude Include="Backjoon_Twop_Silver5_1.h" />

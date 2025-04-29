@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <algorithm>
 
@@ -63,7 +64,7 @@ int BFS() {
 			int nby = cby + dy[i];
 			int ncnt = ccnt + 1;
 
-			//Red ì­‰ ì´ë™.
+			//Red Âß ÀÌµ¿.
 			while (1) {
 				if (arr[nrx][nry] == '#') break;
 				if (arr[nrx][nry] == 'O') {
@@ -77,7 +78,7 @@ int BFS() {
 			nrx = nrx - dx[i];
 			nry = nry - dy[i];
 
-			//Blue ì­‰ ì´ë™.
+			//Blue Âß ÀÌµ¿.
 			while (1) {
 				if (arr[nbx][nby] == '#') break;
 				if (arr[nbx][nby] == 'O') {
@@ -91,7 +92,7 @@ int BFS() {
 			nbx = nbx - dx[i];
 			nby = nby - dy[i];
 
-			//blueê°€ ë‹¿ì•˜ìœ¼ë©´ ë.
+			//blue°¡ ´ê¾ÒÀ¸¸é ³¡.
 			if (blue_check) continue;
 			if (red_check) {
 				return ncnt;

@@ -34,6 +34,12 @@
     <Filter Include="헤더 파일\Backjoon_DP">
       <UniqueIdentifier>{980de3ac-c8a3-47a2-8556-0b727976a4dc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\Backjoon_Sliding">
+      <UniqueIdentifier>{5009f46e-1378-413b-8494-0791fa727686}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Backjoon_Twopointer">
+      <UniqueIdentifier>{494a41e1-e236-4fa8-8d80-478e2bdf8df5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -227,15 +233,6 @@
     <ClInclude Include="Backjoon_BFS_Gold1_1.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Backjoon_Twop_Silver5_1.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Backjoon_Twop_Silver2_1.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Backjoon_Twop_Silver2_2.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Backjoon_DP_Silver2_1.h">
       <Filter>헤더 파일\Backjoon_DP</Filter>
     </ClInclude>
@@ -255,16 +252,28 @@
       <Filter>헤더 파일\Backjoon_DP</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Sliding_Silver4_1.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Sliding</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Sliding_Silver4_2.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Sliding</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Sliding_Silver5_1.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Sliding</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Sliding_Silver5_2.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Sliding</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Sliding_Silver5_3.h">
+      <Filter>헤더 파일\Backjoon_Sliding</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Twop_Silver2_1.h">
+      <Filter>헤더 파일\Backjoon_Twopointer</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Twop_Silver2_2.h">
+      <Filter>헤더 파일\Backjoon_Twopointer</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Twop_Silver5_1.h">
+      <Filter>헤더 파일\Backjoon_Twopointer</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
