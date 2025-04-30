@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <algorithm>
 
@@ -103,7 +104,7 @@ void BFS() {
 
 int main() {
 	Input();
-	
+
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < n; j++) {
 			if (arr[i][j] == 0) {
