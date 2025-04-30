@@ -131,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Backjoon_BFS_Gold1_1.h" />
+    <ClInclude Include="Backjoon_BFS_Gold1_2.h" />
     <ClInclude Include="Backjoon_Dijk_Gold4_1.h" />
     <ClInclude Include="Backjoon_Dijk_Gold4_2.h" />
     <ClInclude Include="Backjoon_Dijk_Gold4_4.h" />
@@ -151,8 +152,12 @@
     <ClInclude Include="Backjoon_Sliding_Silver5_1.h" />
     <ClInclude Include="Backjoon_Sliding_Silver5_2.h" />
     <ClInclude Include="Backjoon_Sliding_Silver5_3.h" />
+    <ClInclude Include="Backjoon_Twop_Gold3_1.h" />
+    <ClInclude Include="Backjoon_Twop_Gold3_2.h" />
+    <ClInclude Include="Backjoon_Twop_Gold4_1.h" />
     <ClInclude Include="Backjoon_Twop_Silver2_1.h" />
     <ClInclude Include="Backjoon_Twop_Silver2_2.h" />
+    <ClInclude Include="Backjoon_Twop_Silver4_1.h" />
     <ClInclude Include="Backjoon_Twop_Silver5_1.h" />
     <ClInclude Include="pro_lv2_DP_6.h" />
     <ClInclude Include="pro_lv2_Greedy_3.h" />

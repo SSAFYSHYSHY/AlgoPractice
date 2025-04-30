@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 #include <algorithm>
 using namespace std;
@@ -11,9 +12,9 @@ int main() {
     for (int i = 0; i < n; ++i) cin >> belt[i];
 
     vector<int> kind(d + 1, 0);
-    int cnt = 0; // í˜„ì¬ ì¢…ë¥˜ ìˆ˜
+    int cnt = 0; // ÇöÀç Á¾·ù ¼ö
 
-    // ì´ˆê¸° ìœˆë„ìš° ì„¤ì •
+    // ÃÊ±â À©µµ¿ì ¼³Á¤
     for (int i = 0; i < k; ++i) {
         if (kind[belt[i]]++ == 0) cnt++;
     }
@@ -21,7 +22,7 @@ int main() {
     int ans = cnt + (kind[c] == 0 ? 1 : 0);
 
     for (int i = 1; i < n; ++i) {
-        // ìŠ¬ë¼ì´ë”© ìœˆë„ìš°: i ~ i+k-1 (ì´ kê°œ), mod n
+        // ½½¶óÀÌµù À©µµ¿ì: i ~ i+k-1 (ÃÑ k°³), mod n
         int remove = belt[(i - 1) % n];
         if (--kind[remove] == 0) cnt--;
 
