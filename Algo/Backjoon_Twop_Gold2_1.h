@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <vector>
 
@@ -12,7 +13,7 @@ int main() {
 	vector<pair<int, int>> v;
 
 	for (int i = 0; i < n; i++) {
-		for (int j = 0; j < m; j++){
+		for (int j = 0; j < m; j++) {
 			int num;
 			cin >> num;
 
