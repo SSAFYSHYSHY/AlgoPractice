@@ -43,7 +43,7 @@
     <Filter Include="헤더 파일\Backjoon_Prefix">
       <UniqueIdentifier>{106ea597-94b8-471f-ae80-2187f5f5390a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="헤더 파일\Backjoon_BFS">
+    <Filter Include="헤더 파일\Backjoon_BFS/DFS">
       <UniqueIdentifier>{f48f0331-00e1-4762-87d1-064b9d4b1511}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -309,13 +309,13 @@
       <Filter>헤더 파일\Backjoon_Prefix</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_BFS_Gold1_1.h">
-      <Filter>헤더 파일\Backjoon_BFS</Filter>
+      <Filter>헤더 파일\Backjoon_BFS/DFS</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_BFS_Gold1_2.h">
-      <Filter>헤더 파일\Backjoon_BFS</Filter>
+      <Filter>헤더 파일\Backjoon_BFS/DFS</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_BFS_Gold1_3.h">
-      <Filter>헤더 파일\Backjoon_BFS</Filter>
+      <Filter>헤더 파일\Backjoon_BFS/DFS</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Twop_Gold2_1.h">
       <Filter>헤더 파일\Backjoon_Twopointer</Filter>
@@ -334,6 +334,9 @@
     </ClInclude>
     <ClInclude Include="Backjoon_Twop_Gold5_2.h">
       <Filter>헤더 파일\Backjoon_Twopointer</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_DFS_Silver2_1.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

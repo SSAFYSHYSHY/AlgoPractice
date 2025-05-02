@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+_#pragma once
+#include <iostream>
 #include <vector>
 #include <algorithm>
 #include <cstring>
@@ -36,7 +37,7 @@ void Print() {
 void Drop(int idx) {
 	memset(new_arr, 0, sizeof(new_arr));
 
-	//ìœ„ë¡œ.
+	//À§·Î.
 	if (idx == 0) {
 		for (int j = 0; j < n; j++) {
 			int temp = 0;
@@ -56,7 +57,7 @@ void Drop(int idx) {
 		}
 
 	}
-	//ë™
+	//µ¿
 	else if (idx == 1) {
 		for (int i = 0; i < n; i++) {
 			int temp = n - 1;
@@ -77,7 +78,7 @@ void Drop(int idx) {
 
 	}
 
-	//ì•„ëž˜ë¡œ
+	//¾Æ·¡·Î
 	else if (idx == 2) {
 		for (int j = 0; j < n; j++) {
 			int temp = n - 1;
@@ -98,7 +99,7 @@ void Drop(int idx) {
 		}
 	}
 
-	//ì„œë¡œ 
+	//¼­·Î 
 	else if (idx == 3) {
 		for (int i = 0; i < n; i++) {
 			int temp = 0;
@@ -128,16 +129,16 @@ void Drop(int idx) {
 }
 
 int Calc() {
-	//ì´ˆê¸°í™”.
+	//ÃÊ±âÈ­.
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < n; j++) {
 			arr[i][j] = copy_arr[i][j];
 		}
 	}
 
-	//ê° ë²¡í„° ì‚¬ì´ì¦ˆ ë³„ë¡œ íšŒì „.
+	//°¢ º¤ÅÍ »çÀÌÁî º°·Î È¸Àü.
 	for (int i = 0; i < v.size(); i++) {
-		//ì¤‘ë ¥.
+		//Áß·Â.
 
 		Drop(v[i]);
 	}
