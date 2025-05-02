@@ -329,7 +329,10 @@
     <ClInclude Include="Backjoon_Twop_Gold4_4.h">
       <Filter>헤더 파일\Backjoon_Twopointer</Filter>
     </ClInclude>
-    <ClInclude Include="Backjoon_Twop_Gold5_3.h">
+    <ClInclude Include="Backjoon_Twop_Gold5_1.h">
+      <Filter>헤더 파일\Backjoon_Twopointer</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Twop_Gold5_2.h">
       <Filter>헤더 파일\Backjoon_Twopointer</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <string>
 
 using namespace std;
@@ -8,12 +9,12 @@ string digits[] = { "0", "1", "2" };
 
 void backtrack(int depth, string temp) {
     if (depth == n) {
-        if (temp[0] == '0') return; // 0ìœ¼ë¡œ ì‹œì‘í•˜ë©´ ì•ˆ ë¨
+        if (temp[0] == '0') return; // 0À¸·Î ½ÃÀÛÇÏ¸é ¾È µÊ
 
         int sum = 0;
         for (char c : temp) sum += c - '0';
 
-        if (sum % 3 == 0) ans++; // 3ì˜ ë°°ìˆ˜
+        if (sum % 3 == 0) ans++; // 3ÀÇ ¹è¼ö
         return;
     }
 
