@@ -1,41 +1,56 @@
 ﻿#include <iostream>
 #include <algorithm>
-#include <vector>
+#include <cstring>
 
 using namespace std;
 
-int n, m;
+int n, k, t;
+int arr[1000001];
+int ans = 21e8;
 
 int main() {
-	cin >> n >> m;
+	ios::sync_with_stdio(false);
+	cin.tie(0);
+	cout.tie(0);
 
-	vector<pair<int, int>> v;
+	cin >> t;
 
-	for (int i = 0; i < n; i++) {
-		for (int j = 0; j < m; j++){
-			int num;
-			cin >> num;
+	while (t--) {
+		memset(arr, 0, sizeof(arr));
+		cin >> n >> k;
 
-			v.push_back({ num,i });
+		for (int i = 0; i < n; i++) {
+			cin >> arr[i];
 		}
-	}
-	sort(v.begin(), v.end());
+		sort(arr, arr + n);
 
-	vector<int> cnt(n, 0);
-	int total = 0, r = 0, l = 0, ans = 21e8;
+		int cnt = 0, ans = 21e8;
+		int l = 0, r = n - 1;
 
-	while (r < v.size()) {
-		if (cnt[v[r].second]++ == 0) total++;
-		r++;
+		while (l < r) {
+			int l_n = arr[l];
+			int r_n = arr[r];
 
-		while (total == n) {
-			ans = min(ans, v[r - 1].first - v[l].first);
-			if (--cnt[v[l].second] == 0) total--;
-			l++;
+			if (l_n + r_n == k) {
+				l++;
+				r--;
+			}
+			else if (l_n + r_n > k) {
+				r--;
+			}
+			else {
+				l++;
+			}
+
+			if (abs(k - (l_n + r_n)) < ans) {
+				ans = abs(k - (l_n + r_n));
+				cnt = 1;
+			}
+			else if(abs(k - (l_n + r_n)) == ans){
+				cnt++;
+			}
 		}
+
+		cout << cnt << '\n';
 	}
-
-	cout << ans;
-
-
 }

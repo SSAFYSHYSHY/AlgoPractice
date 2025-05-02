@@ -317,17 +317,20 @@
     <ClInclude Include="Backjoon_BFS_Gold1_3.h">
       <Filter>헤더 파일\Backjoon_BFS</Filter>
     </ClInclude>
-    <ClInclude Include="Backjoon_Twop_Gold5_3.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Backjoon_Twop_Gold4_3.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="Backjoon_Twop_Gold2_1.h">
+      <Filter>헤더 파일\Backjoon_Twopointer</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Twop_Gold3_3.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Twopointer</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Twop_Gold4_3.h">
+      <Filter>헤더 파일\Backjoon_Twopointer</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Twop_Gold4_4.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Twopointer</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Twop_Gold5_3.h">
+      <Filter>헤더 파일\Backjoon_Twopointer</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
