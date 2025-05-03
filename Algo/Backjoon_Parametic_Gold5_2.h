@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 using namespace std;
 
@@ -11,7 +12,7 @@ bool isPossible(int maxCost) {
         ok[i] = cost[i] <= maxCost;
     }
 
-    // ìŠ¬ë¼ì´ë”© ìœˆë„ìš°ë¡œ ì—°ì†ëœ Kê°œ êµ¬ê°„ ì¤‘ ìˆ˜ë½ëœ ì˜ë¢°ê°€ í•˜ë‚˜ë¼ë„ ìžˆëŠ”ì§€ í™•ì¸
+    // ½½¶óÀÌµù À©µµ¿ì·Î ¿¬¼ÓµÈ K°³ ±¸°£ Áß ¼ö¶ôµÈ ÀÇ·Ú°¡ ÇÏ³ª¶óµµ ÀÖ´ÂÁö È®ÀÎ
     int cnt = 0;
     for (int i = 0; i < K; ++i) {
         if (ok[i]) cnt++;
