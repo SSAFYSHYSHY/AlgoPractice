@@ -335,8 +335,11 @@
     <ClInclude Include="Backjoon_Twop_Gold5_2.h">
       <Filter>헤더 파일\Backjoon_Twopointer</Filter>
     </ClInclude>
+    <ClInclude Include="Backjoon_DFS_Gold1_1.h">
+      <Filter>헤더 파일\pro_BFS/DFS</Filter>
+    </ClInclude>
     <ClInclude Include="Backjoon_DFS_Silver2_1.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\pro_BFS/DFS</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

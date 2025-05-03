@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 #include <algorithm>
 
@@ -12,10 +13,10 @@ int countByCitation[MAX_N];
 bool possible(int h) {
     int need = 0;
 
-    // h ì´ìƒ ì¸ìš©ëœ ë…¼ë¬¸ ìˆ˜
+    // h ÀÌ»ó ÀÎ¿ëµÈ ³í¹® ¼ö
     int high = countByCitation[h];
 
-    // ë¶€ì¡±í•œ ìˆ˜ë¥¼ Lë¡œ ì±„ìš¸ ìˆ˜ ìžˆëŠ”ê°€?
+    // ºÎÁ·ÇÑ ¼ö¸¦ L·Î Ã¤¿ï ¼ö ÀÖ´Â°¡?
     if (high >= h) return true;
     need = h - high;
 
@@ -37,7 +38,7 @@ int main() {
         countByCitation[c]++;
     }
 
-    // ëˆ„ì í•©: countByCitation[i] = i ì´ìƒ ì¸ìš©ëœ ë…¼ë¬¸ ìˆ˜
+    // ´©ÀûÇÕ: countByCitation[i] = i ÀÌ»ó ÀÎ¿ëµÈ ³í¹® ¼ö
     for (int i = MAX_N - 2; i >= 0; i--) {
         countByCitation[i] += countByCitation[i + 1];
     }
