@@ -1,25 +1,26 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 
 using namespace std;
 
-int arr[100001];
-int prefix[100001];
+long long arr[1000001];
+long long prefix[1000001];
 
 int main() {
-	int n;
+	long long n;
 	cin >> n;
 
-	for (int i = 0; i < n; i++) {
+	for (long long i = 0; i < n; i++) {
 		cin >> arr[i];
 	}
 
-	for (int i = 1; i <= n; i++) {
+	for (long long i = 1; i <= n; i++) {
 		prefix[i] = prefix[i - 1] + (arr[i - 1] == 0 ? 1 : 0);
 	}
 
 	long long sum = 0;
-	for (int i = 1; i <= n; i++) {
+	for (long long i = 1; i <= n; i++) {
 		if (arr[i] == 1) {
 			sum += prefix[i];
 		}
