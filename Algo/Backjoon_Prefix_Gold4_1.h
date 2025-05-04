@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <climits>
 
@@ -14,11 +15,11 @@ int main() {
 
     cin >> n >> m;
 
-    // ë°°ì—´ ì…ë ¥
+    // ¹è¿­ ÀÔ·Â
     for (int i = 1; i <= n; ++i) {
         for (int j = 1; j <= m; ++j) {
             cin >> arr[i][j];
-            // ëˆ„ì í•© ê³„ì‚°
+            // ´©ÀûÇÕ °è»ê
             prefix[i][j] = arr[i][j]
                 + prefix[i - 1][j]
                 + prefix[i][j - 1]
@@ -28,7 +29,7 @@ int main() {
 
     int maxSum = INT_MIN;
 
-    // ëª¨ë“  (r1,c1) ~ (r2,c2) ì‚¬ê°í˜• íƒìƒ‰
+    // ¸ğµç (r1,c1) ~ (r2,c2) »ç°¢Çü Å½»ö
     for (int r1 = 1; r1 <= n; ++r1) {
         for (int r2 = r1; r2 <= n; ++r2) {
             for (int c1 = 1; c1 <= m; ++c1) {
