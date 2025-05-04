@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <climits>
 
@@ -32,7 +33,7 @@ int main() {
         for (int j = 1; j <= m; j++) {
             for (int k = len; k < min(n - i + 1, m - j + 1); k++) {
                 int sum = prefix[i + k][j + k] - prefix[i + k][j - 1] - prefix[i - 1][j + k] + prefix[i - 1][j - 1];
-            
+
                 if (sum == 0) {
                     len = max(len, k + 1);
                 }
