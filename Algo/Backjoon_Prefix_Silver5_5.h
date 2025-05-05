@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 
 using namespace std;
@@ -13,7 +14,7 @@ int main() {
 
 	for (int i = 1; i <= n; i++) {
 		cin >> arr[i];
-		prefix[i] = prefix[i - 1] + (arr[i]*arr[i]);
+		prefix[i] = prefix[i - 1] + (arr[i] * arr[i]);
 		prefix2[i] = prefix2[i - 1] + arr[i];
 	}
 
