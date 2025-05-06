@@ -1,14 +1,15 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 
 using namespace std;
 
 long long arr[100001];
 long long prefix[100001];
-int k,n;
+int k, n;
 
 int main() {
-	cin >>k >>  n;
+	cin >> k >> n;
 
 	for (int i = 1; i <= n; i++) {
 		cin >> arr[i];
