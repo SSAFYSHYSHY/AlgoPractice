@@ -150,6 +150,7 @@
     <ClInclude Include="Backjoon_Parametic_Gold5_1.h" />
     <ClInclude Include="Backjoon_Parametic_Gold5_2.h" />
     <ClInclude Include="Backjoon_Parametic_Gold5_3.h" />
+    <ClInclude Include="Backjoon_Parametic_Silver2_2.h" />
     <ClInclude Include="Backjoon_Prefix_Gold4_2.h" />
     <ClInclude Include="Backjoon_Prefix_Gold4_1.h" />
     <ClInclude Include="Backjoon_Prefix_Gold4_3.h" />
@@ -161,6 +162,7 @@
     <ClInclude Include="Backjoon_Prefix_Silver4_5.h" />
     <ClInclude Include="Backjoon_Prefix_Silver4_6.h" />
     <ClInclude Include="Backjoon_Prefix_Silver4_7.h" />
+    <ClInclude Include="Backjoon_Prefix_Silver4_8.h" />
     <ClInclude Include="Backjoon_Prefix_Silver5_1.h" />
     <ClInclude Include="Backjoon_Prefix_Silver5_2.h" />
     <ClInclude Include="Backjoon_Prefix_Silver5_3.h" />

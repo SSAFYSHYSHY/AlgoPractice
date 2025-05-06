@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 #include <algorithm>
 
@@ -31,10 +32,10 @@ int main() {
 
         if (isEnough(mid, burners, n)) {
             answer = mid;
-            right = mid - 1; 
+            right = mid - 1;
         }
         else {
-            left = mid + 1; 
+            left = mid + 1;
         }
     }
 
