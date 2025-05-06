@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #define MAX 100000000000LL
 
@@ -31,7 +32,7 @@ int main() {
     long long l = 0, r = 0;
     for (int i = 0; i < n; i++) {
         cin >> arr[i];
-        r += arr[i]; // 최댓값은 모든 박스 무게 합
+        r += arr[i];
     }
 
     long long ans = r;
