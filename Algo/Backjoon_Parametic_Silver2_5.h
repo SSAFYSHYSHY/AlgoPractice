@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #define MAX 100000000000000LL
 
@@ -13,15 +14,15 @@ bool Calc(long long mid) {
 
 	for (int i = 0; i < n; i++) {
 		if (arr[i][0] >= mid) {
-			// ëª¨ë“œ 1
+			// ¸ðµå 1
 			total += mid * arr[i][1];
 		}
 		else {
-			// ëª¨ë“œ 2
+			// ¸ðµå 2
 			total += arr[i][1] * arr[i][0] + arr[i][2] * (mid - arr[i][0]);
 		}
 
-		// ì´ë¯¸ pë¥¼ ë„˜ì—ˆìœ¼ë©´ ë” ê³„ì‚° ì•ˆ í•´ë„ ë¨
+		// ÀÌ¹Ì p¸¦ ³Ñ¾úÀ¸¸é ´õ °è»ê ¾È ÇØµµ µÊ
 		if (total >= p) return true;
 	}
 
