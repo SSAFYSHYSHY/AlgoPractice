@@ -1,10 +1,11 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 #include <algorithm>
 
 using namespace std;
 
-// të¶„ê¹Œì§€ ì´ë°œí•œ ê³ ê° ìˆ˜ ê³„ì‚°
+// tºĞ±îÁö ÀÌ¹ßÇÑ °í°´ ¼ö °è»ê
 long long servedUntil(const vector<int>& m, long long t) {
     long long total = 0;
     for (int time : m) {
@@ -27,8 +28,8 @@ int main() {
             cin >> m[i];
         }
 
-        // ì´ë¶„ íƒìƒ‰ìœ¼ë¡œ ìµœì†Œ ì‹œê°„ ì°¾ê¸°
-        long long l = 0, r = 1LL << 50; // ì¶©ë¶„íˆ í° ë²”ìœ„
+        // ÀÌºĞ Å½»öÀ¸·Î ÃÖ¼Ò ½Ã°£ Ã£±â
+        long long l = 0, r = 1LL << 50; // ÃæºĞÈ÷ Å« ¹üÀ§
         long long time = -1;
 
         while (l <= r) {
@@ -42,17 +43,17 @@ int main() {
             }
         }
 
-        // time - 1ê¹Œì§€ ì²˜ë¦¬ëœ ì†ë‹˜ ìˆ˜
+        // time - 1±îÁö Ã³¸®µÈ ¼Õ´Ô ¼ö
         long long servedBefore = servedUntil(m, time - 1);
         long long toGo = N - servedBefore;
 
-        // time ì‹œì ì— ë¹„ëŠ” ì´ë°œì‚¬ ì¤‘ Në²ˆì§¸ ì‚¬ëŒì„ ì²˜ë¦¬í•˜ëŠ” ì´ë°œì‚¬ ì°¾ê¸°
+        // time ½ÃÁ¡¿¡ ºñ´Â ÀÌ¹ß»ç Áß N¹øÂ° »ç¶÷À» Ã³¸®ÇÏ´Â ÀÌ¹ß»ç Ã£±â
         int result = -1;
         for (int i = 0; i < B; i++) {
             if (time % m[i] == 0) {
                 toGo--;
                 if (toGo == 0) {
-                    result = i + 1; // ì´ë°œì‚¬ëŠ” 1ë²ˆë¶€í„° ì‹œì‘
+                    result = i + 1; // ÀÌ¹ß»ç´Â 1¹øºÎÅÍ ½ÃÀÛ
                     break;
                 }
             }
