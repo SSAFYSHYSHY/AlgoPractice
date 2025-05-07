@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <vector>
 #include <cmath>  // for M_PI or acos
@@ -7,8 +8,8 @@ using namespace std;
 
 int t;
 
-// Ï€ë¥¼ ì •í™•í•˜ê²Œ í‘œí˜„
-const double PI = acos(-1);  // ë˜ëŠ” 3.14159265358979
+// ¥ğ¸¦ Á¤È®ÇÏ°Ô Ç¥Çö
+const double PI = acos(-1);  // ¶Ç´Â 3.14159265358979
 
 bool Calc(const vector<int>& v, double mid, int totalPeople) {
     int cnt = 0;
@@ -33,12 +34,12 @@ int main() {
             cin >> v[i];
         }
 
-        // ì´ë¶„ íƒìƒ‰ ë²”ìœ„ ì„¤ì •
+        // ÀÌºĞ Å½»ö ¹üÀ§ ¼³Á¤
         double l = 0.0;
         double r = PI * *max_element(v.begin(), v.end()) * *max_element(v.begin(), v.end());
         double ans = 0.0;
 
-        // ì ˆëŒ€ ì˜¤ì°¨ ê¸°ì¤€ ì´ë¶„ íƒìƒ‰
+        // Àı´ë ¿ÀÂ÷ ±âÁØ ÀÌºĞ Å½»ö
         while (r - l > 1e-6) {
             double mid = (l + r) / 2.0;
             if (Calc(v, mid, f + 1)) {
