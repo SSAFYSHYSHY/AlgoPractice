@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <vector>
 
@@ -26,7 +27,7 @@ bool Calc(int idx, double percent, const vector<int>& v, double total) {
 int main() {
 	cout << fixed;
 	cout.precision(6);
-	
+
 	int t;
 	cin >> t;
 
@@ -36,7 +37,7 @@ int main() {
 		double sum = 0.0;
 
 		vector<int> v(n);
-		
+
 		for (int i = 0; i < n; i++) {
 			cin >> v[i];
 			sum += v[i];
