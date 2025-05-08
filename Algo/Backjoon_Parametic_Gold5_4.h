@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 
 using namespace std;
 
@@ -20,11 +21,11 @@ int main() {
 			return 0;
 		}
 
-		//ì–‘ì´ ëŠ‘ëŒ€ë³´ë‹¤ ë§Žìœ¼ë©´.
+		//¾çÀÌ ´Á´ëº¸´Ù ¸¹À¸¸é.
 		else if (x > mid / 2) {
 			l = mid;
 		}
-		//ì•„ë‹ˆë©´.
+		//¾Æ´Ï¸é.
 		else {
 			r = mid;
 		}
