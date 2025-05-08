@@ -404,9 +404,6 @@
     <ClInclude Include="Backjoon_Parametic_Silver2_6.h">
       <Filter>헤더 파일\Backjoon_Parametic</Filter>
     </ClInclude>
-    <ClInclude Include="Backjoon_Parametic_Silver1_2.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Backjoon_Prefix_Silver3_4.h">
       <Filter>헤더 파일\Backjoon_Prefix</Filter>
     </ClInclude>
@@ -422,13 +419,22 @@
     <ClInclude Include="Backjoon_Prefix_Silver3_5.h">
       <Filter>헤더 파일\Backjoon_Prefix</Filter>
     </ClInclude>
+    <ClInclude Include="Backjoon_Parametic_Silver1_2.h">
+      <Filter>헤더 파일\Backjoon_Parametic</Filter>
+    </ClInclude>
     <ClInclude Include="Backjoon_Parametic_Silver1_3.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Parametic</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Parametic_Silver1_4.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Parametic</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Parametic_Silver1_5.h">
+      <Filter>헤더 파일\Backjoon_Parametic</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Parametic_Silver1_6.h">
+      <Filter>헤더 파일\Backjoon_Parametic</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Prefix_Silver2_1.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
