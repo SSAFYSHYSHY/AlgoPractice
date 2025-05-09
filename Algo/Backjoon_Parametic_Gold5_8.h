@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <cmath>
 using namespace std;
 
@@ -11,7 +12,7 @@ int main() {
     ll A, B, C, D, K;
     cin >> A >> B >> C >> D >> K;
 
-    // ê°€ëŠ¥í•œ ìµœëŒ€ ì¼ ìˆ˜ ê³„ì‚° (ìµœì•…ì˜ ê²½ìš°)
+    // °¡´ÉÇÑ ÃÖ´ë ÀÏ ¼ö °è»ê (ÃÖ¾ÇÀÇ °æ¿ì)
     ll End = (A + C + D - 1) / D;
 
     ll S = 1;
@@ -22,31 +23,31 @@ int main() {
     while (S <= E) {
         ll T = (S + E) / 2;
 
-        // ë§Œì•½ ë°©ì–´ë ¥ ê°ì†Œê°€ 0 ì´í•˜ë¡œ ë–¨ì–´ì¡Œë‹¤ë©´, ë” ì´ìƒ ê³„ì‚° ë¶ˆê°€
+        // ¸¸¾à ¹æ¾î·Â °¨¼Ò°¡ 0 ÀÌÇÏ·Î ¶³¾îÁ³´Ù¸é, ´õ ÀÌ»ó °è»ê ºÒ°¡
         ll damage = B - K * (T - 1);
         if (damage <= 0) {
             E = T - 1;
             continue;
         }
 
-        // ëˆ„ì  í”¼í•´ ê³„ì‚°: T * (2B - K(T-1)) / 2
-        // í”¼í•  ìˆ˜ ìˆëŠ” ëˆ„ì  í”¼í•´(Toca)
+        // ´©Àû ÇÇÇØ °è»ê: T * (2B - K(T-1)) / 2
+        // ÇÇÇÒ ¼ö ÀÖ´Â ´©Àû ÇÇÇØ(Toca)
         ll first_term = 2 * B;
         ll second_term = K * (T - 1);
-        ll total = T * (first_term - second_term); // ë¶„ì
+        ll total = T * (first_term - second_term); // ºĞÀÚ
         ll Toca = A - total / 2;
 
-        // ì‹œê°„ Tì— ë„ë‹¬í•œ ëŒëŒì´ ì²´ë ¥
+        // ½Ã°£ T¿¡ µµ´ŞÇÑ µ¹µ¹ÀÌ Ã¼·Â
         ll Doldol = A + C - T * D;
 
         if (Toca <= 0) {
-            // ë¬´ì¡°ê±´ ë„ì°© (ë°©ì–´ ë¬´ì‹œ)
+            // ¹«Á¶°Ç µµÂø (¹æ¾î ¹«½Ã)
             Arrive = min(Arrive, T);
             E = T - 1;
         }
         else {
             if (Toca >= Doldol) {
-                // ë„ë‹¬ ì‹œì ì— ì¡ì„ ìˆ˜ ìˆìŒ
+                // µµ´Ş ½ÃÁ¡¿¡ ÀâÀ» ¼ö ÀÖÀ½
                 Catch = min(Catch, T);
             }
             S = T + 1;
