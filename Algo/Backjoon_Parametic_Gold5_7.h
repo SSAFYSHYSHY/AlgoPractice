@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 
 using namespace std;
@@ -8,12 +9,12 @@ long long arr[200001];
 long long prefix[200001];
 
 bool Calc(long long mid) {
-	
+
 	for (int start = 0; start + mid <= n; start++) {
 		long long bonus = prefix[start];
 		long long after = prefix[n] - prefix[start + mid];
 
-		long long total = bonus*x + after;
+		long long total = bonus * x + after;
 
 		if (total >= k) return true;
 	}
@@ -49,5 +50,5 @@ int main() {
 	}
 
 	cout << ans;
- 
+
 }
