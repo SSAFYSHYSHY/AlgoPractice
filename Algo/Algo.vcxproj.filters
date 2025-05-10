@@ -441,16 +441,19 @@
       <Filter>헤더 파일\Backjoon_Prefix</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Parametic_Gold5_4.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Parametic</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Parametic_Gold5_5.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Parametic</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Parametic_Gold5_6.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Parametic</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Parametic_Gold5_7.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Parametic</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Parametic_Gold5_8.h">
+      <Filter>헤더 파일\Backjoon_Parametic</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
