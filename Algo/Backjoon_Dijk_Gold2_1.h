@@ -1,102 +1,89 @@
-#pragma once
 #include <iostream>
-#include <queue>
-#include <algorithm>
-#include <string>
-#include <cstring>
+#include <vector>
+#include <limits.h>
 
 using namespace std;
 
-int n, m;
-int sx, sy, ex, ey;
+int n;
 
-int dx[] = { -1,1,0,0 };
-int dy[] = { 0,0,-1,1 };
+// 만들어진 색 조합 저장
+vector<vector<int>> vec;
 
-char arr[51][51];
-int dist[51][51];
+// 물감의 색 저장
+vector<vector<int>> paints;
 
-bool InRange(int x, int y) {
-	return 0 <= x && x < n && 0 <= y && y < m;
+// 배열의 각 원소 사용 유무
+vector<bool> visited;
+
+// 곰두리색 저장
+vector<int> origin(3);
+
+int ans = INT_MAX;
+
+void check(int cur)
+{
+    vector<int> temp = vector<int>{ 0 ,0 ,0 };
+
+    for (int i = 0; i < cur; i++)
+    {
+        temp[0] += vec[i][0];
+        temp[1] += vec[i][1];
+        temp[2] += vec[i][2];
+    }
+
+    int gap = 0;
+    for (int i = 0; i < 3; i++)
+    {
+        gap += abs((temp[i] / cur) - origin[i]);
+    }
+
+    // 가장 적은 값을 ans로 저장한다.
+    ans = min(ans, gap);
 }
 
-void Calc() {
-	memset(dist, -1, sizeof(dist));
-	priority_queue<pair<pair<int, int>, pair<int, int>>, vector<pair<pair<int, int>, pair<int, int>>>, greater<pair<pair<int, int>, pair<int, int>>>>pq;
-	pq.push({ {0,0}, {sx,sy} });
+void recur(int cur, int start)
+{
+    // 색을 2가지 이상 섞었다면 곰두리색과 비교
+    if (cur >= 2) check(cur);
 
-	int cnt = 0;
-	int trash_cnt = 0;
+    // 최대 7색 이상 섞을 수 없다.
+    if (cur == 7) return;
 
-	dist[sx][sy] = 0;
-
-	while (!pq.empty()) {
-		int flag = false;
-		int cnt2 = pq.top().first.first;
-		int trash_cnt2 = pq.top().first.second;
-		int x = pq.top().second.first;
-		int y = pq.top().second.second;
-		pq.pop();
-
-		for (int i = 0; i < 4; i++) {
-			int nx = x + dx[i];
-			int ny = y + dy[i];
-
-			if (nx == ex && ny == ey) {
-				cnt = cnt2;
-				trash_cnt = trash_cnt2;
-				flag = true;
-				break;
-			}
-
-			if (!InRange(nx, ny)) continue;
-			if (dist[nx][ny] != -1) continue;
-
-			if (arr[nx][ny] == 'g') {
-				pq.push({ {cnt2 + 1, trash_cnt2}, {nx,ny} });
-			}
-			else if (arr[nx][ny] == '.') {
-				bool flag2 = false;
-				for (int j = 0; j < 4; j++) {
-					if (arr[nx + dx[j]][ny + dy[j]] == 'g') {
-						flag2 = true;
-						break;
-					}
-				}
-
-				if (flag2) {
-					pq.push({ {cnt2, trash_cnt2 + 1},{nx,ny} });
-				}
-				else {
-					pq.push({ {cnt2, trash_cnt2},{nx,ny} });
-				}
-			}
-
-			dist[nx][ny] = dist[x][y] + 1;
-		}
-		if (flag) break;
-	}
-
-	cout << cnt << " " << trash_cnt;
+    // 중복이 없도록 start를 사용
+    for (int i = start + 1; i < n; i++)
+    {
+        if (visited[i] == true) continue;
+        visited[i] = true;
+        vec[cur] = paints[i];
+        recur(cur + 1, i);
+        visited[i] = false;
+    }
 }
 
-int main() {
-	cin >> n >> m;
 
-	for (int i = 0; i < n; i++) {
-		for (int j = 0; j < m; j++) {
-			cin >> arr[i][j];
 
-			if (arr[i][j] == 'S') {
-				sx = i;
-				sy = j;
-			}
-			else if (arr[i][j] == 'F') {
-				ex = i;
-				ey = j;
-			}
-		}
-	}
+int main()
+{
+    cin >> n;
 
-	Calc();
+    int a, b, c;
+    for (int i = 0; i < n; i++)
+    {
+        cin >> a >> b >> c;
+        paints.push_back(vector<int>{ a, b, c });
+    }
+
+    for (int i = 0; i < 3; i++)
+    {
+        cin >> origin[i];
+    }
+
+    vec.resize(n);
+    visited.resize(n, false);
+
+    recur(0, -1);
+
+    cout << ans;
+
+    return 0;
 }

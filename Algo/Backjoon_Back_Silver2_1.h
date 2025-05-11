@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 #include <limits.h>
 
@@ -6,16 +7,16 @@ using namespace std;
 
 int n;
 
-// ë§Œë“¤ì–´ì§„ ìƒ‰ ì¡°í•© ì €ì¥
+// ¸¸µé¾îÁø »ö Á¶ÇÕ ÀúÀå
 vector<vector<int>> vec;
 
-// ë¬¼ê°ì˜ ìƒ‰ ì €ì¥
+// ¹°°¨ÀÇ »ö ÀúÀå
 vector<vector<int>> paints;
 
-// ë°°ì—´ì˜ ê° ì›ì†Œ ì‚¬ìš© ìœ ë¬´
+// ¹è¿­ÀÇ °¢ ¿ø¼Ò »ç¿ë À¯¹«
 vector<bool> visited;
 
-// ê³°ë‘ë¦¬ìƒ‰ ì €ì¥
+// °õµÎ¸®»ö ÀúÀå
 vector<int> origin(3);
 
 int ans = INT_MAX;
@@ -37,19 +38,19 @@ void check(int cur)
         gap += abs((temp[i] / cur) - origin[i]);
     }
 
-    // ê°€ì¥ ì ì€ ê°’ì„ ansë¡œ ì €ì¥í•œë‹¤.
+    // °¡Àå ÀûÀº °ªÀ» ans·Î ÀúÀåÇÑ´Ù.
     ans = min(ans, gap);
 }
 
 void recur(int cur, int start)
 {
-    // ìƒ‰ì„ 2ê°€ì§€ ì´ìƒ ì„ì—ˆë‹¤ë©´ ê³°ë‘ë¦¬ìƒ‰ê³¼ ë¹„êµ
+    // »öÀ» 2°¡Áö ÀÌ»ó ¼¯¾ú´Ù¸é °õµÎ¸®»ö°ú ºñ±³
     if (cur >= 2) check(cur);
 
-    // ìµœëŒ€ 7ìƒ‰ ì´ìƒ ì„ì„ ìˆ˜ ì—†ë‹¤.
+    // ÃÖ´ë 7»ö ÀÌ»ó ¼¯À» ¼ö ¾ø´Ù.
     if (cur == 7) return;
 
-    // ì¤‘ë³µì´ ì—†ë„ë¡ startë¥¼ ì‚¬ìš©
+    // Áßº¹ÀÌ ¾øµµ·Ï start¸¦ »ç¿ë
     for (int i = start + 1; i < n; i++)
     {
         if (visited[i] == true) continue;
