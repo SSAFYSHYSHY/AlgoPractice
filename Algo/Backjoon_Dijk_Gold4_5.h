@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <cstring>
 #include <cmath>
@@ -43,7 +44,7 @@ void Dijk(int sx, int sy) {
 		int cy = pq.top().second.second;
 		pq.pop();
 
-		if (dist[cx][cy] < cost) continue; // ë” ë‚˜ì€ ê²½ë¡œë¡œ ì´ë¯¸ ë°©ë¬¸í–ˆìœ¼ë©´ ë¬´ì‹œ
+		if (dist[cx][cy] < cost) continue; // ´õ ³ªÀº °æ·Î·Î ÀÌ¹Ì ¹æ¹®ÇßÀ¸¸é ¹«½Ã
 
 		for (int i = 0; i < 4; i++) {
 			int nx = cx + dx[i];
