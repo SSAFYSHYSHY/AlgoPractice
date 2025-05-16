@@ -195,6 +195,7 @@
     <ClInclude Include="Backjoon_Prefix_Silver5_4.h" />
     <ClInclude Include="Backjoon_Prefix_Silver5_5.h" />
     <ClInclude Include="Backjoon_Prefix_Silver5_6.h" />
+    <ClInclude Include="Backjoon_Simul_Gold5_1.h" />
     <ClInclude Include="Backjoon_Stack_Gold5_1.h" />
     <ClInclude Include="Backjoon_Twop_Gold2_1.h" />
     <ClInclude Include="Backjoon_Twop_Gold3_3.h" />

@@ -464,13 +464,16 @@
     <ClInclude Include="Backjoon_Parametic_Silver3_1.h">
       <Filter>헤더 파일\Backjoon_Parametic</Filter>
     </ClInclude>
-    <ClInclude Include="Backjoon_Parametic_Gold2_1.h">
+    <ClInclude Include="Backjoon_Stack_Gold5_1.h">
       <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Parametic_Gold2_1.h">
+      <Filter>헤더 파일\Backjoon_Parametic</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Parametic_Gold2_2.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Parametic</Filter>
     </ClInclude>
-    <ClInclude Include="Backjoon_Stack_Gold5_1.h">
+    <ClInclude Include="Backjoon_Simul_Gold5_1.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
