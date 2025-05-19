@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 #define endl "\n"
 #define MAX 100
@@ -43,7 +44,7 @@ void Copy_MAP(int A[][MAX], int B[][MAX]) {
     }
 }
 
-// ìƒí•˜ ë°˜ì „
+// »óÇÏ ¹İÀü
 void Cmd_One() {
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < M; j++) {
@@ -53,7 +54,7 @@ void Cmd_One() {
     Copy_MAP(MAP, C_MAP);
 }
 
-// ì¢Œìš° ë°˜ì „
+// ÁÂ¿ì ¹İÀü
 void Cmd_Two() {
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < M; j++) {
@@ -63,7 +64,7 @@ void Cmd_Two() {
     Copy_MAP(MAP, C_MAP);
 }
 
-// ì˜¤ë¥¸ìª½ 90ë„ íšŒì „
+// ¿À¸¥ÂÊ 90µµ È¸Àü
 void Cmd_Three() {
     int temp = N;
     swap(N, M);
@@ -76,7 +77,7 @@ void Cmd_Three() {
     Copy_MAP(MAP, C_MAP);
 }
 
-// ì™¼ìª½ 90ë„ íšŒì „
+// ¿ŞÂÊ 90µµ È¸Àü
 void Cmd_Four() {
     int temp = M;
     swap(N, M);
@@ -89,7 +90,7 @@ void Cmd_Four() {
     Copy_MAP(MAP, C_MAP);
 }
 
-// 4ì‚¬ë¶„ë©´ì„ ì‹œê³„ ë°©í–¥ìœ¼ë¡œ íšŒì „
+// 4»çºĞ¸éÀ» ½Ã°è ¹æÇâÀ¸·Î È¸Àü
 void Cmd_Five() {
     int halfN = N / 2;
     int halfM = M / 2;
@@ -121,7 +122,7 @@ void Cmd_Five() {
     Copy_MAP(MAP, C_MAP);
 }
 
-// 4ì‚¬ë¶„ë©´ì„ ë°˜ì‹œê³„ ë°©í–¥ìœ¼ë¡œ íšŒì „
+// 4»çºĞ¸éÀ» ¹İ½Ã°è ¹æÇâÀ¸·Î È¸Àü
 void Cmd_Six() {
     int halfN = N / 2;
     int halfM = M / 2;
