@@ -1,4 +1,5 @@
-﻿
+#pragma once
+
 #include <iostream>                                                            
 #include <vector>
 #include <queue>
@@ -25,7 +26,7 @@ int main() {
         if (inDeg[i] == 0) {
             q.push(i);
         }
-        result[i] = 1; //1학기부터 시작(초기화)
+        result[i] = 1;
     }
 
     while (!q.empty()) {
@@ -37,7 +38,7 @@ int main() {
             inDeg[next]--;
             if (inDeg[next] == 0) {
                 q.push(next);
-                result[next] = max(result[next], result[cur] + 1); //★
+                result[next] = max(result[next], result[cur] + 1);
             }
         }
     }
