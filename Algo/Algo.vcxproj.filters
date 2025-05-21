@@ -489,7 +489,7 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_DFS_Gold5_1.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_BFS/DFS</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
