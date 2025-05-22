@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <cstring>
 #include <utility>
@@ -9,7 +10,7 @@ int n, m;
 char arr[51][51];
 bool visited[51][51][5][2][2]; // [x][y][dir][c1][c2]
 
-int dx[] = { -1, 1, 0, 0 }; // ìƒí•˜ì¢Œìš°
+int dx[] = { -1, 1, 0, 0 }; // »óÇÏÁÂ¿ì
 int dy[] = { 0, 0, -1, 1 };
 
 pair<int, int> start;
@@ -49,7 +50,7 @@ int BFS() {
     memset(visited, false, sizeof(visited));
     queue<State> q;
 
-    q.push({ start.first, start.second, 0, 4, 0, 0 }); // 4ëŠ” ì´ˆê¸°ê°’ìœ¼ë¡œ ì´ì „ ë°©í–¥ ì—†ìŒ
+    q.push({ start.first, start.second, 0, 4, 0, 0 }); // 4´Â ÃÊ±â°ªÀ¸·Î ÀÌÀü ¹æÇâ ¾øÀ½
     visited[start.first][start.second][4][0][0] = true;
 
     while (!q.empty()) {
