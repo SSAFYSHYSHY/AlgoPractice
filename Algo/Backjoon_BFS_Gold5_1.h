@@ -1,11 +1,12 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <cstring>
 
 using namespace std;
 
 int n, s, d, f, b, k;
-bool visited[100001] = {false,};
+bool visited[100001] = { false, };
 char arr[100001];
 
 void Input() {
