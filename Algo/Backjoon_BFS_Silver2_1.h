@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <algorithm>
 #include <string>
@@ -44,7 +45,7 @@ void BFS() {
 		Node cur = q.front();
 		q.pop();
 
-		// ìµœëŒ€ ì‹œê°„ ê°±ì‹ 
+		// ÃÖ´ë ½Ã°£ °»½Å
 		ans = max(ans, cur.cnt);
 
 		for (int i = 0; i < 8; i++) {
