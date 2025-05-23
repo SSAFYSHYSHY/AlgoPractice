@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <algorithm>
 #include <string>
@@ -61,7 +62,7 @@ int main() {
 		for (int j = 0; j < m; j++) {
 			if (!visited[i][j] && arr[i][j] == '*') {
 				visited[i][j] = true;
-				int num  = BFS(i, j);
+				int num = BFS(i, j);
 				ans = max(num, ans);
 			}
 		}
