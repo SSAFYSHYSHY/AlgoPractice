@@ -512,10 +512,16 @@
     <ClInclude Include="Backjoon_BFS_Silver2_2.h">
       <Filter>헤더 파일\Backjoon_BFS/DFS</Filter>
     </ClInclude>
-    <ClInclude Include="Backjoon_BFS_Silver3_1.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Backjoon_BFS_Silver2_3.h">
+      <Filter>헤더 파일\Backjoon_BFS/DFS</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_BFS_Silver2_4.h">
+      <Filter>헤더 파일\Backjoon_BFS/DFS</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_BFS_Silver3_1.h">
+      <Filter>헤더 파일\Backjoon_BFS/DFS</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_DFS_Silver1_1.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
