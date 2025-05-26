@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 #include <queue>
 #include <cstring>
@@ -18,7 +19,7 @@ void bfs(int num) {
 	q.push(num);
 
 	while (!q.empty()) {
-		int now = q.front(); 
+		int now = q.front();
 		q.pop();
 
 		for (auto next : v[now]) {
@@ -63,6 +64,7 @@ int main() {
 	for (auto num : del) {
 		visited[num] = 0;
 	}
+
 	for (int i = 1; i <= n; i++) {
 		if (visited[i] == 1)
 			ans++;
