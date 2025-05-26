@@ -527,5 +527,8 @@
     <ClInclude Include="Backjoon_Simul_Silver2_1.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="Backjoon_BFS_Gold5_2.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

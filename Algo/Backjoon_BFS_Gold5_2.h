@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 #include <queue>
 #include <algorithm>
@@ -8,22 +9,22 @@ using namespace std;
 
 int n, m;
 int arr[101][101];
-vector<int> trinity; // í˜„ì¬ ì„ íƒí•œ 3ê°œì˜ ìˆ«ì
+vector<int> trinity; // ÇöÀç ¼±ÅÃÇÑ 3°³ÀÇ ¼ıÀÚ
 bool visited[101][101];
 int dx[] = { -1, 1, 0, 0 };
 int dy[] = { 0, 0, -1, 1 };
 
-// ì„ íƒí•œ ìˆ«ì ì¤‘ í¬í•¨ ì—¬ë¶€
+// ¼±ÅÃÇÑ ¼ıÀÚ Áß Æ÷ÇÔ ¿©ºÎ
 bool isValidNumber(int num) {
     return trinity[0] == num || trinity[1] == num || trinity[2] == num;
 }
 
-// ë²”ìœ„ í™•ì¸
+// ¹üÀ§ È®ÀÎ
 bool inRange(int x, int y) {
     return x >= 0 && x < n&& y >= 0 && y < m;
 }
 
-// BFSë¡œ ì²« í–‰ì—ì„œ ë§ˆì§€ë§‰ í–‰ê¹Œì§€ ë„ë‹¬ ê°€ëŠ¥ ì—¬ë¶€ í™•ì¸
+// BFS·Î Ã¹ Çà¿¡¼­ ¸¶Áö¸· Çà±îÁö µµ´Ş °¡´É ¿©ºÎ È®ÀÎ
 bool canEscapeFrom(int startY) {
     memset(visited, false, sizeof(visited));
     queue<pair<int, int>> q;
@@ -51,15 +52,15 @@ bool canEscapeFrom(int startY) {
 }
 
 int main() {
-    cin >> m >> n; // ì—´ m, í–‰ n
+    cin >> m >> n; // ¿­ m, Çà n
 
-    for (int i = 0; i < n; i++) {     // í–‰
-        for (int j = 0; j < m; j++) { // ì—´
+    for (int i = 0; i < n; i++) {     // Çà
+        for (int j = 0; j < m; j++) { // ¿­
             cin >> arr[i][j];
         }
     }
 
-    // 0~9 ì¤‘ ì¤‘ë³µ í—ˆìš© 3ì¤‘ forë¬¸ìœ¼ë¡œ ëª¨ë“  ì¡°í•© í™•ì¸
+    // 0~9 Áß Áßº¹ Çã¿ë 3Áß for¹®À¸·Î ¸ğµç Á¶ÇÕ È®ÀÎ
     for (int a = 0; a < 10; a++) {
         for (int b = 0; b < 10; b++) {
             for (int c = 0; c < 10; c++) {
@@ -77,7 +78,7 @@ int main() {
         }
     }
 
-    // ë¶ˆê°€ëŠ¥í•  ê²½ìš°
+    // ºÒ°¡´ÉÇÒ °æ¿ì
     cout << "-1 -1 -1\n";
     return 0;
 }
