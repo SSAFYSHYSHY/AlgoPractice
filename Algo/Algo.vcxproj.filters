@@ -49,6 +49,9 @@
     <Filter Include="헤더 파일\Backjoon_Simul">
       <UniqueIdentifier>{1b93eb41-a491-41c8-a0df-dd15295e043d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\Samsung">
+      <UniqueIdentifier>{a36be45c-1f6a-4bef-b75a-776b12516f7e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">

@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <algorithm>
 #include <cstring>
@@ -8,7 +9,7 @@ using namespace std;
 
 long long n, m, r;
 vector<long long> v[100001];
-long long visited[100001] = {-1,};
+long long visited[100001] = { -1, };
 long long arr[100001] = { 0, };
 
 void BFS() {
