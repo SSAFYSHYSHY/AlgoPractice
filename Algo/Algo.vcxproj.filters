@@ -57,6 +57,9 @@
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Backjoon_Simul_Silver4_1.h">
+      <Filter>헤더 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Backjoon_Dijk_Gold4_1.h">
@@ -537,6 +540,9 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_BFS_Silver2_5.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Simul_Silver4_2.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
