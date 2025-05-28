@@ -1,59 +1,40 @@
 ﻿#include <iostream>
-#include <queue>
-#include <algorithm>
-#include <cstring>
-#include <vector>
+#include <cmath>
 
 using namespace std;
 
-long long n, m, r;
-vector<long long> v[100001];
-long long visited[100001] = {-1,};
-long long arr[100001] = { 0, };
+bool Calc(int i) {
+	int rt;
+	rt = sqrt(i);
 
-void BFS() {
-	memset(visited, -1, sizeof(visited));
-	queue<long long> q;
-	visited[r] = 0;
-	arr[r] = 1;
-	long long num = 1;
+	if (rt == 1 && i != 1) {
+		return true;
+	}
 
-	q.push(r);
-
-	while (!q.empty()) {
-		long long now = q.front();
-		arr[now] = num++;
-		q.pop();
-
-		for (long long i = 0; i < v[now].size(); i++) {
-			long long next = v[now][i];
-			if (visited[next] == -1) {
-				visited[next] = visited[now] + 1;
-				q.push(next);
+	if (i % 2) {	//홀수일 경우
+		for (int j = 2; j <= rt; j++) {
+			if (!(i % j))
+				return false;
+			if (j == rt) {
+				return true;
 			}
 		}
 	}
 }
 
 int main() {
-	cin >> n >> m >> r;
+	int T;
+	cin >> T;
 
-	for (long long i = 0; i < m; i++) {
-		long long x, y;
-		cin >> x >> y;
+	while (T--) {
+		int n;
+		cin >> n;
 
-		v[x].push_back(y);
-		v[y].push_back(x);
+		for (int i = n / 2; i >= 2; i--) {
+			if (Calc(i) && Calc(n - i)) {
+				cout << i << " " << n - i << '\n';
+				break;
+			}
+		}
 	}
-	for (long long i = 1; i <= n; i++) {
-		sort(v[i].begin(), v[i].end());
-	}
-
-	BFS();
-
-	long long ans = 0;
-	for (long long i = 1; i <= n; i++) {
-		ans += visited[i] * arr[i];
-	}
-	cout << ans;
 }
