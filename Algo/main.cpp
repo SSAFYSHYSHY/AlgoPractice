@@ -1,65 +1,39 @@
 ﻿#include <iostream>
 #include <algorithm>
+#include <stack>
 
 using namespace std;
 
-int n, ans = 0;
-char arr[51][51];
+int arr[1000001];
+int ans[1000001];
 
-void Calc() {
-    for (int i = 0; i < n; i++) {
-        int cnt = 1;
-        for (int j = 0; j < n; j++) {
-            if (arr[i][j] == arr[i][j + 1]) {
-                cnt++;
-            }
-            else {
-                if (ans < cnt) ans = cnt;
-                cnt = 1;
-            }
-        }
-    }
-
-    for (int j = 0; j < n; j++) {
-        int cnt = 1;
-        for (int i = 0; i < n; i++) {
-            if (arr[i][j] == arr[i + 1][j]) {
-                cnt++;
-            }
-            else {
-                if (ans < cnt) ans = cnt;
-                cnt = 1;
-            }
-        }
-    }
-}
+stack<int> s;
 
 int main() {
+    int n;
     cin >> n;
-
+    
     for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
-            cin >> arr[i][j];
-        }
+        cin >> arr[i];
     }
 
     for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n - 1; j++) {
-            swap(arr[i][j], arr[i][j + 1]);
-            Calc();
-            swap(arr[i][j], arr[i][j + 1]);
+
+        while (!s.empty() && arr[s.top()] < arr[i]) {
+            ans[s.top()] = arr[i];
+            s.pop();
         }
+        s.push(i);
     }
 
-    for (int j = 0; j < n; j++) {
-        for (int i = 0; i < n - 1; i++) {
-            swap(arr[i][j], arr[i + 1][j]);
-            Calc();
-            swap(arr[i][j], arr[i + 1][j]);
-        }
+    while (!s.empty()) {
+        ans[s.top()] = -1;
+        s.pop();
     }
 
-    cout << ans << '\n';
+    for (int i = 0; i < n; i++) {
+        cout << ans[i] << " ";
+    }
 
-    return 0;
 }
+
