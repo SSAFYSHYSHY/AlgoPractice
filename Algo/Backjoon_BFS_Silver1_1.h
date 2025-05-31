@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 #include <queue>
 #include <cstring>
@@ -33,7 +34,7 @@ int BFS(int start, int endi) {
         }
     }
 
-    return -1; // ì´ë¡ ìƒ ë„ë‹¬ ë¶ˆê°€ ì—†ìŒ (ë¬¸ì œ ì¡°ê±´ ìƒ íŠ¸ë¦¬ì´ë¯€ë¡œ)
+    return -1; // ÀÌ·Ğ»ó µµ´Ş ºÒ°¡ ¾øÀ½ (¹®Á¦ Á¶°Ç »ó Æ®¸®ÀÌ¹Ç·Î)
 }
 
 int main() {
