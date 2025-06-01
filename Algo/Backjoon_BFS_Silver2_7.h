@@ -1,4 +1,4 @@
-ï»¿#include <iostream>
+#include <iostream>
 #include <vector>
 #include <queue>
 #include <climits>
@@ -9,15 +9,15 @@ int main() {
     int N, H, L;
     cin >> N >> H >> L;
 
-    vector<int> horrorIndex(N, INT_MAX); // ê³µí¬ ì§€ìˆ˜ ì²˜ìŒì—ëŠ” ì „ë¶€ ë¬´í•œëŒ€
-    vector<vector<int>> adj(N); // ìœ ì‚¬ ì˜í™” ê´€ê³„
+    vector<int> horrorIndex(N, INT_MAX); // °øÆ÷ Áö¼ö Ã³À½¿¡´Â ÀüºÎ ¹«ÇÑ´ë
+    vector<vector<int>> adj(N); // À¯»ç ¿µÈ­ °ü°è
     queue<int> q;
 
     for (int i = 0; i < H; ++i) {
         int h;
         cin >> h;
-        horrorIndex[h] = 0; 
-        q.push(h);          
+        horrorIndex[h] = 0;
+        q.push(h);
     }
 
     for (int i = 0; i < L; ++i) {
@@ -49,3 +49,4 @@ int main() {
 
     return 0;
 }
+#pragma once
