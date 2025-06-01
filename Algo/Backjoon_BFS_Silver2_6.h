@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <algorithm>
 #include <vector>
@@ -12,7 +13,7 @@ vector<pair<long long, long long>> v;
 
 long long BFS() {
 	memset(visited, false, sizeof(visited));
-	queue<pair<long long,long long>> q;
+	queue<pair<long long, long long>> q;
 
 	q.push({ s,0 });
 	visited[s] = true;
