@@ -1,51 +1,27 @@
 ﻿#include <iostream>
 #include <vector>
-#include <queue>
-#include <climits>
+#include <algorithm>
+#include <numeric> // for std::gcd
 
 using namespace std;
 
 int main() {
-    int N, H, L;
-    cin >> N >> H >> L;
+    int N;
+    long long S;
+    cin >> N >> S;
 
-    vector<int> horrorIndex(N, INT_MAX); // 공포 지수 처음에는 전부 무한대
-    vector<vector<int>> adj(N); // 유사 영화 관계
-    queue<int> q;
-
-    for (int i = 0; i < H; ++i) {
-        int h;
-        cin >> h;
-        horrorIndex[h] = 0; 
-        q.push(h);          
-    }
-
-    for (int i = 0; i < L; ++i) {
-        int a, b;
-        cin >> a >> b;
-        adj[a].push_back(b);
-        adj[b].push_back(a);
-    }
-
-    while (!q.empty()) {
-        int cur = q.front(); q.pop();
-        for (int next : adj[cur]) {
-            if (horrorIndex[next] > horrorIndex[cur] + 1) {
-                horrorIndex[next] = horrorIndex[cur] + 1;
-                q.push(next);
-            }
-        }
-    }
-
-    int maxHI = -1, answerID = -1;
+    vector<long long> A(N);
     for (int i = 0; i < N; ++i) {
-        if (horrorIndex[i] > maxHI) {
-            maxHI = horrorIndex[i];
-            answerID = i;
-        }
+        cin >> A[i];
+        A[i] = abs(A[i] - S); // 각 동생과의 거리 절댓값
     }
 
-    cout << answerID << endl;
+    // 거리 차들의 GCD 구하기
+    long long D = A[0];
+    for (int i = 1; i < N; ++i) {
+        D = gcd(D, A[i]);
+    }
 
+    cout << D << '\n';
     return 0;
 }
