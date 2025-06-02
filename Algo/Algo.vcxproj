@@ -248,6 +248,7 @@
     <ClInclude Include="Backjoon_Twop_Silver4_1.h" />
     <ClInclude Include="Backjoon_Twop_Silver5_1.h" />
     <ClInclude Include="Bakcjoon_Simul_Silver4_1.h" />
+    <ClInclude Include="pro_lv1_Simul_1.h" />
     <ClInclude Include="pro_lv2_DP_6.h" />
     <ClInclude Include="pro_lv2_Greedy_3.h" />
     <ClInclude Include="pro_lv2_Greedy_4.h" />
