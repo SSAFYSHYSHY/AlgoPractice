@@ -584,12 +584,6 @@
     <ClInclude Include="pro_lv1_Simul_5.h">
       <Filter>헤더 파일\pro_Algo</Filter>
     </ClInclude>
-    <ClInclude Include="pro_lv1_Simul_10.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="pro_lv1_Simul_11.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="pro_lv1_Simul_6.h">
       <Filter>헤더 파일\pro_Algo</Filter>
     </ClInclude>
@@ -602,10 +596,28 @@
     <ClInclude Include="pro_lv1_Simul_9.h">
       <Filter>헤더 파일\pro_Algo</Filter>
     </ClInclude>
-    <ClInclude Include="pro_lv1_Simul_12.h">
+    <ClInclude Include="pro_lv1_Simul_14.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="pro_lv1_Simul_15.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv1_Simul_16.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv1_Simul_10.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv1_Simul_11.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv1_Simul_12.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
     <ClInclude Include="pro_lv1_Simul_13.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv1_Simul_17.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
