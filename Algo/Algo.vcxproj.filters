@@ -620,5 +620,17 @@
     <ClInclude Include="pro_lv1_Simul_17.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="pro_lv1_Simul_18.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv1_Simul_19.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv1_Simul_20.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv1_Simul_21.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
