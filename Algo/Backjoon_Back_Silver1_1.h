@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 
 using namespace std;
@@ -23,7 +24,7 @@ bool Calc() {
 }
 
 void Back(int now) {
-    if (found) return; // ì´ë¯¸ ì°¾ì•˜ìœ¼ë©´ ë” ì´ìƒ ì§„í–‰ X
+    if (found) return; // ÀÌ¹Ì Ã£¾ÒÀ¸¸é ´õ ÀÌ»ó ÁøÇà X
 
     if (now == n) {
         if (Calc()) {
