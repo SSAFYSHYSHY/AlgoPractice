@@ -569,19 +569,31 @@
     <ClInclude Include="Backjoon_Simul_Silver2_3.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="pro_lv1_Simul_1.h">
+    <ClInclude Include="pro_lv1_Simul_6.h">
       <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv1_Simul_1.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
     </ClInclude>
     <ClInclude Include="pro_lv1_Simul_2.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\pro_Algo</Filter>
     </ClInclude>
     <ClInclude Include="pro_lv1_Simul_3.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\pro_Algo</Filter>
     </ClInclude>
     <ClInclude Include="pro_lv1_Simul_4.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\pro_Algo</Filter>
     </ClInclude>
     <ClInclude Include="pro_lv1_Simul_5.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv1_Simul_7.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv1_Simul_8.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv1_Simul_9.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
