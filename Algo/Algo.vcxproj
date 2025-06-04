@@ -249,6 +249,7 @@
     <ClInclude Include="Backjoon_Twop_Silver4_1.h" />
     <ClInclude Include="Backjoon_Twop_Silver5_1.h" />
     <ClInclude Include="Bakcjoon_Simul_Silver4_1.h" />
+    <ClInclude Include="pro_lv1_Simul_22.h" />
     <ClInclude Include="pro_lv1_Simul_1.h" />
     <ClInclude Include="pro_lv1_Simul_10.h" />
     <ClInclude Include="pro_lv1_Simul_11.h" />
@@ -263,6 +264,9 @@
     <ClInclude Include="pro_lv1_Simul_2.h" />
     <ClInclude Include="pro_lv1_Simul_20.h" />
     <ClInclude Include="pro_lv1_Simul_21.h" />
+    <ClInclude Include="pro_lv1_Simul_23.h" />
+    <ClInclude Include="pro_lv1_Simul_24.h" />
+    <ClInclude Include="pro_lv1_Simul_25.h" />
     <ClInclude Include="pro_lv1_Simul_3.h" />
     <ClInclude Include="pro_lv1_Simul_4.h" />
     <ClInclude Include="pro_lv1_Simul_5.h" />
