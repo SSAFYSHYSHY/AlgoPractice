@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <unordered_map>
 #include <string>
 #include <algorithm>
@@ -31,11 +32,11 @@ int main() {
 		if ('0' <= s[0] && s[0] <= '9') {
 			int num = stoi(s);
 
-			//í•´ë‹¹ ë²ˆí˜¸ì˜ string ì¶œë ¥.
+			//ÇØ´ç ¹øÈ£ÀÇ string Ãâ·Â.
 			cout << map2[num] << "\n";
 		}
 		else {
-			//í•´ë‹¹ ê¸€ìžì˜ ë²ˆí˜¸ ì¶œë ¥.
+			//ÇØ´ç ±ÛÀÚÀÇ ¹øÈ£ Ãâ·Â.
 			cout << map[s] << "\n";
 		}
 	}
