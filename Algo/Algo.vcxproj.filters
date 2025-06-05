@@ -635,31 +635,82 @@
     <ClInclude Include="Backjoon_DP_Gold5_2.h">
       <Filter>헤더 파일\Backjoon_DP</Filter>
     </ClInclude>
-    <ClInclude Include="pro_lv1_Simul_22.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="pro_lv1_Simul_23.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="pro_lv1_Simul_24.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="pro_lv1_Simul_25.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Backjoon_Hash_Silver4_1.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="pro_lv1_Simul_26.h">
+    <ClInclude Include="Backjoon_Hash_Silver4_2.h">
       <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv1_Simul_22.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv1_Simul_23.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv1_Simul_24.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv1_Simul_25.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv1_Simul_26.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
     </ClInclude>
     <ClInclude Include="pro_lv1_Simul_27.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\pro_Algo</Filter>
     </ClInclude>
     <ClInclude Include="pro_lv1_Simul_28.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\pro_Algo</Filter>
     </ClInclude>
     <ClInclude Include="pro_lv1_Simul_29.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv1_Simul_41.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv1_Simul_30.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv1_Simul_31.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv1_Simul_32.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv1_Simul_33.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv1_Simul_34.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv1_Simul_35.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv1_Simul_36.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv1_Simul_37.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv1_Simul_38.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv1_Simul_39.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv1_Simul_40.h">
+      <Filter>헤더 파일\pro_Algo</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv1_Simul_42.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv1_Simul_43.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv1_Simul_44.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv1_Simul_45.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
