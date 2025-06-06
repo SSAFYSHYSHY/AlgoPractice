@@ -166,6 +166,7 @@
     <ClInclude Include="Backjoon_DP_Silver3_1.h" />
     <ClInclude Include="Backjoon_DP_Silver4_1.h" />
     <ClInclude Include="Backjoon_DP_Silver5_1.h" />
+    <ClInclude Include="Backjoon_Hash_Silver3_1.h" />
     <ClInclude Include="Backjoon_Hash_Silver4_1.h" />
     <ClInclude Include="Backjoon_Hash_Silver4_2.h" />
     <ClInclude Include="Backjoon_Hash_Silver4_3.h" />
@@ -293,7 +294,18 @@
     <ClInclude Include="pro_lv1_Simul_43.h" />
     <ClInclude Include="pro_lv1_Simul_44.h" />
     <ClInclude Include="pro_lv1_Simul_45.h" />
+    <ClInclude Include="pro_lv1_Simul_46.h" />
+    <ClInclude Include="pro_lv1_Simul_47.h" />
+    <ClInclude Include="pro_lv1_Simul_48.h" />
+    <ClInclude Include="pro_lv1_Simul_49.h" />
     <ClInclude Include="pro_lv1_Simul_5.h" />
+    <ClInclude Include="pro_lv1_Simul_50.h" />
+    <ClInclude Include="pro_lv1_Simul_51.h" />
+    <ClInclude Include="pro_lv1_Simul_52.h" />
+    <ClInclude Include="pro_lv1_Simul_53.h" />
+    <ClInclude Include="pro_lv1_Simul_54.h" />
+    <ClInclude Include="pro_lv1_Simul_55.h" />
+    <ClInclude Include="pro_lv1_Simul_56.h" />
     <ClInclude Include="pro_lv1_Simul_6.h" />
     <ClInclude Include="pro_lv1_Simul_7.h" />
     <ClInclude Include="pro_lv1_Simul_8.h" />

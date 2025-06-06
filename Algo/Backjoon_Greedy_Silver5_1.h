@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 
 using namespace std;
@@ -12,7 +13,6 @@ int main() {
 	for (int i = 0; i < n; i++) {
 		cin >> arr[i];
 	}
-	sort(arr, arr + n);
 
 	int sum = 0;
 	for (int i = 0; i < n; i++) {
@@ -23,7 +23,7 @@ int main() {
 		sum += arr[i];
 	}
 
-	if(sum > 0) {
+	if (sum > 0) {
 		ans++;
 	}
 
