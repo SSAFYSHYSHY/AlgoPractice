@@ -167,6 +167,7 @@
     <ClInclude Include="Backjoon_DP_Silver4_1.h" />
     <ClInclude Include="Backjoon_DP_Silver5_1.h" />
     <ClInclude Include="Backjoon_Greedy_Silver4_1.h" />
+    <ClInclude Include="Backjoon_Greedy_Silver4_2.h" />
     <ClInclude Include="Backjoon_Greedy_Silver5_1.h" />
     <ClInclude Include="Backjoon_Hash_Silver3_1.h" />
     <ClInclude Include="Backjoon_Hash_Silver4_1.h" />
