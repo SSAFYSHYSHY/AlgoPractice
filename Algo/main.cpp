@@ -3,33 +3,24 @@
 
 using namespace std;
 
-int n, m;
-double maxi = 0, mini = 0;
+int arr[3], brr[3];
 
 int main() {
-    cout << fixed;
-    cout.precision(4);
+	for (int i = 0; i < 3; i++) {
+		cin >> arr[i];
+	}
 
-    cin >> n >> m;
+	for (int i = 0; i < 3; i++) {
+		cin >> brr[i];
+	}
 
-    int sum = 0;
-    for (int i = 0; i < m; i++) {
-        int x;
-        cin >> x;
-        sum += x;
-    }
+	sort(arr, arr + 3, greater<int>());
+	sort(brr, brr + 3, greater<int>());
 
-    int remain = n - m;
-    double sum1 = sum;
+	long long sum = 0;
+	for (int i = 0; i < 3; i++) {
+		sum += arr[i] * brr[i];
+	}
 
-    // 최소 평점: 나머지가 모두 -3일 때
-    sum1 += -3 * remain;
-
-    // 최대 평점: 나머지가 모두 +3일 때
-    sum += 3 * remain;
-
-    mini = sum1 / n;
-    maxi = static_cast<double>(sum) / n;
-
-    cout << mini << " " << maxi;
+	cout << sum;
 }
