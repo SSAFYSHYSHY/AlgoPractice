@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 
 using namespace std;
@@ -22,10 +23,10 @@ int main() {
     int remain = n - m;
     double sum1 = sum;
 
-    // ìµœì†Œ í‰ì : ë‚˜ë¨¸ì§€ê°€ ëª¨ë‘ -3ì¼ ë•Œ
+    // ÃÖ¼Ò ÆòÁ¡: ³ª¸ÓÁö°¡ ¸ğµÎ -3ÀÏ ¶§
     sum1 += -3 * remain;
 
-    // ìµœëŒ€ í‰ì : ë‚˜ë¨¸ì§€ê°€ ëª¨ë‘ +3ì¼ ë•Œ
+    // ÃÖ´ë ÆòÁ¡: ³ª¸ÓÁö°¡ ¸ğµÎ +3ÀÏ ¶§
     sum += 3 * remain;
 
     mini = sum1 / n;
