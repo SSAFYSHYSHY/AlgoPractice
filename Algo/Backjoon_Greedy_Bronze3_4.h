@@ -1,11 +1,12 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 
 using namespace std;
 
 int n;
-int sum = 0;
-int arr[1000001];
+long long sum = 0;
+long long arr[1000001];
 
 int main() {
 	cin >> n;
