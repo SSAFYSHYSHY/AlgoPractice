@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <unordered_set>
 #include <string>
 
@@ -11,7 +12,7 @@ int main() {
     int N;
     cin >> N;
 
-    unordered_set<string> entered; 
+    unordered_set<string> entered;
     int count = 0;
 
     for (int i = 0; i < N; i++) {
@@ -19,7 +20,7 @@ int main() {
         cin >> s;
 
         if (s == "ENTER") {
-            entered.clear();  
+            entered.clear();
         }
         else {
             if (entered.find(s) == entered.end()) {
