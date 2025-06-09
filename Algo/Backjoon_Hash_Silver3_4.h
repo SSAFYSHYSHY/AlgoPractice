@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 #include <string>
 #include <unordered_map>
@@ -9,7 +10,7 @@ using namespace std;
 int n;
 unordered_map<string, int> map;
 
-bool cmp(const pair<string ,int>& a, const pair<string ,int>& b) {
+bool cmp(const pair<string, int>& a, const pair<string, int>& b) {
 	return a.first < b.first;
 }
 
