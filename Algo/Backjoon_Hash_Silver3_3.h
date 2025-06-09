@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <string>
 #include <unordered_map>
 #include <vector>
@@ -21,7 +22,7 @@ int main() {
 	cout.tie(0);
 
 	cin >> n >> m;
-	
+
 	for (int i = 0; i < n; i++) {
 		string s;
 		cin >> s;

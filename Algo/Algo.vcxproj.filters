@@ -792,21 +792,24 @@
       <Filter>헤더 파일\Backjoon_DP</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Hash_Silver4_5.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Hash</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Hash_Silver4_6.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Hash</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Hash_Silver4_7.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Hash</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Hash_Silver4_8.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Hash</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Hash_Silver4_9.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Hash</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Hash_Silver4_10.h">
+      <Filter>헤더 파일\Backjoon_Hash</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Hash_Silver3_2.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
