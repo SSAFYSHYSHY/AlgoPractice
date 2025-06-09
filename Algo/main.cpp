@@ -1,39 +1,30 @@
 ﻿#include <iostream>
-#include <unordered_set>
-#include <unordered_map>
-#include <list>
-#include <string>
 
 using namespace std;
 
 int main() {
-	int k, l;
-	cin >> k >> l;
+	int k;
+	cin >> k;
 
-	unordered_set<string> map;
-	unordered_map<string, list<string>::iterator> map2;
-	list<string> wait;
+	for (int t = 1; t <= k; t++) {
+		int n, w, e;
+		cin >> n >> w >> e;
 
-	for (int i = 0; i < l; i++) {
-		string s; 
-		cin >> s;
+		int ans = 0;
 
-		if (map.count(s)) {
-			wait.erase(map2[s]);
+		for (int i = 0; i < n; i++) {
+			int lw_w, lw_e, le_w, le_e;
+			cin >> lw_w >> lw_e >> le_w >> le_e;
+
+			int west = w * lw_w + e * le_w;
+			int east = w * lw_e + e * le_e;
+
+			ans += max(west, east);
 		}
-		else {
-			map.insert(s);
-		}
 
-		wait.push_back(s);
-		map2[s] = prev(wait.end());
+		cout << "Data set " << t << ":\n";
+		cout << ans << "\n\n";
 	}
 
-	int cnt = 0;
-	for (const string& student : wait) {
-		if (cnt++ == k) {
-			break;
-		}
-		cout << student << "\n";
-	}
+
 }
