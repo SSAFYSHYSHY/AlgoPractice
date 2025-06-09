@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <unordered_set>
 #include <unordered_map>
 #include <list>
@@ -15,7 +16,7 @@ int main() {
 	list<string> wait;
 
 	for (int i = 0; i < l; i++) {
-		string s; 
+		string s;
 		cin >> s;
 
 		if (map.count(s)) {
