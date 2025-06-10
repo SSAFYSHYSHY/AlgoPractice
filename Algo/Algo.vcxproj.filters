@@ -809,20 +809,23 @@
     <ClInclude Include="Backjoon_Hash_Silver4_10.h">
       <Filter>헤더 파일\Backjoon_Hash</Filter>
     </ClInclude>
-    <ClInclude Include="Backjoon_Hash_Silver3_2.h">
+    <ClInclude Include="Backjoon_Greedy_Bronze3_8.h">
       <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Hash_Silver3_2.h">
+      <Filter>헤더 파일\Backjoon_Hash</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Hash_Silver3_3.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Hash</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Hash_Silver3_4.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Hash</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Hash_Silver3_5.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Hash</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Hash_Silver3_6.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Hash</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <string>
 #include <vector>
 #include <unordered_map>
@@ -11,6 +12,10 @@ unordered_map<string, vector<string>> map;
 unordered_map<string, string> map2;
 
 int main() {
+	ios::sync_with_stdio(false);
+	cin.tie(0);
+	cout.tie(0);
+
 	cin >> n >> m;
 
 	for (int i = 0; i < n; i++) {
