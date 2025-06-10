@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <unordered_set>
 #include <vector>
 #include <sstream>
@@ -10,13 +11,13 @@ string line;
 
 int main() {
     cin >> t;
-    cin.ignore(); // ê°œí–‰ ë¬¸ì ì œê±°
+    cin.ignore(); // °³Çà ¹®ÀÚ Á¦°Å
 
     while (t--) {
         unordered_set<string> not_fox;
         vector<string> all_sounds;
 
-        // ì „ì²´ ë…¹ìŒëœ ì†Œë¦¬ ë°›ê¸°
+        // ÀüÃ¼ ³ìÀ½µÈ ¼Ò¸® ¹Ş±â
         getline(cin, line);
         stringstream ss(line);
         string word;
@@ -24,7 +25,7 @@ int main() {
             all_sounds.push_back(word);
         }
 
-        // ë™ë¬¼ ì†Œë¦¬ ì •ë³´ ì…ë ¥ ë°›ê¸°
+        // µ¿¹° ¼Ò¸® Á¤º¸ ÀÔ·Â ¹Ş±â
         while (true) {
             getline(cin, line);
             if (line == "what does the fox say?") break;
@@ -35,7 +36,7 @@ int main() {
             not_fox.insert(sound);
         }
 
-        // ì—¬ìš°ì˜ ì†Œë¦¬ë§Œ ì¶œë ¥
+        // ¿©¿ìÀÇ ¼Ò¸®¸¸ Ãâ·Â
         for (auto& sound : all_sounds) {
             if (not_fox.find(sound) == not_fox.end()) {
                 cout << sound << " ";
