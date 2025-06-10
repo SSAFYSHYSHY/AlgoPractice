@@ -1,11 +1,12 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <unordered_map> 
 #include <algorithm>
 #include <vector>
 
 using namespace std;
 
-int n;
+long long n;
 
 int main() {
 	ios::sync_with_stdio(false);
@@ -15,24 +16,24 @@ int main() {
 	cin >> n;
 
 	while (n--) {
-		unordered_map<int, int> map;
-		
-		int num;
+		unordered_map<long long, long long> map;
+
+		long long num;
 		cin >> num;
 
-		int ans_cnt = num / 2;
-		for (int i = 0; i < num; i++) {
-			int a;
+		long long ans_cnt = num / 2;
+		for (long long i = 0; i < num; i++) {
+			long long a;
 			cin >> a;
 
 			map[a]++;
 		}
 
-		int max_number = 0, max_cnt = 0;
+		long long max_number = 0, max_cnt = 0;
 		bool flag = false;
 		for (auto& p : map) {
-			int number = p.first;
-			int cnt = p.second;
+			long long number = p.first;
+			long long cnt = p.second;
 
 			if (cnt > max_cnt) {
 				max_cnt = cnt;
