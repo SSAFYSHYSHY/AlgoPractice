@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <unordered_set>
 #include <string>
 #include <algorithm>
@@ -11,6 +12,7 @@ unordered_set<string> map;
 int main() {
 	ios::sync_with_stdio(false);
 	cin.tie(0);
+	cout.tie(0);
 
 	cin >> n >> m;
 
