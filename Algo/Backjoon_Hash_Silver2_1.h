@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <unordered_map>
 #include <vector>
 #include <string>
@@ -21,7 +22,7 @@ int main() {
 	cout.precision(4);
 
 	string s;
-	
+
 	while (getline(cin, s)) {
 		if (s.empty()) continue;
 		map[s]++;
