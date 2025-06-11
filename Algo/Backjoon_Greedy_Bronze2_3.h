@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <string>
 #include <cmath>
@@ -9,7 +10,7 @@ int main() {
 	int n;
 	cin >> n;
 	int arr[1001];
-	
+
 	int ans = 0;
 	int mini = 1001;
 
