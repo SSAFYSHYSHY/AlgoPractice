@@ -1,11 +1,12 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <unordered_set>
 #include <string>
 #include <sstream>
 
 using namespace std;
 
-// ì‹œê°„ ë¬¸ìì—´ì„ ë¶„ ë‹¨ìœ„ ì •ìˆ˜ë¡œ ë³€í™˜
+// ½Ã°£ ¹®ÀÚ¿­À» ºĞ ´ÜÀ§ Á¤¼ö·Î º¯È¯
 int timeToMin(const string& time) {
     int h = stoi(time.substr(0, 2));
     int m = stoi(time.substr(3, 2));
