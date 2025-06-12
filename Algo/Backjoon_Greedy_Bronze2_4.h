@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 #include <algorithm>
 using namespace std;
@@ -7,9 +8,9 @@ int main() {
     int N, M;
     cin >> N >> M;
 
-    int required = M - 1; 
+    int required = M - 1;
     int reward_cards = 0;
-    vector<int> cost_to_fix; 
+    vector<int> cost_to_fix;
 
     for (int i = 0; i < M; i++) {
         int A, B;
@@ -23,7 +24,7 @@ int main() {
     }
 
     if (reward_cards >= required) {
-        cout << 0 << '\n'; 
+        cout << 0 << '\n';
         return 0;
     }
 
