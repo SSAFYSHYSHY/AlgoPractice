@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 
 using namespace std;
@@ -13,7 +14,7 @@ int main() {
 
 	long long max_t = 0;
 
-	for(int i = 0; i < n ; i++) {
+	for (int i = 0; i < n; i++) {
 		cin >> v[i];
 		max_t += v[i] - 1;
 	}
