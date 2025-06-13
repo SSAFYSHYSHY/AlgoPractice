@@ -167,10 +167,15 @@
     <ClInclude Include="Backjoon_DP_Silver4_1.h" />
     <ClInclude Include="Backjoon_DP_Silver5_1.h" />
     <ClInclude Include="Backjoon_Greedy_Bronze2_1.h" />
+    <ClInclude Include="Backjoon_Greedy_Bronze2_10.h" />
     <ClInclude Include="Backjoon_Greedy_Bronze2_2.h" />
     <ClInclude Include="Backjoon_Greedy_Bronze2_3.h" />
     <ClInclude Include="Backjoon_Greedy_Bronze2_4.h" />
     <ClInclude Include="Backjoon_Greedy_Bronze2_5.h" />
+    <ClInclude Include="Backjoon_Greedy_Bronze2_6.h" />
+    <ClInclude Include="Backjoon_Greedy_Bronze2_7.h" />
+    <ClInclude Include="Backjoon_Greedy_Bronze2_8.h" />
+    <ClInclude Include="Backjoon_Greedy_Bronze2_9.h" />
     <ClInclude Include="Backjoon_Greedy_Bronze3_1.h" />
     <ClInclude Include="Backjoon_Greedy_Bronze3_2.h" />
     <ClInclude Include="Backjoon_Greedy_Bronze3_3.h" />
