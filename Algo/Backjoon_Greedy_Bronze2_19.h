@@ -1,4 +1,5 @@
-﻿#include <string>
+#pragma once
+#include <string>
 #include <iostream>
 
 using namespace std;
@@ -27,7 +28,7 @@ int main() {
 				}
 			}
 
-			if(!flag) {
+			if (!flag) {
 				ans = num;
 				break;
 			}

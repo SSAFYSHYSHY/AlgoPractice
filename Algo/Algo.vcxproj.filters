@@ -905,5 +905,8 @@
     <ClInclude Include="Backjoon_Greedy_Bronze2_16.h">
       <Filter>헤더 파일\Backjoon_DP</Filter>
     </ClInclude>
+    <ClInclude Include="Backjoon_Greedy_Bronze2_18.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
