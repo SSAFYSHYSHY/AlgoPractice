@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 using namespace std;
 
@@ -10,7 +11,7 @@ int main() {
     for (int i = 0; i < n; ++i) cin >> a[i];
     for (int i = 0; i < x; ++i) cin >> b[i];
 
-    int i = 0; // í˜„ìž¬ a ë°°ì—´ ìœ„ì¹˜
+    int i = 0; // ÇöÀç a ¹è¿­ À§Ä¡
     long long answer = 0;
     for (int j = 0; j < x; ++j) {
         long long sum = 0;
