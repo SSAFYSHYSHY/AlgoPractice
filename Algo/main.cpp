@@ -1,22 +1,46 @@
 ﻿#include <iostream>
+#include <vector>
+#include <algorithm>
 
 using namespace std;
 
-int main() {
-	int l, p, v;
-	int n = 1;
+int N, L, K, sum = 0; 
+int a, b; 
+vector<pair<int, int>> v;
 
-	while (1) {
-		cin >> l >> p >> v;
+int main()
+{
+    cin >> N >> L >> K;
+    for (int i = 0; i < N; i++)
+    {
+        cin >> a >> b;
+        v.push_back(make_pair(a, b));
+    }
 
-		if (l == 0 && p == 0 && v == 0) break;
+    sort(v.begin(), v.end());
 
-		int full = v / p;
-		int reamin = v % p;
+    for (int i = 0; i < N; i++)
+    {
+        if (K == 0) break; // K가 0이면 종료
+        if (L >= v[i].second)
+        {
+            sum += 140;
+            K--;
+        }
+    }
+    // 쉬운 난이도가 L보다 작거나 같고(풀 수 있으면) AND 어려운 난이도가 L보다 크면(풀 수 없으면),100점 적립, K(풀 수 있는 문제 개수) -1
+    for (int i = 0; i < N; i++)
+    {
+        if (K == 0) break; // K가 0이면 종료
+        if (L >= v[i].first && L < v[i].second)
+        {
+            sum += 100;
+            K--;
+        }
+    }
 
-		int total = full * l + min(l, reamin);
+    // 출력
+    cout << sum;
 
-		cout << "Case " << n << ": " << total << "\n";
-		n++;
-	}
+    return 0;
 }
