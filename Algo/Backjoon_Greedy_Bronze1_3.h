@@ -1,9 +1,10 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 
 using namespace std;
 
 int arr[250001];
-int ans, n , cnt = 1;
+int ans, n, cnt = 1;
 
 int main() {
 	cin >> n;
