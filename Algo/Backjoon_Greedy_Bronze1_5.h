@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 
 using namespace std;
@@ -8,7 +9,7 @@ bool flag;
 
 int main() {
     int n;
-    
+
     cin >> n;
 
     while (n--) {
