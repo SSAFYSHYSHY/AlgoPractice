@@ -1,11 +1,12 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 
 using namespace std;
 
 int main() {
     int N;
-    cin >> N; 
+    cin >> N;
 
     while (N--) {
         int n;
@@ -14,7 +15,7 @@ int main() {
         vector<int> v(n);
         vector<int> temp(n);
 
-        // 1ë¶€í„° nê¹Œì§€ ì´ˆê¸°í™” ë° lst ì…ë ¥
+        // 1ºÎÅÍ n±îÁö ÃÊ±âÈ­ ¹× lst ÀÔ·Â
         for (int i = 0; i < n; ++i) {
             temp[i] = i + 1;
         }
