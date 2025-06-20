@@ -169,6 +169,10 @@
     <ClInclude Include="Backjoon_Greedy_Bronze1_1.h" />
     <ClInclude Include="Backjoon_Greedy_Bronze1_2.h" />
     <ClInclude Include="Backjoon_Greedy_Bronze1_3.h" />
+    <ClInclude Include="Backjoon_Greedy_Bronze1_4.h" />
+    <ClInclude Include="Backjoon_Greedy_Bronze1_5.h" />
+    <ClInclude Include="Backjoon_Greedy_Bronze1_6.h" />
+    <ClInclude Include="Backjoon_Greedy_Bronze1_7.h" />
     <ClInclude Include="Backjoon_Greedy_Bronze2_1.h" />
     <ClInclude Include="Backjoon_Greedy_Bronze2_10.h" />
     <ClInclude Include="Backjoon_Greedy_Bronze2_11.h" />
@@ -421,6 +425,9 @@
     <ClInclude Include="pro_lv3_hash_1.h" />
     <ClInclude Include="pro_lv3_MST_1.h" />
     <ClInclude Include="pro_lv2_BFS_8.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="SQL.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
