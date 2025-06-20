@@ -1,27 +1,18 @@
-﻿#include <string>
-#include <iostream>
+﻿#include <iostream>
 using namespace std;
 
-string s;
+int N, x, y;
+int ans = 4;
+
 int main() {
-	ios_base::sync_with_stdio(false);
+	ios::sync_with_stdio(0);
 	cin.tie(0);
 
-	int n, m;
-	cin >> n >> m;
-	cin >> s;
-	for (int i = 0; i < m; i++) {
-		string x;
-		cin >> x;
-		bool c = false;
-		for (int j = 0, idx = 0; x[j]; j++) {
-			if (x[j] == s[idx]) idx++;
-			if (idx == n) {
-				c = true;
-				break;
-			}
-		}
-		if (c) cout << "true\n";
-		else cout << "false\n";
-	}
+	cin >> N >> x >> y;
+	if (x == 1) ans--;
+	if (x == N) ans--;
+	if (y == 1) ans--;
+	if (y == N) ans--;
+
+	cout << ans;
 }
