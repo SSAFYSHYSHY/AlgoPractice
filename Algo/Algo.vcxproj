@@ -173,6 +173,8 @@
     <ClInclude Include="Backjoon_Greedy_Bronze1_5.h" />
     <ClInclude Include="Backjoon_Greedy_Bronze1_6.h" />
     <ClInclude Include="Backjoon_Greedy_Bronze1_7.h" />
+    <ClInclude Include="Backjoon_Greedy_Bronze1_8.h" />
+    <ClInclude Include="Backjoon_Greedy_Bronze1_9.h" />
     <ClInclude Include="Backjoon_Greedy_Bronze2_1.h" />
     <ClInclude Include="Backjoon_Greedy_Bronze2_10.h" />
     <ClInclude Include="Backjoon_Greedy_Bronze2_11.h" />

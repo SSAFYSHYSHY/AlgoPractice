@@ -947,6 +947,12 @@
     <ClInclude Include="Backjoon_Greedy_Bronze1_6.h">
       <Filter>헤더 파일\Backjoon_DP</Filter>
     </ClInclude>
+    <ClInclude Include="Backjoon_Greedy_Bronze1_8.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Greedy_Bronze1_9.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="SQL.txt">
