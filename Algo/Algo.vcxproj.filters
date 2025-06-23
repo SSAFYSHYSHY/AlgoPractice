@@ -926,9 +926,6 @@
     <ClInclude Include="Backjoon_Greedy_Bronze2_24.h">
       <Filter>헤더 파일\Backjoon_DP</Filter>
     </ClInclude>
-    <ClInclude Include="Backjoon_Greedy_Bronze1_7.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Backjoon_Greedy_Bronze1_1.h">
       <Filter>헤더 파일\Backjoon_DP</Filter>
     </ClInclude>
@@ -947,20 +944,32 @@
     <ClInclude Include="Backjoon_Greedy_Bronze1_6.h">
       <Filter>헤더 파일\Backjoon_DP</Filter>
     </ClInclude>
-    <ClInclude Include="Backjoon_Greedy_Bronze1_8.h">
+    <ClInclude Include="Backjoon_Hash_Silver4_11.h">
       <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Greedy_Bronze1_7.h">
+      <Filter>헤더 파일\Backjoon_DP</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Greedy_Bronze1_8.h">
+      <Filter>헤더 파일\Backjoon_DP</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Greedy_Bronze1_9.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_DP</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Greedy_Bronze1_10.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_DP</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Greedy_Bronze1_11.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_DP</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Greedy_Bronze1_12.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_DP</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Greedy_Bronze1_13.h">
+      <Filter>헤더 파일\Backjoon_DP</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Greedy_Bronze1_14.h">
+      <Filter>헤더 파일\Backjoon_DP</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
