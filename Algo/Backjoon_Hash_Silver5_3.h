@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <unordered_map>
 #include <vector>
 #include <string>
@@ -10,10 +11,10 @@ using namespace std;
 int main() {
     int n;
     cin >> n;
-    cin.ignore(); // 줄바꿈 제거
+    cin.ignore();
 
     string line;
-    getline(cin, line); // 학생 이름 리스트
+    getline(cin, line);
 
     vector<string> students;
     unordered_map<string, int> index_map;
@@ -26,7 +27,7 @@ int main() {
         index_map[name] = i;
     }
 
-    vector<int> popularity(n, 0); // 각 학생이 몇 명에게 인기 있는지 저장
+    vector<int> popularity(n, 0);
 
     for (int i = 0; i < n; ++i) {
         getline(cin, line);
@@ -43,10 +44,10 @@ int main() {
 
     sort(result.begin(), result.end(), [](const pair<string, int>& a, const pair<string, int>& b) {
         if (a.second != b.second) return a.second > b.second;
-            return a.first < b.first;
+    return a.first < b.first;
         });
 
-    // 출력
+    // ���
     for (const auto& p : result) {
         cout << p.first << " " << p.second << "\n";
     }
