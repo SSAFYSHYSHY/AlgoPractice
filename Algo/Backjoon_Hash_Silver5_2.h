@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <map>
 #include <sstream>
 #include <vector>
