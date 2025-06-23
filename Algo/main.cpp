@@ -1,55 +1,29 @@
-﻿#include <iostream>
-#include <unordered_map>
-#include <vector>
-#include <string>
-#include <sstream>
-#include <algorithm>
-
+﻿#include<iostream>
+#include<queue>
 using namespace std;
 
-int main() {
-    int n;
-    cin >> n;
-    cin.ignore(); // 줄바꿈 제거
+int n, k;
+queue<int>q;
 
-    string line;
-    getline(cin, line); // 학생 이름 리스트
-
-    vector<string> students;
-    unordered_map<string, int> index_map;
-
-    stringstream ss(line);
-    string name;
-    for (int i = 0; i < n; ++i) {
-        ss >> name;
-        students.push_back(name);
-        index_map[name] = i;
-    }
-
-    vector<int> popularity(n, 0); // 각 학생이 몇 명에게 인기 있는지 저장
-
-    for (int i = 0; i < n; ++i) {
-        getline(cin, line);
-        stringstream ss2(line);
-        while (ss2 >> name) {
-            popularity[index_map[name]]++;
-        }
-    }
-
-    vector<pair<string, int>> result;
-    for (int i = 0; i < n; ++i) {
-        result.push_back({ students[i], popularity[i] });
-    }
-
-    sort(result.begin(), result.end(), [](const pair<string, int>& a, const pair<string, int>& b) {
-        if (a.second != b.second) return a.second > b.second;
-            return a.first < b.first;
-        });
-
-    // 출력
-    for (const auto& p : result) {
-        cout << p.first << " " << p.second << "\n";
-    }
-
-    return 0;
+int main(void)
+{
+	int i;
+	cin >> n >> k;
+	for (i = 1; i <= n; i++)
+		q.push(i);		//	큐에 n까지 삽입
+	cout << "<";
+	while (q.size() != 0)		//	큐가 빌 때까지 반복
+	{
+		for (i = 1; i < k; i++)
+		{
+			q.push(q.front());		//	k-1번째 원소를 맨 뒤에 삽입
+			q.pop();			// 	맨 앞에 있던 원소는 삭제
+		}
+		cout << q.front();		//	k번째 원소가 맨 앞에 오게 됨.
+		if (q.size() != 1)
+			cout << ", ";
+		q.pop();		//	k번째 원소 출력 후 삭제
+	}
+	cout << ">";
+	return 0;
 }
