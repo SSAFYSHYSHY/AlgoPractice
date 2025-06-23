@@ -244,6 +244,7 @@
     <ClInclude Include="Backjoon_Hash_Silver4_9.h" />
     <ClInclude Include="Backjoon_Hash_Silver5_1.h" />
     <ClInclude Include="Backjoon_Hash_Silver5_2.h" />
+    <ClInclude Include="Backjoon_Hash_Silver5_3.h" />
     <ClInclude Include="Backjoon_Parametic_Gold2_1.h" />
     <ClInclude Include="Backjoon_Parametic_Gold2_2.h" />
     <ClInclude Include="Backjoon_Parametic_Gold5_1.h" />
@@ -303,6 +304,7 @@
     <ClInclude Include="Backjoon_Simul_Silver2_3.h" />
     <ClInclude Include="Backjoon_Simul_Silver4_2.h" />
     <ClInclude Include="Backjoon_Simul_Silver4_3.h" />
+    <ClInclude Include="Backjoon_Simul_Silver4_4.h" />
     <ClInclude Include="Backjoon_Stack_Gold5_1.h" />
     <ClInclude Include="Backjoon_Twop_Gold2_1.h" />
     <ClInclude Include="Backjoon_Twop_Gold3_3.h" />
