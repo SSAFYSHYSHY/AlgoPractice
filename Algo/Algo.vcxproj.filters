@@ -986,6 +986,9 @@
     <ClInclude Include="pro_lv1_Simul_56.h">
       <Filter>헤더 파일\pro_Simul</Filter>
     </ClInclude>
+    <ClInclude Include="Backjoon_Parametic_Silver4_1.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="SQL.txt">
