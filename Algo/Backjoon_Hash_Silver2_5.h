@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <set>
 #include <vector>
 
@@ -19,7 +20,7 @@ int main() {
 		s.insert({ v[i].first, v[i].second });
 	}
 
-	int a, b, ans =0;
+	int a, b, ans = 0;
 	for (int i = 0; i < n; i++) {
 		a = v[i].first;
 		b = v[i].second;
@@ -28,7 +29,7 @@ int main() {
 		if (s.find({ a, b + y }) == s.end()) continue;
 		if (s.find({ a + x, b + y }) == s.end()) continue;
 		ans++;
-	} 
+	}
 
 	cout << ans;
 
