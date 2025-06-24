@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 #include <algorithm>
 using namespace std;
@@ -19,7 +20,7 @@ int main() {
             maxPop = max(maxPop, population[i]);
         }
 
-        // ì´ë¶„ íƒìƒ‰: í•œ íˆ¬í‘œí•¨ë‹¹ ìµœëŒ€ ì‚¬ëŒ ìˆ˜ë¥¼ ì´ë¶„ íƒìƒ‰
+        // ÀÌºĞ Å½»ö: ÇÑ ÅõÇ¥ÇÔ´ç ÃÖ´ë »ç¶÷ ¼ö¸¦ ÀÌºĞ Å½»ö
         int left = 1, right = maxPop;
         int answer = maxPop;
 
@@ -28,16 +29,16 @@ int main() {
 
             long long boxesNeeded = 0;
             for (int i = 0; i < N; ++i) {
-                // ì˜¬ë¦¼(ceil) íš¨ê³¼: (ì¸êµ¬ + mid - 1) / mid
+                // ¿Ã¸²(ceil) È¿°ú: (ÀÎ±¸ + mid - 1) / mid
                 boxesNeeded += (population[i] + mid - 1) / mid;
             }
 
             if (boxesNeeded <= B) {
                 answer = mid;
-                right = mid - 1; // ë” ì¤„ì¼ ìˆ˜ ìˆëŠ”ì§€ í™•ì¸
+                right = mid - 1; // ´õ ÁÙÀÏ ¼ö ÀÖ´ÂÁö È®ÀÎ
             }
             else {
-                left = mid + 1; // midë¡œëŠ” ë¶€ì¡±í•˜ë¯€ë¡œ ì¦ê°€
+                left = mid + 1; // mid·Î´Â ºÎÁ·ÇÏ¹Ç·Î Áõ°¡
             }
         }
 
