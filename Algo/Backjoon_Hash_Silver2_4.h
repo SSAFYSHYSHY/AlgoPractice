@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <map>
 #include <vector>
 
@@ -30,5 +31,5 @@ int main() {
 		}
 	}
 
-	cout << ans << "/" << (n* ( n - 1) / 2);
+	cout << ans << "/" << (n * (n - 1) / 2);
 }
