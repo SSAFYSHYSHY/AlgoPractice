@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <string>
 #include <queue>
 #include <map>
@@ -25,7 +26,7 @@ void BFS(map<string, vector<Node>>& tree, map<string, int>& age) {
 		for (auto& child : tree[cname]) {
 			int childage = cage - child.agediff;
 			age[child.name] = childage;
-			q.push({ child.name, childage });  // 고침
+			q.push({ child.name, childage });  // ��ħ
 		}
 	}
 }
