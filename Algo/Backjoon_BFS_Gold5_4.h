@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 #include <queue>
 #include <climits>
@@ -7,9 +8,8 @@
 
 using namespace std;
 
-const int MAX = 2001;  // 거리 및 좌표 범위
+const int MAX = 2001;
 
-// 방향 벡터 (상, 하, 좌, 우)
 int dx[4] = { 0, 0, 1, -1 };
 int dy[4] = { 1, -1, 0, 0 };
 
@@ -26,7 +26,7 @@ int bfs(const vector<pair<int, int>>& mall1, const vector<vector<bool>>& visited
         auto [x, y] = q.front(); q.pop();
 
         if (visited2[x][y]) {
-            return dist[x][y];  // 두 번째 몰에 도달
+            return dist[x][y];
         }
 
         for (int dir = 0; dir < 4; dir++) {
@@ -57,7 +57,6 @@ int main() {
             cin >> mall2[i].first >> mall2[i].second;
         }
 
-        // mall2 visited 표시
         vector<vector<bool>> visited2(MAX, vector<bool>(MAX, false));
         for (auto& [x, y] : mall2) {
             visited2[x][y] = true;
