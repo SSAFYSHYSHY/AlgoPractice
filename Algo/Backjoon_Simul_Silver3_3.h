@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <string>
 #include <stack>
 
@@ -10,7 +11,7 @@ stack<int> v;
 int main() {
     cin >> s1 >> s2;
 
-    // í•­ìƒ s1ì´ ë” ê¸¸ë„ë¡ swap
+    // Ç×»ó s1ÀÌ ´õ ±æµµ·Ï swap
     if (s1.length() < s2.length())
         swap(s1, s2);
 
@@ -18,7 +19,7 @@ int main() {
     int idx1 = s1.length() - 1;
     int idx2 = s2.length() - 1;
 
-    // ë’¤ì—ì„œë¶€í„° í•œ ìë¦¬ì”© ë”í•˜ê¸°
+    // µÚ¿¡¼­ºÎÅÍ ÇÑ ÀÚ¸®¾¿ ´õÇÏ±â
     while (idx2 >= 0) {
         int sum = (s1[idx1] - '0') + (s2[idx2] - '0') + carry;
         carry = sum / 10;
@@ -27,7 +28,7 @@ int main() {
         idx2--;
     }
 
-    // s1 ë‚˜ë¨¸ì§€ ì²˜ë¦¬
+    // s1 ³ª¸ÓÁö Ã³¸®
     while (idx1 >= 0) {
         int sum = (s1[idx1] - '0') + carry;
         carry = sum / 10;
@@ -35,11 +36,11 @@ int main() {
         idx1--;
     }
 
-    // ë§ˆì§€ë§‰ ìºë¦¬ ì²˜ë¦¬
+    // ¸¶Áö¸· Ä³¸® Ã³¸®
     if (carry > 0)
         v.push(carry);
 
-    // ê²°ê³¼ ì¶œë ¥
+    // °á°ú Ãâ·Â
     while (!v.empty()) {
         cout << v.top();
         v.pop();
