@@ -1007,6 +1007,9 @@
     <ClInclude Include="Backjoon_BFS_Gold5_4.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="Backjoon_Simul_Silver3_1.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="SQL.txt">
