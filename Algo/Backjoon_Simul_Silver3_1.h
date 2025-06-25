@@ -1,11 +1,12 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <deque>
 
 using namespace std;
 
 int main() {
 	deque<int> q;
-	int idx = 0, ans =0;
+	int idx = 0, ans = 0;
 
 	int n, m, x;
 	cin >> n >> m;
