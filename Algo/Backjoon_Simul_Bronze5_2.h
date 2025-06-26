@@ -1,8 +1,9 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 
 using namespace std;
 
-char arr[3] = { 'S','U','O'};
+char arr[3] = { 'S','U','O' };
 
 int main() {
 	int n;
