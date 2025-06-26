@@ -1,22 +1,23 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 #include <cstring>
 using namespace std;
 
 const int MAX = 1001;
 
-vector<int> wants[MAX]; // í•™ìƒ iê°€ ì›í•˜ëŠ” ì±… ë¦¬ìŠ¤íŠ¸
-int match[MAX];         // ì±… jê°€ ë§¤ì¹­ëœ í•™ìƒ ë²ˆí˜¸
-bool visited[MAX];      // ë°©ë¬¸ ì²´í¬ (ì±… ê¸°ì¤€)
+vector<int> wants[MAX]; // ÇĞ»ı i°¡ ¿øÇÏ´Â Ã¥ ¸®½ºÆ®
+int match[MAX];         // Ã¥ j°¡ ¸ÅÄªµÈ ÇĞ»ı ¹øÈ£
+bool visited[MAX];      // ¹æ¹® Ã¼Å© (Ã¥ ±âÁØ)
 
 bool dfs(int student) {
     for (int book : wants[student]) {
-        // ì´ë¯¸ ìµœì ì˜ í•™ìƒì´ ë…ì  í–ˆìœ¼ë©´.
+        // ÀÌ¹Ì ÃÖÀûÀÇ ÇĞ»ıÀÌ µ¶Á¡ ÇßÀ¸¸é.
         if (visited[book]) continue;
 
         visited[book] = true;
 
-        // ê·¸ ì±…ì´ ì•„ì§ ì•ˆ ì¤¬ê±°ë‚˜, ê¸°ì¡´ í•™ìƒì´ ë‹¤ë¥¸ ì±… ë°›ì„ ìˆ˜ ìˆëŠ” ê²½ìš°
+        // ±× Ã¥ÀÌ ¾ÆÁ÷ ¾È Áá°Å³ª, ±âÁ¸ ÇĞ»ıÀÌ ´Ù¸¥ Ã¥ ¹ŞÀ» ¼ö ÀÖ´Â °æ¿ì
         if (match[book] == 0 || dfs(match[book])) {
             match[book] = student;
             return true;
@@ -34,7 +35,7 @@ int main() {
         int N, M;
         cin >> N >> M;
 
-        // ì´ˆê¸°í™”
+        // ÃÊ±âÈ­
         for (int i = 1; i <= M; ++i) wants[i].clear();
         memset(match, 0, sizeof(match));
 
