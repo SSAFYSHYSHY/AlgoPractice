@@ -153,6 +153,7 @@
     <ClInclude Include="Backjoon_Binarymatch_Gold3_1.h" />
     <ClInclude Include="Backjoon_Binarymatch_Platinum4_2.h" />
     <ClInclude Include="Backjoon_Binarymatch_Platinum4_1.h" />
+    <ClInclude Include="Backjoon_Binarymatch_Platinum4_3.h" />
     <ClInclude Include="Backjoon_Binarymatch_Tutorial.h" />
     <ClInclude Include="Backjoon_DFS_Gold1_1.h" />
     <ClInclude Include="Backjoon_DFS_Gold5_1.h" />
@@ -347,6 +348,7 @@
     <ClInclude Include="Backjoon_Twop_Silver4_1.h" />
     <ClInclude Include="Backjoon_Twop_Silver5_1.h" />
     <ClInclude Include="Backjoon_Union_Gold5_1.h" />
+    <ClInclude Include="Bakcjoon_Simul_Bronze5_4.h" />
     <ClInclude Include="Bakcjoon_Simul_Silver4_1.h" />
     <ClInclude Include="pro_lv1_Simul_22.h" />
     <ClInclude Include="pro_lv1_Simul_1.h" />

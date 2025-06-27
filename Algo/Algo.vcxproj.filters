@@ -55,6 +55,9 @@
     <Filter Include="헤더 파일\Backjoon_Hash">
       <UniqueIdentifier>{7a593112-e9b0-499c-afed-33d325ce2c63}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\Backjoon_Binarymatch">
+      <UniqueIdentifier>{800d2aa8-5351-4649-bedf-8192e82cced3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -995,12 +998,6 @@
     <ClInclude Include="Backjoon_Union_Gold5_1.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Backjoon_Binarymatch_Gold3_1.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Backjoon_Binarymatch_Tutorial.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Backjoon_Simul_Bronze5_1.h">
       <Filter>헤더 파일\Backjoon_Simul</Filter>
     </ClInclude>
@@ -1038,6 +1035,18 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Binarymatch_Platinum4_2.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Binarymatch_Platinum4_3.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Binarymatch_Gold3_1.h">
+      <Filter>헤더 파일\Backjoon_Binarymatch</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Binarymatch_Tutorial.h">
+      <Filter>헤더 파일\Backjoon_Binarymatch</Filter>
+    </ClInclude>
+    <ClInclude Include="Bakcjoon_Simul_Bronze5_4.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
