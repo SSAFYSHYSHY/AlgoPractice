@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 #include <algorithm>
 
@@ -6,7 +7,7 @@ using namespace std;
 
 vector<int> v[1001];
 int match[1001];
-bool visited[1001] = {false,};
+bool visited[1001] = { false, };
 int n, m;
 
 bool DFS(int idx) {
