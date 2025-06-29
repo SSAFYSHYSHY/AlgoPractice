@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <vector>
 #include <string>
@@ -8,14 +9,14 @@ using namespace std;
 
 int n, m;
 char arr[101][101];
-bool visited[101][101][2]; // [í–‰][ì—´][ìŠˆí¼ì´ë™ ì‚¬ìš© ì—¬ë¶€]
-pair<pair<int, int>, bool> parent[101][101][2]; // ì´ì „ ìœ„ì¹˜, ìŠˆí¼ ì‚¬ìš© ì—¬ë¶€
+bool visited[101][101][2]; // [Çà][¿­][½´ÆÛÀÌµ¿ »ç¿ë ¿©ºÎ]
+pair<pair<int, int>, bool> parent[101][101][2]; // ÀÌÀü À§Ä¡, ½´ÆÛ »ç¿ë ¿©ºÎ
 
-// ì¼ë°˜ ë‚˜ì´íŠ¸ ì´ë™
+// ÀÏ¹İ ³ªÀÌÆ® ÀÌµ¿
 int dx[] = { -2,-1,1,2,2,1,-1,-2 };
 int dy[] = { 1,2,2,1,-1,-2,-2,-1 };
 
-// ìŠˆí¼ ë‚˜ì´íŠ¸ ì´ë™
+// ½´ÆÛ ³ªÀÌÆ® ÀÌµ¿
 int sdx[] = { -3,-1,1,3,3,1,-1,-3 };
 int sdy[] = { 1,3,3,1,-1,-3,-3,-1 };
 
@@ -46,7 +47,7 @@ void BFS() {
         bool used = cur.usedSuper;
 
         if (x == dest.first && y == dest.second) {
-            // ë„ì°© ì§€ì ì— ë„ë‹¬í–ˆìœ¼ë©´ ê²½ë¡œ ì¶”ì 
+            // µµÂø ÁöÁ¡¿¡ µµ´ŞÇßÀ¸¸é °æ·Î ÃßÀû
             vector<pair<int, int> > path;
             int cx = x;
             int cy = y;
@@ -63,7 +64,7 @@ void BFS() {
             path.push_back(make_pair(start.first + 1, start.second + 1));
             reverse(path.begin(), path.end());
 
-            // ì¶œë ¥
+            // Ãâ·Â
             cout << (int)path.size() - 1 << "\n";
             for (int i = 0; i < (int)path.size(); i++) {
                 cout << path[i].first << " " << path[i].second << "\n";
@@ -72,7 +73,7 @@ void BFS() {
             return;
         }
 
-        // ì¼ë°˜ ë‚˜ì´íŠ¸ ì´ë™
+        // ÀÏ¹İ ³ªÀÌÆ® ÀÌµ¿
         for (int i = 0; i < 8; i++) {
             int nx = x + dx[i];
             int ny = y + dy[i];
@@ -84,7 +85,7 @@ void BFS() {
             }
         }
 
-        // ìŠˆí¼ ì´ë™ (í•œ ë²ˆë§Œ ê°€ëŠ¥)
+        // ½´ÆÛ ÀÌµ¿ (ÇÑ ¹ø¸¸ °¡´É)
         if (!used) {
             for (int i = 0; i < 8; i++) {
                 int nx = x + sdx[i];
