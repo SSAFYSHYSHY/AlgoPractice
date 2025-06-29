@@ -1,9 +1,10 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <algorithm>
 #include <string>
 
-using namespace std; 
+using namespace std;
 
 int n, m, ans = 0;
 int arr[1001][1001];
@@ -14,7 +15,7 @@ int dy[] = { 0,0,-1,1 };
 
 void Input() {
 	cin >> n >> m;
-	
+
 	for (int i = 0; i < n; i++) {
 		string s;
 		cin >> s;
@@ -62,7 +63,7 @@ int main() {
 
 	Input();
 
-	//í–‰ ì—°ì‚°.
+	//Çà ¿¬»ê.
 	for (int i = 0; i < n; i++) {
 		if (!visited[i][0] && arr[i][0] == 0) {
 			BFS(i, 0);
@@ -72,7 +73,7 @@ int main() {
 		}
 	}
 
-	//ì—´ ì—°ì‚°.
+	//¿­ ¿¬»ê.
 	for (int j = 0; j < m; j++) {
 		if (!visited[0][j] && arr[0][j] == 0) {
 			BFS(0, j);
@@ -82,19 +83,19 @@ int main() {
 		}
 	}
 
-	//ì™„íƒìœ¼ë¡œ 1 ì˜ ì˜ì—­ì˜ í™•ì¸.
+	//¿ÏÅ½À¸·Î 1 ÀÇ ¿µ¿ªÀÇ È®ÀÎ.
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < m; j++) {
-			//ì„¬ì˜ ì˜ì—­ì´ë©´.
+			//¼¶ÀÇ ¿µ¿ªÀÌ¸é.
 			if (arr[i][j] == 1) {
-				//4 ë°©í–¥ íƒìƒ‰í•´ì„œ.
+				//4 ¹æÇâ Å½»öÇØ¼­.
 				for (int k = 0; k < 4; k++) {
 					int nx = i + dx[k];
 					int ny = j + dy[k];
 
-					//ë²”ìœ„ ë°–ì´ë©´.
+					//¹üÀ§ ¹ÛÀÌ¸é.
 					if (!InRange(nx, ny)) ans++;
-					//ë²”ìœ„ ì•ˆì— ìžˆëŠ”ë° ë°©ë¬¸í•œ 1 ì¦‰ ë°”ë‹¤ë©´.
+					//¹üÀ§ ¾È¿¡ ÀÖ´Âµ¥ ¹æ¹®ÇÑ 1 Áï ¹Ù´Ù¸é.
 					else if (InRange(nx, ny) && visited[nx][ny] && arr[nx][ny] == 0) {
 						ans++;
 					}

@@ -306,10 +306,14 @@
     <ClInclude Include="Backjoon_Prefix_Silver5_6.h" />
     <ClInclude Include="Backjoon_BFS_Silver3_1.h" />
     <ClInclude Include="Backjoon_Simul_Bronze5_1.h" />
+    <ClInclude Include="Backjoon_Simul_Bronze5_10.h" />
     <ClInclude Include="Backjoon_Simul_Bronze5_2.h" />
     <ClInclude Include="Backjoon_Simul_Bronze5_3.h" />
     <ClInclude Include="Backjoon_Simul_Bronze5_5.h" />
     <ClInclude Include="Backjoon_Simul_Bronze5_6.h" />
+    <ClInclude Include="Backjoon_Simul_Bronze5_7.h" />
+    <ClInclude Include="Backjoon_Simul_Bronze5_8.h" />
+    <ClInclude Include="Backjoon_Simul_Bronze5_9.h" />
     <ClInclude Include="Backjoon_Simul_Silver3_3.h" />
     <ClInclude Include="Backjoon_Simul_Silver2_2.h" />
     <ClInclude Include="Backjoon_Simul_Gold4_1.h" />
