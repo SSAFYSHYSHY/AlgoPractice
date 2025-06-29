@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <algorithm>
 
@@ -25,7 +26,7 @@ void Input() {
 }
 
 void BFS(int start) {
-	queue<pair<int,int>> q;
+	queue<pair<int, int>> q;
 	q.push({ start, 1 });
 	visited[start] = true;
 
@@ -38,7 +39,7 @@ void BFS(int start) {
 
 		for (int i = 0; i < v[curr].size(); i++) {
 			int next = v[curr][i];
-			
+
 			if (!visited[next] && v[curr][i] > 0) {
 				q.push({ next, cnt + 1 });
 				visited[next] = true;
