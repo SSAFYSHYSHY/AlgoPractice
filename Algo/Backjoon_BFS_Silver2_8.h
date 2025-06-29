@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <vector>
 #include <algorithm>
@@ -32,7 +33,7 @@ void BFS(int start) {
 			}
 		}
 
-		// ì˜¤ë¦„ì°¨ìˆœ ì •ë ¬ í›„ ì¶œë ¥
+		// ¿À¸§Â÷¼ø Á¤·Ä ÈÄ Ãâ·Â
 		sort(level.begin(), level.end());
 		for (int x : level) {
 			cout << x << " ";
