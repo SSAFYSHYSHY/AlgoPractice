@@ -58,6 +58,9 @@
     <Filter Include="헤더 파일\Backjoon_Binarymatch">
       <UniqueIdentifier>{800d2aa8-5351-4649-bedf-8192e82cced3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\Backjoon_Union">
+      <UniqueIdentifier>{7816e8c4-6a28-43e9-9d50-907623900718}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -989,9 +992,6 @@
     <ClInclude Include="pro_lv1_Simul_56.h">
       <Filter>헤더 파일\pro_Simul</Filter>
     </ClInclude>
-    <ClInclude Include="Backjoon_Union_Gold5_1.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Backjoon_Simul_Bronze5_1.h">
       <Filter>헤더 파일\Backjoon_Simul</Filter>
     </ClInclude>
@@ -1061,9 +1061,6 @@
     <ClInclude Include="Backjoon_Simul_Bronze5_10.h">
       <Filter>헤더 파일\Backjoon_Simul</Filter>
     </ClInclude>
-    <ClInclude Include="Backjoon_BFS_Silver2_9.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Backjoon_BFS_Gold5_3.h">
       <Filter>헤더 파일\Backjoon_BFS/DFS</Filter>
     </ClInclude>
@@ -1079,14 +1076,23 @@
     <ClInclude Include="Backjoon_BFS_Silver2_8.h">
       <Filter>헤더 파일\Backjoon_BFS/DFS</Filter>
     </ClInclude>
-    <ClInclude Include="Backjoon_Simul_Bronze4_1.h">
+    <ClInclude Include="Backjoon_Simul_Silver5_1.h">
       <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Simul_Bronze4_1.h">
+      <Filter>헤더 파일\Backjoon_Simul</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_BFS_Silver2_9.h">
+      <Filter>헤더 파일\Backjoon_BFS/DFS</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Hash_Silver5_4.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Hash</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Hash_Silver5_5.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Hash</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Union_Gold5_1.h">
+      <Filter>헤더 파일\Backjoon_Union</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
