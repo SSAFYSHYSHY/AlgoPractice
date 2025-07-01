@@ -1,70 +1,118 @@
 #include <iostream>
+#include <queue>
 #include <algorithm>
-#include <vector>
-#include <cstring>
 
 using namespace std;
 
-int n, m, k;
-vector<int> v[1001];
-bool visited[1001];
-int match[1001];
+int n, m;
 
-bool DFS(int idx) {
-	for (int curr : v[idx]) {
-		if (visited[curr]) continue;
+vector<int> v[100002];
+bool visited[100002];
+//여기서부터 true라면 다음노드 방문부터 똑같이 체크됨.
+bool check[100002];
+int degree[100002];
+int match[100002];
 
-		visited[curr] = true;
+struct Node {
+	int x;
+	bool flag;
+};
 
-		if (match[curr] == 0 || DFS(match[curr])) {
-			match[curr] = idx;
-			return true;
+void BFS(int now) {
+	queue<Node> q;
+	q.push({ 1, check[1] });
+	visited[1] = true;
+
+	//체크가 되어있으면 매치에 1 누적. 
+	if (check[1]) {
+		match[1] = 1;
+	}
+	//체크가 없으면 매치 0 누적.
+	else {
+		match[1] = 0;
+	}
+
+	while (!q.empty()) {
+		int cx = q.front().x;
+		bool cflag = q.front().flag;
+		q.pop();
+
+		for (int i = 0; i < v[cx].size(); i++) {
+			//그 다음 노드에 대해서 체크.
+			int nx = v[cx][i];
+
+			//미리 방문된 곳이면 체크.
+			if (visited[nx]) continue;	
+			//그렇지 않으면 
+			else {
+				//다음 장소가 check true가 되어 있으면.
+				//그 다음 부터는 true로 반환되어야 함.
+				if (check[nx]) {
+					//미리 다음 match 칸이 0으로 방문되어 있으면 2로 반환.
+					if (match[nx] == 0) {
+						match[nx] = 2;
+					}
+					//-1 이면 방문이 되지 않았으니.
+					else {
+						match[nx] = 1;
+					}
+					visited[nx] = true;
+					q.push({ nx, check[nx] });
+				}
+				//그렇지 않으면 
+				else {
+					if (match[nx] == 1) {
+						match[nx] = 2;
+					}
+					else {
+						match[nx] = 0;
+					}
+					visited[nx] = true;
+					q.push({ nx, check[nx] });
+				}
+			}
 		}
 	}
 
-	return false;
 }
 
-int main() {
-	ios::sync_with_stdio(false);
-	cin.tie(0);
-	cout.tie(0);
+void Input() {
+	memset(check, false, sizeof(check));
+	memset(visited, false, sizeof(visited));
+	memset(match, -1, sizeof(match));
 
-	cin >> n >> m >> k;
+	cin >> n >> m;
 
-	for (int i = 1; i <= n; i++) {
+	for (int i = 0; i < n; i++) {
+		int x, y;
+		cin >> x >> y;
+
+		v[x].push_back(y);
+		degree[x]++;
+	}
+
+	int cnt;
+	cin >> cnt;
+
+	for (int i = 0; i < cnt; i++) {
 		int num;
 		cin >> num;
 
-		while (num--) {
-			int x;
-			cin >> x;
-
-			v[i].push_back(x);
-		}
+		check[num] = true;
 	}
-
-	int ans = 1;
-	//1명씩.
-	for (int i = 1; i <= n; i++) {
-		memset(visited, false, sizeof(visited));
-		if (DFS(i)) {
-			ans++;
-		}
-	}
-
-	//k 명만 2 번씩 가능. 노드 n+1 ~ n + k
-	for (int i = n + 1; i <= n + k; i++) {
-		//가상 노드는 실제 직원과 동일 직군.
-		v[i] = v[i - k];
-		memset(visited, false, sizeof(visited));
-		if (DFS(i)) {
-			ans++;
-		}
-
-	}
-
-	cout << ans;
 }
 
-#pragma once
+int main() {
+	Input();
+
+	BFS(1);
+
+	for (int i = 1; i <= n; i++) {
+		//아무 차수가 없는 곳에서의 색출.
+		if (degree[i] == 0 && (match[i]== 2 || match[i] == 0)) {
+			cout << "yes";
+			return 0;
+		}
+	}
+	cout << "Yes";
+}
