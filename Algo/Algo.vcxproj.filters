@@ -1103,6 +1103,12 @@
     <ClInclude Include="Backjoon_Binarymatch_Platinum3_1.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="Backjoon_Simul_Bronze4_2.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Simul_Bronze4_3.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="SQL.txt">
