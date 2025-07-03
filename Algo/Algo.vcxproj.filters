@@ -1142,6 +1142,9 @@
     <ClInclude Include="Backjoon_Tree_Silver4_3.h">
       <Filter>헤더 파일\Backjoon_Tree</Filter>
     </ClInclude>
+    <ClInclude Include="Backjoon_Simul_Bronze5_11.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="SQL.txt">
@@ -1149,6 +1152,9 @@
     </Text>
     <Text Include="Backjoon_BFS_GuideLine.txt">
       <Filter>헤더 파일\Backjoon_BFS/DFS</Filter>
+    </Text>
+    <Text Include="Backjoon_Tree_Tutorial_Algo.txt">
+      <Filter>헤더 파일</Filter>
     </Text>
   </ItemGroup>
 </Project>

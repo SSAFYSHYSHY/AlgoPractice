@@ -491,6 +491,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="Backjoon_BFS_GuideLine.txt" />
+    <Text Include="Backjoon_Tree_Tutorial_Algo.txt" />
     <Text Include="SQL.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

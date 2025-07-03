@@ -1,0 +1,126 @@
+///////////////////LCA 구조.
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+const int MAX = 10001;
+
+vector<int> tree[MAX];
+int parent[MAX];   // 부모 노드 저장
+int depth[MAX];    // 노드 깊이 저장
+bool visited[MAX];
+int n;             // 노드 수
+
+// 트리 구성 + 깊이와 부모 기록
+void dfs(int node, int d) {
+    visited[node] = true;
+    depth[node] = d;
+
+    for (int next : tree[node]) {
+        if (!visited[next]) {
+            parent[next] = node;
+            dfs(next, d + 1);
+        }
+    }
+}
+
+// LCA 계산
+int lca(int a, int b) {
+    // 더 깊은 쪽을 위로 올림
+    while (depth[a] > depth[b]) a = parent[a];
+    while (depth[b] > depth[a]) b = parent[b];
+
+    // 같아질 때까지 같이 올라감
+    while (a != b) {
+        a = parent[a];
+        b = parent[b];
+    }
+    return a;
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+
+    cin >> n;
+
+    // 트리 입력
+    for (int i = 0; i < n - 1; i++) {
+        int u, v;
+        cin >> u >> v;
+        tree[u].push_back(v);
+        tree[v].push_back(u); // 무방향 트리
+    }
+
+    // 루트는 1번이라고 가정하고 DFS
+    dfs(1, 0);
+
+    // 쿼리 예시
+    int q;
+    cin >> q;
+    while (q--) {
+        int u, v;
+        cin >> u >> v;
+        cout << lca(u, v) << "\n";
+    }
+
+    return 0;
+}
+
+
+
+
+/////////////////////지름
+
+#include <iostream>
+#include <vector>
+#include <cstring>
+using namespace std;
+
+const int MAX = 10001;
+
+vector<pair<int, int>> tree[MAX]; // (연결 노드, 가중치)
+bool visited[MAX];
+int farthest_node;
+int max_dist = 0;
+
+void dfs(int node, int dist) {
+    visited[node] = true;
+
+    if (dist > max_dist) {
+        max_dist = dist;
+        farthest_node = node;
+    }
+
+    for (auto [next, cost] : tree[node]) {
+        if (!visited[next]) {
+            dfs(next, dist + cost);
+        }
+    }
+}
+
+int main() {
+    int n;
+    cin >> n;
+
+    // 트리 입력 (무방향)
+    for (int i = 0; i < n - 1; i++) {
+        int u, v, w;
+        cin >> u >> v >> w;
+        tree[u].emplace_back(v, w);
+        tree[v].emplace_back(u, w);
+    }
+
+    // 1차 DFS: 아무 노드(1번)에서 가장 먼 노드 찾기
+    memset(visited, false, sizeof(visited));
+    dfs(1, 0);
+
+    // 2차 DFS: 가장 먼 노드에서 다시 DFS해서 최대 거리 갱신
+    memset(visited, false, sizeof(visited));
+    max_dist = 0;
+    dfs(farthest_node, 0);
+
+    cout << "트리의 지름은: " << max_dist << "\n";
+    return 0;
+}
