@@ -61,6 +61,9 @@
     <Filter Include="헤더 파일\Backjoon_Union">
       <UniqueIdentifier>{7816e8c4-6a28-43e9-9d50-907623900718}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\Backjoon_Tree">
+      <UniqueIdentifier>{017b16dd-d7ed-418e-8210-f682420f1abd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -1131,13 +1134,13 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Tree_Silver4_1.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Tree</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Tree_Silver4_2.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Tree</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Tree_Silver4_3.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Tree</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
