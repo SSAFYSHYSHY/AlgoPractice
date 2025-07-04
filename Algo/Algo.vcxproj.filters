@@ -1143,7 +1143,7 @@
       <Filter>헤더 파일\Backjoon_Tree</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Simul_Bronze5_11.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Simul</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
