@@ -1163,6 +1163,12 @@
     <ClInclude Include="Backjoon_Simul_Silver5_4.h">
       <Filter>헤더 파일\Backjoon_Simul</Filter>
     </ClInclude>
+    <ClInclude Include="Backjoon_Greedy_Bronze1_15.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Greedy_Bronze1_16.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="SQL.txt">
