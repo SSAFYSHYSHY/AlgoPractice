@@ -1,4 +1,6 @@
 #pragma once
+
+//TRIE 구조 알고리즘에 대한 문제 해결법.
 #include <iostream>
 #include <string>
 #include <vector>
