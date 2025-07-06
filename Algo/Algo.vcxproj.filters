@@ -1130,9 +1130,6 @@
     <ClInclude Include="Backjoon_BFS_Gold4_6.h">
       <Filter>헤더 파일\Backjoon_BFS/DFS</Filter>
     </ClInclude>
-    <ClInclude Include="Backjoon_BFS_Gold3_1.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Backjoon_Tree_Silver4_1.h">
       <Filter>헤더 파일\Backjoon_Tree</Filter>
     </ClInclude>
@@ -1145,15 +1142,6 @@
     <ClInclude Include="Backjoon_Simul_Bronze5_11.h">
       <Filter>헤더 파일\Backjoon_Simul</Filter>
     </ClInclude>
-    <ClInclude Include="Backjoon_Tree_Gold3_1.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Backjoon_Tree_Gold4_1.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Backjoon_Tree_Gold4_2.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Backjoon_Hash_Bronze1_1.h">
       <Filter>헤더 파일\Backjoon_Hash</Filter>
     </ClInclude>
@@ -1163,31 +1151,49 @@
     <ClInclude Include="Backjoon_Simul_Silver5_4.h">
       <Filter>헤더 파일\Backjoon_Simul</Filter>
     </ClInclude>
+    <ClInclude Include="Backjoon_DP_Bronze1_1.h">
+      <Filter>헤더 파일\Backjoon_DP</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_DP_Bronze1_2.h">
+      <Filter>헤더 파일\Backjoon_DP</Filter>
+    </ClInclude>
     <ClInclude Include="Backjoon_Greedy_Bronze1_15.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_DP</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Greedy_Bronze1_16.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_DP</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Greedy_Bronze1_17.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_DP</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Greedy_Bronze1_18.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_DP</Filter>
     </ClInclude>
-    <ClInclude Include="Backjoon_DP_Bronze1_1.h">
+    <ClInclude Include="Backjoon_Tree_Gold3_1.h">
+      <Filter>헤더 파일\Backjoon_Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Tree_Gold4_1.h">
+      <Filter>헤더 파일\Backjoon_Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Tree_Gold4_2.h">
+      <Filter>헤더 파일\Backjoon_Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_BFS_Gold3_1.h">
+      <Filter>헤더 파일\Backjoon_BFS/DFS</Filter>
+    </ClInclude>
+    <ClInclude Include="Wakeup_Lottery.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="SQL.txt">
-      <Filter>헤더 파일</Filter>
-    </Text>
     <Text Include="Backjoon_BFS_GuideLine.txt">
       <Filter>헤더 파일\Backjoon_BFS/DFS</Filter>
     </Text>
     <Text Include="Backjoon_Tree_Tutorial_Algo.txt">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Tree</Filter>
+    </Text>
+    <Text Include="SQL.txt">
+      <Filter>헤더 파일\pro_Simul</Filter>
     </Text>
   </ItemGroup>
 </Project>
