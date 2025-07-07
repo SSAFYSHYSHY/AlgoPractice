@@ -64,6 +64,9 @@
     <Filter Include="헤더 파일\Backjoon_Tree">
       <UniqueIdentifier>{017b16dd-d7ed-418e-8210-f682420f1abd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\Backjoon_Heap">
+      <UniqueIdentifier>{caadbeb2-8e07-4449-897d-db0f015c8c6a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -1184,32 +1187,38 @@
     <ClInclude Include="Wakeup_Lottery.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Backjoon_Tree_Gold4_4.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Backjoon_Tree_Gold4_5.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Backjoon_Tree_Gold4_6.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Backjoon_Tree_Gold4_7.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Backjoon_Heap_Silver1_1.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Backjoon_Heap_Gold5_1.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Heap</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Heap_Gold5_2.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Heap</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Heap_Gold5_3.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Heap</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Heap_Gold5_4.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Heap</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Heap_Gold5_5.h">
+      <Filter>헤더 파일\Backjoon_Heap</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_DP_Silver3_2.h">
+      <Filter>헤더 파일\Backjoon_DP</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Heap_Silver1_1.h">
+      <Filter>헤더 파일\Backjoon_Heap</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Tree_Gold4_4.h">
+      <Filter>헤더 파일\Backjoon_Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Tree_Gold4_5.h">
+      <Filter>헤더 파일\Backjoon_Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Tree_Gold4_6.h">
+      <Filter>헤더 파일\Backjoon_Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Tree_Gold4_7.h">
+      <Filter>헤더 파일\Backjoon_Tree</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

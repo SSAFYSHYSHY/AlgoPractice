@@ -185,6 +185,7 @@
     <ClInclude Include="Backjoon_DP_Silver2_2.h" />
     <ClInclude Include="Backjoon_DP_Silver2_3.h" />
     <ClInclude Include="Backjoon_DP_Silver3_1.h" />
+    <ClInclude Include="Backjoon_DP_Silver3_2.h" />
     <ClInclude Include="Backjoon_DP_Silver4_1.h" />
     <ClInclude Include="Backjoon_DP_Silver5_1.h" />
     <ClInclude Include="Backjoon_Greedy_Bronze1_1.h" />
@@ -280,6 +281,7 @@
     <ClInclude Include="Backjoon_Heap_Gold5_2.h" />
     <ClInclude Include="Backjoon_Heap_Gold5_3.h" />
     <ClInclude Include="Backjoon_Heap_Gold5_4.h" />
+    <ClInclude Include="Backjoon_Heap_Gold5_5.h" />
     <ClInclude Include="Backjoon_Heap_Silver1_1.h" />
     <ClInclude Include="Backjoon_Parametic_Gold2_1.h" />
     <ClInclude Include="Backjoon_Parametic_Gold2_2.h" />
