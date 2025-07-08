@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 
 using namespace std;
@@ -9,6 +10,7 @@ long long arr[100001];
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(0);
+    cout.tie(0);
 
     cin >> n >> m;
 
@@ -21,7 +23,7 @@ int main() {
     while (m--) {
         cin >> x >> y;
 
-        // [x, y] ë²”ìœ„ì— ìˆëŠ” ì›ì†Œì˜ ê°œìˆ˜ = upper_bound - lower_bound
+        // [x, y] ¹üÀ§¿¡ ÀÖ´Â ¿ø¼ÒÀÇ °³¼ö = upper_bound - lower_bound
         long long left = lower_bound(arr, arr + n, x) - arr;
         long long right = upper_bound(arr, arr + n, y) - arr;
 
