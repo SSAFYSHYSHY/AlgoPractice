@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 #include <algorithm>
 #include <queue>
@@ -6,8 +7,8 @@
 using namespace std;
 
 int n, k;
-queue<pair<int,int>> q;
-bool visited[500001][2] = {false,};
+queue<pair<int, int>> q;
+bool visited[500001][2] = { false, };
 
 int BFS() {
 	q.push({ n,0 });
