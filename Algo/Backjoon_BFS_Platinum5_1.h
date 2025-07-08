@@ -1,104 +1,123 @@
-#pragma once
 #include <iostream>
 #include <queue>
 #include <vector>
+
 using namespace std;
 
-const int MAX = 1501;
 int n, m;
-char arr[MAX][MAX];
-bool visited[MAX][MAX];
-bool melt_visited[MAX][MAX];
+char arr[1501][1501];
+bool visited[1501][1501];
+bool melt_visited[1501][1501];
+
+//현재 처리해야 하는 상황, 현재 처리에서 다음 처리해야 할 영역을 저장하는 영역
 queue<pair<int, int>> swan_q, swan_nq;
 queue<pair<int, int>> water_q, water_nq;
-int dx[4] = { -1,1,0,0 };
-int dy[4] = { 0,0,-1,1 };
-pair<int, int> swan1, swan2;
+int dx[] = { -1,1,0,0 };
+int dy[] = { 0,0,-1,1 };
 
-bool inRange(int x, int y) {
-    return 0 <= x && x < n && 0 <= y && y < m;
+pair<int, int> start, endi;
+
+bool InRange(int x, int y) {
+	return 0 <= x && x < n && 0 <= y && y < m;
 }
 
-bool move_swan() {
-    while (!swan_q.empty()) {
-        auto [x, y] = swan_q.front(); swan_q.pop();
+bool Met() {
+	while (!swan_q.empty()) {
+		int cx = swan_q.front().first;
+		int cy = swan_q.front().second;
+		swan_q.pop();
 
-        for (int d = 0; d < 4; d++) {
-            int nx = x + dx[d], ny = y + dy[d];
+		for (int i = 0; i < 4; i++) {
+			int nx = cx + dx[i];
+			int ny = cy + dy[i];
 
-            if (!inRange(nx, ny) || visited[nx][ny]) continue;
-            visited[nx][ny] = true;
+			if (InRange(nx, ny) && !visited[nx][ny]) {
+				visited[nx][ny] = true;
 
-            if (arr[nx][ny] == '.') {
-                swan_q.push({ nx, ny });
-            }
-            else if (arr[nx][ny] == 'X') {
-                swan_nq.push({ nx, ny });
-            }
-            else if (make_pair(nx, ny) == swan2) {
-                return true;
-            }
-        }
-    }
-    return false;
+				if (arr[nx][ny] == '.') {
+					swan_q.push({ nx,ny });
+				}
+				else if (arr[nx][ny] == 'X') {
+					swan_nq.push({ nx,ny });
+				}
+				else if (nx == endi.first && ny == endi.second) {
+					return true;
+				}
+			}
+		}
+	}
+
+	return false;
 }
 
-void melt() {
-    while (!water_q.empty()) {
-        auto [x, y] = water_q.front(); water_q.pop();
+void Melt() {
+	while (!water_q.empty()) {
+		int x = water_q.front().first;
+		int y = water_q.front().second;
+		water_q.pop();
 
-        for (int d = 0; d < 4; d++) {
-            int nx = x + dx[d], ny = y + dy[d];
+		for (int i = 0; i < 4; i++) {
+			int nx = x + dx[i];
+			int ny = y + dy[i];
 
-            if (!inRange(nx, ny) || melt_visited[nx][ny]) continue;
-            if (arr[nx][ny] == 'X') {
-                melt_visited[nx][ny] = true;
-                arr[nx][ny] = '.';
-                water_nq.push({ nx, ny });
-            }
-        }
-    }
+			if (InRange(nx, ny) && !melt_visited[nx][ny]) {
+				if (arr[nx][ny] == 'X') {
+					melt_visited[nx][ny] = true;
+					arr[nx][ny] = '.';
+					water_nq.push({ nx,ny });
+				}
+			}
+		}
+	}
 }
 
 int main() {
-    ios::sync_with_stdio(false); cin.tie(0);
-    cin >> n >> m;
+	ios::sync_with_stdio(false);
+	cin.tie(0);
+	cout.tie(0);
 
-    bool found = false;
-    for (int i = 0; i < n; ++i) {
-        string s; cin >> s;
-        for (int j = 0; j < m; ++j) {
-            arr[i][j] = s[j];
-            if (arr[i][j] != 'X') {
-                water_q.push({ i, j });
-                melt_visited[i][j] = true;
-            }
-            if (arr[i][j] == 'L') {
-                if (!found) {
-                    swan1 = { i, j };
-                    found = true;
-                }
-                else {
-                    swan2 = { i, j };
-                }
-            }
-        }
-    }
+	cin >> n >> m;
 
-    swan_q.push(swan1);
-    visited[swan1.first][swan1.second] = true;
+	bool flag = false;
+	for (int i = 0; i < n; i++) {
+		string s;
+		cin >> s;
 
-    int day = 0;
-    while (true) {
-        if (move_swan()) {
-            cout << day << '\n';
-            break;
-        }
-        melt();
-        swan_q = swan_nq;
-        water_q = water_nq;
-        while (!swan_nq.empty()) swan_nq.pop();
-        while (!water_nq.empty()) water_nq.pop();
-        day++;
-    }
+		for (int j = 0; j < m; j++) {
+			arr[i][j] = s[j];
+
+			if (arr[i][j] != 'X') {
+				water_q.push({ i,j });
+				melt_visited[i][j] = true;
+			}
+
+			if (arr[i][j] == 'L') {
+				if (!flag) {
+					start = { i,j };
+					flag = true;
+				}
+				else {
+					endi = { i,j };
+				}
+			}
+		}
+	}
+
+	swan_q.push(start);
+	visited[start.first][start.second] = true;
+
+	int date = 0;
+	while (1) {
+		if (Met()) {
+			cout << date << "\n";
+			break;
+		}
+
+		Melt();
+		swan_q = swan_nq;
+		water_q = water_nq;
+		while (!swan_nq.empty()) swan_nq.pop();
+		while (!water_nq.empty()) water_nq.pop();
+		date++;
+	}
 }
