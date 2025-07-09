@@ -1,4 +1,5 @@
 #pragma once
+//그룹화 BFS 를 이루고 그 다음 그룹끼리의 조건을 연산하는게 더 빠르다.
 #include <vector>
 #include <queue>
 #include <algorithm>
