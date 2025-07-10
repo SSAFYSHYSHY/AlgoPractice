@@ -1244,6 +1244,15 @@
     <ClInclude Include="Backjoon_Greedy_Bronze1_20.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="Backjoon_Greedy_Bronze1_21.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv2_BFS_9.h">
+      <Filter>헤더 파일\pro_BFS/DFS</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Simul_Silver5_5.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Backjoon_BFS_GuideLine.txt">

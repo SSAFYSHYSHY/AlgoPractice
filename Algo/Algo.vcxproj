@@ -206,6 +206,7 @@
     <ClInclude Include="Backjoon_Greedy_Bronze1_18.h" />
     <ClInclude Include="Backjoon_Greedy_Bronze1_2.h" />
     <ClInclude Include="Backjoon_Greedy_Bronze1_20.h" />
+    <ClInclude Include="Backjoon_Greedy_Bronze1_21.h" />
     <ClInclude Include="Backjoon_Greedy_Bronze1_3.h" />
     <ClInclude Include="Backjoon_Greedy_Bronze1_4.h" />
     <ClInclude Include="Backjoon_Greedy_Bronze1_5.h" />
@@ -375,6 +376,7 @@
     <ClInclude Include="Backjoon_Simul_Silver5_2.h" />
     <ClInclude Include="Backjoon_Simul_Silver5_3.h" />
     <ClInclude Include="Backjoon_Simul_Silver5_4.h" />
+    <ClInclude Include="Backjoon_Simul_Silver5_5.h" />
     <ClInclude Include="Backjoon_Stack_Gold5_1.h" />
     <ClInclude Include="Backjoon_Tree_Gold3_1.h" />
     <ClInclude Include="Backjoon_Tree_Gold4_1.h" />
@@ -467,6 +469,7 @@
     <ClInclude Include="pro_lv1_Simul_7.h" />
     <ClInclude Include="pro_lv1_Simul_8.h" />
     <ClInclude Include="pro_lv1_Simul_9.h" />
+    <ClInclude Include="pro_lv2_BFS_9.h" />
     <ClInclude Include="pro_lv2_DP_6.h" />
     <ClInclude Include="pro_lv2_Greedy_3.h" />
     <ClInclude Include="pro_lv2_Greedy_4.h" />
