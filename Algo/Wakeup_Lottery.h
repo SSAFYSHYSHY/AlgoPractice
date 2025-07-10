@@ -123,6 +123,10 @@ int main() {
 				if (arr[i][j] == ans[k]) {
 					cnt++;
 				}
+
+				if (cnt == 6) {
+					cout << i << "\n";
+				}
 			}
 		}
 

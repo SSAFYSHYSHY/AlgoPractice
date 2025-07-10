@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <cstring>
 
 using namespace std;
@@ -12,28 +13,27 @@ int main() {
 	int M, x;
 	int arr[21] = { 0 };
 
-
 	cin >> M;
 	for (int i = 0; i < M; i++) {
 		cin >> s;
 
 		if (s == "add") {
 			cin >> x;
-			if (arr[x] == 0) {  
+			if (arr[x] == 0) {
 				arr[x] = 1;
 			}
 		}
 
 		else if (s == "remove") {
 			cin >> x;
-			if (arr[x] == 1) { 
+			if (arr[x] == 1) {
 				arr[x] = 0;
 			}
 
 		}
 		else if (s == "check") {
 			cin >> x;
-			if (arr[x] == 0) {  
+			if (arr[x] == 0) {
 				cout << "0\n";
 			}
 			else {
