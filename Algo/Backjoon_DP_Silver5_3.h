@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 
 using namespace std;
 
@@ -13,8 +14,8 @@ int main() {
 	for (int test = 1; test <= t; test++) {
 		cin >> c >> v >> l;
 
-		dp[0] = 1;         
-		dp[1] = v;         
+		dp[0] = 1;
+		dp[1] = v;
 
 		for (int i = 2; i <= l; i++) {
 			dp[i] = (dp[i - 1] * v % MOD + dp[i - 2] * c % MOD * v % MOD) % MOD;
