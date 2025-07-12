@@ -360,6 +360,7 @@
     <ClInclude Include="Backjoon_Simul_Bronze5_7.h" />
     <ClInclude Include="Backjoon_Simul_Bronze5_8.h" />
     <ClInclude Include="Backjoon_Simul_Bronze5_9.h" />
+    <ClInclude Include="Backjoon_Simul_Gold4_2.h" />
     <ClInclude Include="Backjoon_Simul_Silver3_3.h" />
     <ClInclude Include="Backjoon_Simul_Silver2_2.h" />
     <ClInclude Include="Backjoon_Simul_Gold4_1.h" />
