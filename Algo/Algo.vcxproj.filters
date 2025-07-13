@@ -359,12 +359,6 @@
     <ClInclude Include="Backjoon_Twop_Gold5_2.h">
       <Filter>헤더 파일\Backjoon_Twopointer</Filter>
     </ClInclude>
-    <ClInclude Include="Backjoon_DFS_Gold1_1.h">
-      <Filter>헤더 파일\pro_BFS/DFS</Filter>
-    </ClInclude>
-    <ClInclude Include="Backjoon_DFS_Silver2_1.h">
-      <Filter>헤더 파일\pro_BFS/DFS</Filter>
-    </ClInclude>
     <ClInclude Include="Backjoon_Parametic_Gold5_1.h">
       <Filter>헤더 파일\Backjoon_Parametic</Filter>
     </ClInclude>
@@ -1187,9 +1181,6 @@
     <ClInclude Include="Backjoon_BFS_Gold3_1.h">
       <Filter>헤더 파일\Backjoon_BFS/DFS</Filter>
     </ClInclude>
-    <ClInclude Include="Wakeup_Lottery.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Backjoon_Heap_Gold5_1.h">
       <Filter>헤더 파일\Backjoon_Heap</Filter>
     </ClInclude>
@@ -1281,16 +1272,28 @@
       <Filter>헤더 파일\Backjoon_Simul</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Simul_Bronze5_13.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Simul</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Simul_Bronze5_14.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Simul</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Simul_Bronze5_15.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Simul</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Simul_Bronze5_16.h">
+      <Filter>헤더 파일\Backjoon_Simul</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Simul_Bronze5_17.h">
+      <Filter>헤더 파일\Backjoon_Simul</Filter>
+    </ClInclude>
+    <ClInclude Include="Wakeup_lottery.h">
       <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_DFS_Gold1_1.h">
+      <Filter>헤더 파일\Backjoon_BFS/DFS</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_DFS_Silver2_1.h">
+      <Filter>헤더 파일\Backjoon_BFS/DFS</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
