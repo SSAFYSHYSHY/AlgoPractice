@@ -1,4 +1,5 @@
-ï»¿#include <string>
+#pragma once
+#include <string>
 #include <vector>
 #include <iostream>
 
@@ -16,13 +17,13 @@ int solution(vector<int> bandage, int health, vector<vector<int>> attacks) {
     int sum = 0;
     for (int i = 0; i < attacks.size(); i++) {
 
-        //ì´ˆê¸° ì ì˜ êµ¬ì¡°ì— ëŒ€í•´ì„œ.
+        //ÃÊ±â ÀûÀÇ ±¸Á¶¿¡ ´ëÇØ¼­.
         if (i == 0) {
             int s = 0;
             int e = attacks[i][0];
             int hp = attacks[i][1];
 
-            //ì—°ì‚°.
+            //¿¬»ê.
             int num = e - s - 1;
             int mod = num / t;
 
@@ -31,16 +32,16 @@ int solution(vector<int> bandage, int health, vector<vector<int>> attacks) {
                 sum = health;
             }
 
-            //ê°ì‚°.
+            //°¨»ê.
             sum -= hp;
         }
-        //ë‚˜ë¨¸ì§€ ì—°ì‚°ì— ëŒ€í•´ì„œ.
+        //³ª¸ÓÁö ¿¬»ê¿¡ ´ëÇØ¼­.
         else {
             int s = attacks[i - 1][0];
             int e = attacks[i][0];
             int hp = attacks[i][1];
 
-            //ì—°ì‚°.
+            //¿¬»ê.
             int num = e - s - 1;
             int mod = num / t;
 
