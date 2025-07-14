@@ -1316,6 +1316,9 @@
     <ClInclude Include="pro_test_Simul_4.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="Backjoon_Simul_Bronze4_10.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Backjoon_BFS_GuideLine.txt">
