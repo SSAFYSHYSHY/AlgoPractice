@@ -1,4 +1,5 @@
-﻿#include <string>
+#pragma once
+#include <string>
 #include <vector>
 #include <unordered_map>
 #include <map>
@@ -24,15 +25,15 @@ void Calc(vector<int>& v) {
             int dx = curr.second - next.second;
 
             if (dy != 0) {
-                if (dy > 0) 
+                if (dy > 0)
                     curr.first--;
-                else 
+                else
                     curr.first++;
             }
             else if (dx != 0) {
                 if (dx > 0)
                     curr.second--;
-                else 
+                else
                     curr.second++;
             }
             t++;
@@ -51,7 +52,7 @@ int solution(vector<vector<int>> points, vector<vector<int>> routes) {
     vv.resize(100001);
 
     for (auto i : routes) {
-        Calc (i);
+        Calc(i);
     }
 
     return answer;
