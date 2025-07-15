@@ -349,6 +349,7 @@
     <ClInclude Include="Backjoon_Simul_Bronze4_10.h" />
     <ClInclude Include="Backjoon_Simul_Bronze4_11.h" />
     <ClInclude Include="Backjoon_Simul_Bronze4_12.h" />
+    <ClInclude Include="Backjoon_Simul_Bronze4_13.h" />
     <ClInclude Include="Backjoon_Simul_Bronze4_5.h" />
     <ClInclude Include="Backjoon_Simul_Bronze4_6.h" />
     <ClInclude Include="Backjoon_Simul_Bronze5_13.h" />
