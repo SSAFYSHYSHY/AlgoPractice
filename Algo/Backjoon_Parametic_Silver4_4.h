@@ -1,12 +1,13 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <cstring>
 
 using namespace std;
 
 int n, m, ans;
-bool visited[100001] = {false,};
-int arr[100001] = {0,};
+bool visited[100001] = { false, };
+int arr[100001] = { 0, };
 
 bool Calc(int h) {
 
