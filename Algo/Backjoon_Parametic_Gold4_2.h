@@ -1,15 +1,16 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <vector>
 
 using namespace std;
 
 int h, w, m, k;
-vector<pair<int,int>> v;
+vector<pair<int, int>> v;
 
 bool Calc(int num) {
 	int cnt = 1;
-	//ì™¼ìª½ x ì¢Œí‘œ.
+	//¿ÞÂÊ x ÁÂÇ¥.
 	int left = v[0].second;
 
 	for (int i = 1; i < k; i++) {
