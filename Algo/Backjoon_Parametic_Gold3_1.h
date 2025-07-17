@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #define MAX 2000000000
 
 using namespace std;
@@ -12,17 +13,17 @@ bool Calc(int now, int cnt) {
 	int curr_cnt = 0;
 
 	for (int i = 0; i < n; i++) {
-		//ì ìˆ˜ë¥¼ ìˆœì„œëŒ€ë¡œ ê³„ì† í•©í•œë‹¤.
+		//Á¡¼ö¸¦ ¼ø¼­´ë·Î °è¼Ó ÇÕÇÑ´Ù.
 		sum += arr[i];
 
-		//ê·¸ë¦¬ê³  mid ê°’ì„ ë„˜ìœ¼ë©´ cnt ëˆ„ì , sum ìž¬ê°±ì‹ .
+		//±×¸®°í mid °ªÀ» ³ÑÀ¸¸é cnt ´©Àû, sum Àç°»½Å.
 		if (sum >= now) {
 			curr_cnt++;
 			sum = 0;
 		}
 	}
 
-	//ë§Œì•½ cntê°€ curr_cntì™€ ê°™ë‹¤ë©´ ë°˜í™˜.
+	//¸¸¾à cnt°¡ curr_cnt¿Í °°´Ù¸é ¹ÝÈ¯.
 	return curr_cnt >= k;
 
 }
@@ -34,7 +35,7 @@ int main() {
 		cin >> arr[i];
 	}
 
-	int l = 1, r = MAX, ans= 0;
+	int l = 1, r = MAX, ans = 0;
 	while (l <= r) {
 		int mid = (l + r) / 2;
 
