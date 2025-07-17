@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <climits>
 
@@ -7,7 +8,7 @@
 using namespace std;
 
 long long arr[123456][3];
-long long n, atk ,ans = 0;
+long long n, atk, ans = 0;
 
 
 void Input() {
@@ -29,13 +30,13 @@ bool Calc(long long hmax) {
 	long long curatk = atk;
 
 	for (int i = 0; i < n; i++) {
-		//1ì¸ ê²½ìš° ëª¬ìŠ¤í„° ê³µê²© ì‹œìž‘.
+		//1ÀÎ °æ¿ì ¸ó½ºÅÍ °ø°Ý ½ÃÀÛ.
 		if (arr[i][0] == 1) {
-			
+
 			long long matk = arr[i][1];
 			long long mhp = arr[i][2];
 
-			//ê³µê²© í„´ìˆ˜ ê³„ì‚°.
+			//°ø°Ý ÅÏ¼ö °è»ê.
 			long long turn = mhp / curatk;
 			if (mhp % curatk != 0) turn++;
 
@@ -44,12 +45,12 @@ bool Calc(long long hmax) {
 			if (hcur <= 0) return false;
 
 		}
-		//2ì¸ ê²½ìš° íšŒë³µ.
+		//2ÀÎ °æ¿ì È¸º¹.
 		else if (arr[i][0] == 2) {
 			hcur += arr[i][2];
 			curatk += arr[i][1];
 
-			//ì²´ë ¥ì´ ì´ìƒìœ¼ë¡œ ìž¡ížˆë©´ hmaxë¡œ ê°±ì‹ .
+			//Ã¼·ÂÀÌ ÀÌ»óÀ¸·Î ÀâÈ÷¸é hmax·Î °»½Å.
 			if (hcur > hmax) {
 				hcur = hmax;
 			}
