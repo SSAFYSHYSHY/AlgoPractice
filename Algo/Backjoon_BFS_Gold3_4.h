@@ -1,4 +1,6 @@
-癤�#include <iostream>
+#pragma once
+//최적 경로 관리 및 그 경로 제외하는 방법에 대한 솔루션.
+#include <iostream>
 #include <algorithm>
 #include <vector>
 #include <queue>
@@ -6,8 +8,8 @@
 
 using namespace std;
 
-int n, m,s,e, sum = 0;
-bool visited[100000] = {false,};
+int n, m, s, e, sum = 0;
+bool visited[100000] = { false, };
 bool check[100000] = { false, };
 int parent[100000];
 vector<int> v[100000];
@@ -24,7 +26,7 @@ void Input() {
 		v[x].push_back(y);
 		v[y].push_back(x);
 	}
-	
+
 	cin >> s >> e;
 
 	for (int i = 1; i <= n; i++) {
@@ -34,7 +36,7 @@ void Input() {
 
 int BFS(int start, int endi) {
 	memset(visited, false, sizeof(visited));
-	queue<pair<int,int>> q;
+	queue<pair<int, int>> q;
 	visited[start] = true;
 	q.push({ start, 0 });
 
@@ -78,7 +80,7 @@ int BFS2(int endi, int start) {
 
 		for (int i = 0; i < v[curr].size(); i++) {
 			int next = v[curr][i];
-			
+
 			if (!visited[next] && !check[next]) {
 				visited[next] = true;
 				q.push({ next, dist + 1 });
