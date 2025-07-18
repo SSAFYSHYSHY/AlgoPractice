@@ -296,6 +296,7 @@
     <ClInclude Include="Backjoon_Heap_Gold5_4.h" />
     <ClInclude Include="Backjoon_Heap_Gold5_5.h" />
     <ClInclude Include="Backjoon_Heap_Silver1_1.h" />
+    <ClInclude Include="Backjoon_Parametic_Gold3_1.h" />
     <ClInclude Include="Backjoon_Parametic_Gold4_1.h" />
     <ClInclude Include="Backjoon_Parametic_Gold2_1.h" />
     <ClInclude Include="Backjoon_Parametic_Gold2_2.h" />
