@@ -1,4 +1,5 @@
-﻿#include<iostream>
+#pragma once
+#include <iostream>
 
 using namespace std;
 
@@ -7,12 +8,12 @@ int a, b, k;
 int arr[100001], sum = 0;
 
 int main() {
-    ios::sync_with_stdio(0); 
+    ios::sync_with_stdio(0);
     cin.tie(0); cout.tie(0);
 
     cin >> N >> M;
 
-    for (int i = 0; i < N; i++) 
+    for (int i = 0; i < N; i++)
         cin >> H[i];
 
     for (int i = 0; i < M; i++) {
@@ -22,8 +23,8 @@ int main() {
     }
 
     for (int i = 0; i < N; i++) {
-        sum += arr[i]; 
-        H[i] += sum; 
+        sum += arr[i];
+        H[i] += sum;
         cout << H[i] << ' ';
     }
 
