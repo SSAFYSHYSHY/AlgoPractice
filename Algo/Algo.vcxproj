@@ -365,6 +365,7 @@
     <ClInclude Include="Backjoon_Simul_Bronze4_18.h" />
     <ClInclude Include="Backjoon_Simul_Bronze4_19.h" />
     <ClInclude Include="Backjoon_Simul_Bronze4_20.h" />
+    <ClInclude Include="Backjoon_Simul_Bronze4_22.h" />
     <ClInclude Include="Backjoon_Simul_Bronze4_5.h" />
     <ClInclude Include="Backjoon_Simul_Bronze4_6.h" />
     <ClInclude Include="Backjoon_Simul_Bronze5_13.h" />
