@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 
 using namespace std;
 
@@ -7,7 +8,7 @@ int t, x;
 int main() {
 	cin >> t >> x;
 
-	int num, cnt =0 ;
+	int num, cnt = 0;
 	cin >> num;
 	bool flag = false;
 
@@ -18,7 +19,7 @@ int main() {
 		for (int j = 0; j < a; j++) {
 			int b;
 			cin >> b;
-			
+
 			if (b == x) flag = true;
 		}
 
@@ -29,5 +30,5 @@ int main() {
 	}
 
 	cout << "YES";
-	
+
 }
