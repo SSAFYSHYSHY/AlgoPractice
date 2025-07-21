@@ -134,9 +134,6 @@
     <ClInclude Include="pro_lv3_BFS_3.h">
       <Filter>헤더 파일\pro_BFS/DFS</Filter>
     </ClInclude>
-    <ClInclude Include="pro_lv3_BFS_4.h">
-      <Filter>헤더 파일\pro_BFS/DFS</Filter>
-    </ClInclude>
     <ClInclude Include="pro_lv2_DP_1.h">
       <Filter>헤더 파일\pro_DP</Filter>
     </ClInclude>
@@ -1340,9 +1337,6 @@
     <ClInclude Include="pro_test_Simul_4.h">
       <Filter>헤더 파일\pro_Simul</Filter>
     </ClInclude>
-    <ClInclude Include="pro_test_BFS1.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Backjoon_Parametic_Gold4_1.h">
       <Filter>헤더 파일\Backjoon_Parametic</Filter>
     </ClInclude>
@@ -1352,35 +1346,44 @@
     <ClInclude Include="Backjoon_Parametic_Silver4_4.h">
       <Filter>헤더 파일\Backjoon_Parametic</Filter>
     </ClInclude>
-    <ClInclude Include="Backjoon_Parametic_Gold4_3.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Backjoon_Parametic_Gold3_1.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Backjoon_BFS_Gold3_3.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Backjoon_BFS_Gold3_4.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Backjoon_Prefix_Gold5_2.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="Backjoon_Simul_Bronze4_21.h">
+      <Filter>헤더 파일\Backjoon_Simul</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Simul_Bronze4_18.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Simul</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Simul_Bronze4_19.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Simul</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Simul_Bronze4_20.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Backjoon_Simul_Bronze4_21.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Simul</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Simul_Bronze4_22.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Simul</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Simul_Bronze4_23.h">
+      <Filter>헤더 파일\Backjoon_Simul</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Parametic_Gold4_3.h">
+      <Filter>헤더 파일\Backjoon_Parametic</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Parametic_Gold3_1.h">
+      <Filter>헤더 파일\Backjoon_Parametic</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_BFS_Gold3_3.h">
+      <Filter>헤더 파일\Backjoon_BFS/DFS</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_BFS_Gold3_4.h">
+      <Filter>헤더 파일\Backjoon_BFS/DFS</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Prefix_Gold5_2.h">
+      <Filter>헤더 파일\Backjoon_Prefix</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_test_BFS1.h">
+      <Filter>헤더 파일\pro_BFS/DFS</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_lv3_BFS_4.h">
+      <Filter>헤더 파일\pro_Simul</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
