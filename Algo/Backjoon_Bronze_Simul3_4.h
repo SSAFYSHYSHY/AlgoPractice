@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 
 using namespace std;
 
@@ -12,9 +13,9 @@ int main() {
 	for (int i = 2; i <= N; i++) {
 		cout << "int ";
 
-		for (int k = 0; k < i; k++) 
+		for (int k = 0; k < i; k++)
 			cout << '*';
-		
+
 		if (i > 2) cout << "ptr" << i << " = &ptr" << i - 1 << ";\n";
 		else cout << "ptr" << i << " = &ptr" << ";\n";
 	}
