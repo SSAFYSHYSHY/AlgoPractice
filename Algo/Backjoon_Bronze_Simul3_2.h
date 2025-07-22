@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <string>
 
 using namespace std;
@@ -22,7 +23,7 @@ int main() {
 	if (a > b) {
 		cout << 2;
 	}
-	else if( a< b) {
+	else if (a < b) {
 		cout << "e";
 	}
 	else {
