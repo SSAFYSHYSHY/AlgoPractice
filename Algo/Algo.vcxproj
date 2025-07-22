@@ -141,6 +141,7 @@
     <ClInclude Include="Backjoon_BFS_Gold3_2.h" />
     <ClInclude Include="Backjoon_BFS_Gold3_3.h" />
     <ClInclude Include="Backjoon_BFS_Gold3_4.h" />
+    <ClInclude Include="Backjoon_BFS_Gold3_5.h" />
     <ClInclude Include="Backjoon_BFS_Gold4_1.h" />
     <ClInclude Include="Backjoon_BFS_Gold4_2.h" />
     <ClInclude Include="Backjoon_BFS_Gold4_3.h" />
@@ -372,6 +373,7 @@
     <ClInclude Include="Backjoon_Simul_Bronze4_26.h" />
     <ClInclude Include="Backjoon_Simul_Bronze4_27.h" />
     <ClInclude Include="Backjoon_Simul_Bronze4_28.h" />
+    <ClInclude Include="Backjoon_Simul_Bronze4_29.h" />
     <ClInclude Include="Backjoon_Simul_Bronze4_5.h" />
     <ClInclude Include="Backjoon_Simul_Bronze4_6.h" />
     <ClInclude Include="Backjoon_Simul_Bronze5_13.h" />

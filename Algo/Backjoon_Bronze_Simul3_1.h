@@ -1,9 +1,10 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 
 using namespace std;
 
 int n, k, p;
-int arr[51];
+int arr[2501];
 
 int main() {
 	cin >> n >> k >> p;
