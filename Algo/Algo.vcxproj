@@ -177,6 +177,7 @@
     <ClInclude Include="Backjoon_BinarySearch_Silver3_2.h" />
     <ClInclude Include="Backjoon_BinarySearch_Silver5_1.h" />
     <ClInclude Include="Backjoon_Bronze_Simul3_1.h" />
+    <ClInclude Include="Backjoon_Bronze_Simul3_2.h" />
     <ClInclude Include="Backjoon_DFS_Gold1_1.h" />
     <ClInclude Include="Backjoon_DFS_Gold5_1.h" />
     <ClInclude Include="Backjoon_DFS_Silver1_1.h" />
