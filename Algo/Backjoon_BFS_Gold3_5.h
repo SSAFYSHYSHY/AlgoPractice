@@ -1,38 +1,53 @@
-#pragma once
 #include <iostream>
 #include <queue>
 #include <algorithm>
 #include <vector>
+#include <cstring>
 
 using namespace std;
 
-int n, a, b;
+int n, a, b, ans = -1;
 
 //턴 수로 나눈다.
-int visited[500001][2] = { 0, };
+int visited[500001] = { 0, };
 
 bool InRange(int x) {
 	return 1 <= x && x <= 500000;
 }
 
-void BFS(int start, int idx) {
+void BFS() {
 	queue<pair<int, int>> q;
-	q.push({ start , 0 });
-	visited[start][idx] = 0;
+	q.push({ a,0 });
+	q.push({ b,0 });
 
 	while (!q.empty()) {
 		int pos = q.front().first;
-		int turn = q.front().second;
+		int day = q.front().second;
 		q.pop();
 
-		int move = 1 << turn;
+		int dist = 1 << day;
 
-		for (int dir : {-1, 1}) {
-			int next = pos + (dir * move);
+		int npos = pos + dist;
+		if (npos <= n) {
+			if (visited[npos] == day + 1) {
+				ans = day + 1;
+				break;
+			}
+			else {
+				visited[npos] = day + 1;
+				q.push({ npos, day + 1 });
+			}
+		}
 
-			if (InRange(next) && visited[next][idx] == -1) {
-				visited[next][idx] = turn + 1;
-				q.push({ next, turn + 1 });
+		npos = pos - dist;
+		if (npos > 0) {
+			if (visited[npos] == day + 1) {
+				ans = day + 1;
+				break;
+			}
+			else {
+				visited[npos] = day + 1;
+				q.push({ npos, day + 1 });
 			}
 		}
 	}
@@ -43,24 +58,7 @@ int main() {
 
 	cin >> n >> a >> b;
 
-	BFS(a, 0);
-	BFS(b, 1);
-
-	for (int i = 0; i < 2; i++) {
-		for (int j = 1; j <= n; j++) {
-			cout << visited[j][i] << " ";
-		}
-		cout << "\n\n";
-	}
-
-	int ans = -1;
-	for (int i = 1; i <= n; i++) {
-		if (visited[i][0] != -1 && visited[i][1] != -1 && visited[i][0] == visited[i][1]) {
-			if (ans == -1 || visited[i][0] < ans) {
-				ans = visited[i][0];
-			}
-		}
-	}
+	BFS();
 
 	cout << ans;
 

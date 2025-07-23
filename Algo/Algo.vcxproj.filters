@@ -1407,13 +1407,16 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Bronze_Simul3_1.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Simul</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Bronze_Simul3_2.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Simul</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Bronze_Simul3_3.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Simul</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Bronze_Simul3_4.h">
+      <Filter>헤더 파일\Backjoon_Simul</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
