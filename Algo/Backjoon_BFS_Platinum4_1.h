@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <cstring>
 #include <string>
@@ -6,7 +7,7 @@ using namespace std;
 
 int n, m, k;
 char arr[1001][1001];
-int dist[1001][1001];  // ì´ë™ íšŸìˆ˜ ê¸°ë¡
+int dist[1001][1001];  // ÀÌµ¿ È½¼ö ±â·Ï
 int s_x, s_y, e_x, e_y;
 
 int dx[] = { -1, 1, 0, 0 };
@@ -22,7 +23,7 @@ void BFS() {
     dist[s_x][s_y] = 0;
 
     while (!q.empty()) {
-        int x = q.front().first; 
+        int x = q.front().first;
         int y = q.front().second;
         q.pop();
 
@@ -39,7 +40,7 @@ void BFS() {
                 if (!InRange(nx, ny) || arr[nx][ny] == '#') break;
 
                 if (dist[nx][ny] != -1) {
-                    // ì´ë¯¸ ë°©ë¬¸í–ˆëŠ”ë° ì§€ê¸ˆ ì´ë™ íšŸìˆ˜ê°€ ë” ë§ìœ¼ë©´ ì¤‘ë‹¨
+                    // ÀÌ¹Ì ¹æ¹®Çß´Âµ¥ Áö±İ ÀÌµ¿ È½¼ö°¡ ´õ ¸¹À¸¸é Áß´Ü
                     if (dist[nx][ny] < dist[x][y] + 1) break;
                     else continue;
                 }
@@ -50,7 +51,7 @@ void BFS() {
         }
     }
 
-    // ë„ë‹¬ ëª»í•¨
+    // µµ´Ş ¸øÇÔ
     cout << -1 << "\n";
 }
 
