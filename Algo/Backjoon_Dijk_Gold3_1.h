@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <algorithm>
 #include <string>
@@ -12,8 +13,8 @@ char arr[501][501];
 int dist[501][501];
 int s_x, s_y, e_x, e_y;
 
-int dx[] = {-1,0,1,-1,1,-1,0,1};
-int dy[] = {-1,-1,-1,0,0,1,1,1};
+int dx[] = { -1,0,1,-1,1,-1,0,1 };
+int dy[] = { -1,-1,-1,0,0,1,1,1 };
 
 bool InRange(int x, int y) {
 	return 0 <= x && x < n && 0 <= y && y < m;
@@ -22,7 +23,7 @@ bool InRange(int x, int y) {
 struct Node {
 	int cost, x, y;
 
-	bool operator>(const Node& other) const{
+	bool operator>(const Node& other) const {
 		return cost > other.cost;
 	}
 };
@@ -30,7 +31,7 @@ struct Node {
 void Dijk() {
 	priority_queue<Node, vector<Node>, greater<>> pq;
 	dist[s_x][s_y] = 0;
-	pq.push({0, s_x,s_y });
+	pq.push({ 0, s_x,s_y });
 
 	while (!pq.empty()) {
 		int cost = pq.top().cost;

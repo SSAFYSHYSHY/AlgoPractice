@@ -186,6 +186,7 @@
     <ClInclude Include="Backjoon_DFS_Silver1_1.h" />
     <ClInclude Include="Backjoon_DFS_Silver2_1.h" />
     <ClInclude Include="Backjoon_Dijk_Gold2_1.h" />
+    <ClInclude Include="Backjoon_Dijk_Gold3_1.h" />
     <ClInclude Include="Backjoon_Dijk_Gold4_1.h" />
     <ClInclude Include="Backjoon_Dijk_Gold4_2.h" />
     <ClInclude Include="Backjoon_Dijk_Gold4_4.h" />

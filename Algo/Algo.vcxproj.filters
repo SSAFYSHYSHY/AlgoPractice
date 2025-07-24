@@ -1403,9 +1403,6 @@
     <ClInclude Include="Backjoon_Simul_Bronze4_29.h">
       <Filter>헤더 파일\Backjoon_Simul</Filter>
     </ClInclude>
-    <ClInclude Include="Backjoon_BFS_Gold3_5.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Backjoon_Bronze_Simul3_1.h">
       <Filter>헤더 파일\Backjoon_Simul</Filter>
     </ClInclude>
@@ -1418,8 +1415,11 @@
     <ClInclude Include="Backjoon_Bronze_Simul3_4.h">
       <Filter>헤더 파일\Backjoon_Simul</Filter>
     </ClInclude>
+    <ClInclude Include="Backjoon_BFS_Gold3_5.h">
+      <Filter>헤더 파일\Backjoon_BFS/DFS</Filter>
+    </ClInclude>
     <ClInclude Include="Backjoon_BFS_Platinum4_1.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_BFS/DFS</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
