@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 #include <queue>
 #include <tuple>
@@ -19,7 +20,7 @@ int dist[1001][1001];
 
 struct Node {
     int x, y, cost;
-    
+
     bool operator>(const Node& other) const {
         return cost > other.cost;
     }
@@ -50,12 +51,12 @@ vector<Node> BFS() {
             int ny = cur.y + dy[i];
             if (!InRange(nx, ny)) continue;
 
-            //ê°€ê³ ì í•˜ëŠ” . ì— ëŒ€í•´ì„œ cost + 1 < dist[nx][ny], cost + 1 <= tg ì¸ ê²½ìš°. 
+            //°¡°íÀÚ ÇÏ´Â . ¿¡ ´ëÇØ¼­ cost + 1 < dist[nx][ny], cost + 1 <= tg ÀÎ °æ¿ì. 
             if (board[nx][ny] == '.' && dist[nx][ny] > dist[cur.x][cur.y] + 1 && dist[cur.x][cur.y] + 1 <= tg) {
                 dist[nx][ny] = dist[cur.x][cur.y] + 1;
                 pq.push({ nx, ny, dist[nx][ny] });
             }
-            //ê°€ê³ ì í•˜ëŠ” # ìœ„ì¹˜ì— ëŒ€í•´ì„œ (tb + 1) + cost ë¡œ ê·¸ëƒ¥ í™• ì¦ê°€ì‹œì¼œì„œ ê±°ê¸°ì„œ ë¶€í„° ë¹„êµí•  ìˆ˜ ìˆë„ë¡.
+            //°¡°íÀÚ ÇÏ´Â # À§Ä¡¿¡ ´ëÇØ¼­ (tb + 1) + cost ·Î ±×³É È® Áõ°¡½ÃÄÑ¼­ °Å±â¼­ ºÎÅÍ ºñ±³ÇÒ ¼ö ÀÖµµ·Ï.
             else if (board[nx][ny] == '#' && dist[nx][ny] > dist[cur.x][cur.y] + (tb + 1) && dist[cur.x][cur.y] + (tb + 1) <= tg) {
                 dist[nx][ny] = dist[cur.x][cur.y] + (tb + 1);
                 pq.push({ nx, ny, dist[nx][ny] });
@@ -103,14 +104,14 @@ int main() {
 
     sort(result.begin(), result.end(), [](const Node& a, const Node& b) {
         if (a.x == b.x) return a.y < b.y;
-        return a.x < b.x;
-    });
+    return a.x < b.x;
+        });
 
     if (result.empty()) {
         cout << -1 << '\n';
     }
     else {
-        
+
         for (const auto& pos : result) {
             cout << pos.x << " " << pos.y << '\n';
         }
