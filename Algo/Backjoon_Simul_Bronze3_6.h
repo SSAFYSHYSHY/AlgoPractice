@@ -1,14 +1,15 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 
 using namespace std;
 
 int main() {
-	
-	int a,b; 
+
+	int a, b;
 	cin >> a >> b;
 
 	int ans = a ^ b;
 
 	cout << ans << "\n";
-	
+
 }
