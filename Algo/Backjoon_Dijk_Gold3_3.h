@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <string>
 #include <cstring>
@@ -57,13 +58,13 @@ bool Calc(int x, int y) {
 		int nx = x + dx[i];
 		int ny = y + dy[i];
 
-		//ë²”ìœ„ ì•ˆì— ì—†ê³ , ì´ë¯¸ ë°©ë¬¸ì´ ë˜ì–´ë²„ë¦° ì¡°ê±´ì´ë©´.
+		//¹üÀ§ ¾È¿¡ ¾ø°í, ÀÌ¹Ì ¹æ¹®ÀÌ µÇ¾î¹ö¸° Á¶°ÇÀÌ¸é.
 		if (!InRange(nx, ny)) continue;
 		if (dist[nx][ny] != INT_MAX) continue;
 
-		//# ë²½ ë°œê²¬ì‹œ.
+		//# º® ¹ß°ß½Ã.
 		if (arr[nx][ny] == '#') return false;
-	} 
+	}
 
 	return true;
 }
@@ -80,22 +81,22 @@ void Dijk() {
 		int cx = pq.top().x;
 		int cy = pq.top().y;
 		pq.pop();
-		
-		//í˜„ ìœ„ì¹˜ì—ì„œ 4 ë°©í–¥ì„ ìƒ‰ì¶œ.
+
+		//Çö À§Ä¡¿¡¼­ 4 ¹æÇâÀ» »öÃâ.
 		first = Calc(cx, cy);
 		for (int i = 0; i < 4; i++) {
 			int nx = cx + dx[i];
 			int ny = cy + dy[i];
 
-			//ë²”ìœ„ ì•ˆì´ ì•„ë‹ˆê³  , dist ê°’ì´ ì •í•´ì ¸ ìˆê³ , ê°€ê³ ì í•˜ëŠ” ê³³ì´ ë²½ì´ë©´ íƒìƒ‰ ìŠ¤í‚µ.
+			//¹üÀ§ ¾ÈÀÌ ¾Æ´Ï°í , dist °ªÀÌ Á¤ÇØÁ® ÀÖ°í, °¡°íÀÚ ÇÏ´Â °÷ÀÌ º®ÀÌ¸é Å½»ö ½ºÅµ.
 			if (!InRange(nx, ny)) continue;
 			//if (dist[nx][ny] != INT_MAX) continue;
 			if (arr[nx][ny] == '#') continue;
 
-			//ê°€ê³ ì í•˜ëŠ” ë°©í–¥ì˜ ë‹¤ì‹œ 4 ë°©í–¥ì„ íƒìƒ‰;
+			//°¡°íÀÚ ÇÏ´Â ¹æÇâÀÇ ´Ù½Ã 4 ¹æÇâÀ» Å½»ö;
 			second = Calc(nx, ny);
 
-			//cost ì¦ê°€ ì¡°ê±´.
+			//cost Áõ°¡ Á¶°Ç.
 			if ((first == true && second == true) || (first == true && second == false) || (first == false && second == true)) {
 				if (cost + 1 < dist[nx][ny]) {
 					dist[nx][ny] = cost + 1;
@@ -114,11 +115,11 @@ void Dijk() {
 	}
 }
 
-int main(){
+int main() {
 	ios::sync_with_stdio(false);
 	cin.tie(0);
 	cout.tie(0);
-	
+
 	Input();
 
 	Dijk();
