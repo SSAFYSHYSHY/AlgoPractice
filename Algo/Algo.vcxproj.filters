@@ -1433,6 +1433,9 @@
     <ClInclude Include="Backjoon_Simul_Bronze3_6.h">
       <Filter>헤더 파일\Backjoon_Simul</Filter>
     </ClInclude>
+    <ClInclude Include="Backjoon_Dijk_Gold3_3.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Backjoon_BFS_GuideLine.txt">
