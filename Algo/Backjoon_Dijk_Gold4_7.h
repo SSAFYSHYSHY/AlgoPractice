@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <algorithm>
 #include <cstring>
@@ -22,7 +23,7 @@ void Input() {
 	for (int i = 0; i < m; i++) {
 		int x, y, c;
 		cin >> x >> y >> c;
-		
+
 		v[x].push_back({ y,c });
 		v[y].push_back({ x,c });
 	}
@@ -59,7 +60,7 @@ int Dijk(int start, int endi) {
 
 			if (cost + next_cost < dist[next]) {
 				dist[next] = cost + next_cost;
-				pq.push({dist[next], next});
+				pq.push({ dist[next], next });
 			}
 
 		}
@@ -86,7 +87,7 @@ int main() {
 			cin >> arr[i];
 		}
 
-		int ans = INT_MAX, ans_idx =0 ;
+		int ans = INT_MAX, ans_idx = 0;
 		for (int i = 1; i <= n; i++) {
 			int sum = 0;
 
