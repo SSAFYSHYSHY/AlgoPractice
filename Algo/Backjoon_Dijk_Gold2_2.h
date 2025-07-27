@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <algorithm>
 #include <string>
@@ -93,7 +94,7 @@ int Dijk() {
 				temp += (int)(arr[nx][ny] - '0');
 			}
 
-			//flag ìƒì¡´.
+			//flag »ıÁ¸.
 			if (flag) {
 				if (temp < dist[nx][ny]) {
 					dist[nx][ny] = temp;
@@ -112,9 +113,9 @@ int Dijk() {
 int main() {
 	Input();
 
-	cout << Dijk() <<"\n";
+	cout << Dijk() << "\n";
 
-	for (int i = 0; i < n; i++) {
+	/*for (int i = 0; i < n; i++) {
 		for (int j = 0; j < m; j++) {
 			if (arr[i][j] == 'R' || arr[i][j] == 'H' || arr[i][j] == 'E' || arr[i][j] == 'T') {
 				cout << arr[i][j] << " ";
@@ -129,5 +130,5 @@ int main() {
 			}
 		}
 		cout << "\n";
-	}
+	}*/
 }
