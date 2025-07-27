@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <queue>
 #include <cstring>
@@ -8,7 +9,7 @@
 
 using namespace std;
 
-int n, m,a,b,c;
+int n, m, a, b, c;
 vector<pair<int, int>> v[100001];
 
 void Input() {
@@ -72,7 +73,7 @@ int main() {
 
 	int ans = -1, ans_idx = 0;
 	for (int i = 1; i <= n; i++) {
-		int mini = max({ dA[i], dB[i], dC[i]});
+		int mini = max({ dA[i], dB[i], dC[i] });
 		if (mini == 0) continue;
 
 		if (ans < mini) {
