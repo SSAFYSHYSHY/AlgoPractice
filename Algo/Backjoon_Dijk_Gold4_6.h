@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <algorithm>
 #include <vector>
@@ -51,7 +52,7 @@ int Dijk(int start, int endi) {
 
 			if (cost + cnext_cost < dist[cnext]) {
 				dist[cnext] = cost + cnext_cost;
-				pq.push({ dist[cnext], cnext});
+				pq.push({ dist[cnext], cnext });
 			}
 		}
 	}
