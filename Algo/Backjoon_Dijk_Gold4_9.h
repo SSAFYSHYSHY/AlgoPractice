@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <algorithm>
 #include <cstring>
@@ -39,7 +40,7 @@ bool InRange(int x, int y) {
 
 void Dijk() {
 	priority_queue<Node, vector<Node>, greater<>> pq;
-	pq.push({ arr[0][0], 0,0});
+	pq.push({ arr[0][0], 0,0 });
 	dist[0][0] = arr[0][0];
 
 	while (!pq.empty()) {
