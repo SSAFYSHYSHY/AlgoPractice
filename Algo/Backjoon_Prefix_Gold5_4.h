@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <climits>
 
@@ -28,7 +29,7 @@ int main() {
 			int num = min(n - i, n - j);
 
 			for (int k = 0; k <= num; k++) {
-				int sum = prefix[i + k][j + k] - prefix[i - 1][j + k] - prefix[i + k][j - 1] + prefix[i-1][j-1];
+				int sum = prefix[i + k][j + k] - prefix[i - 1][j + k] - prefix[i + k][j - 1] + prefix[i - 1][j - 1];
 				ans = max(ans, sum);
 			}
 		}
