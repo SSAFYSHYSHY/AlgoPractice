@@ -1446,18 +1446,24 @@
       <Filter>헤더 파일\Backjoon_Dijk</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Dijk_Gold4_7.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Dijk</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Dijk_Gold4_8.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Dijk</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Dijk_Gold4_9.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Dijk</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Prefix_Gold5_3.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Prefix</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Prefix_Gold5_4.h">
+      <Filter>헤더 파일\Backjoon_Prefix</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Prefix_Gold5_5.h">
+      <Filter>헤더 파일\Backjoon_Prefix</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Simul_Bronze2_2.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

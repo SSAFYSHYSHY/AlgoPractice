@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 
 using namespace std;
 
@@ -11,7 +12,7 @@ int main() {
 		int sum = 0;
 		int num = i;
 
-		while (num != 0) { 
+		while (num != 0) {
 			sum += num % 10;
 			num /= 10;
 		}
