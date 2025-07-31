@@ -1,4 +1,4 @@
-﻿
+
 #include<iostream>
 #include<string.h>
 #include<algorithm>
@@ -14,7 +14,7 @@ vector<vector<int>> committee_member;
 
 void FindCommitteeBFS(int start_idx) {
     queue<int> q;
-    vector<int> new_committee;  //이번에 생성하는 위원회의 멤버를 저장
+    vector<int> new_committee;
     new_committee.push_back(start_idx);
 
     q.push(start_idx);
@@ -28,18 +28,17 @@ void FindCommitteeBFS(int start_idx) {
         visited[idx] = true;
 
         for (int i = 1; i <= people_num; ++i) {
-            //방문하지 않았거나 큐에 삽입되지 않은 정점만 확인
             if (!visited[i] && !is_in_que[i])
-                if (dist[idx][i] < INF) { //dist가 INF라면 idx와 i정점은 서로 도달 불가
+                if (dist[idx][i] < INF) {
                     q.push(i);
                     is_in_que[i] = true;
-                    new_committee.push_back(i); //위원회 멤버로 추가
+                    new_committee.push_back(i);
                 }
 
         }
     }
 
-    committee_member.push_back(new_committee); //새로운 위원회를 삽입
+    committee_member.push_back(new_committee);
 }
 
 void FloydWarshall() {
@@ -69,7 +68,6 @@ int main() {
     memset(is_in_que, false, sizeof(is_in_que));
 
     for (int i = 1; i <= people_num; ++i)
-        //관계가 이어지는 사람끼리만 위원회를 만듬
         if (!visited[i]) {
             FindCommitteeBFS(i);
             ++committee_order;
@@ -78,10 +76,10 @@ int main() {
     vector<int> representives;
     int now_idx, next_idx;
     for (int k = 0; k < committee_order; ++k) {
-        pair<int, int> represent_info(0, INF);   //K번째 위원회의 대표의 정보
+        pair<int, int> represent_info(0, INF);
 
         for (int i = 0; i < committee_member[k].size(); ++i) {
-            int max_dist = 0; //now_idx와 다른 정점들 사이의 가장 먼 거리를 저장
+            int max_dist = 0;
             now_idx = committee_member[k][i];
 
             for (int j = 0; j < committee_member[k].size(); ++j) {
@@ -89,7 +87,6 @@ int main() {
                 max_dist = max(dist[now_idx][next_idx], max_dist);
             }
 
-            //현재 대표의 의사 전달시간 보다 작은 경우 새로운 대표로 선택
             if (max_dist < represent_info.second)
                 represent_info = { now_idx, max_dist };
         }
@@ -103,4 +100,4 @@ int main() {
         cout << representives[i] << "\n";
 
     return 0;
-}
+}#pragma once
