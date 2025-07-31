@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <algorithm>
 #include <string.h>
@@ -18,16 +19,16 @@ void dfs(int start, int num, int line) {
 	visited[num] = true;
 	cur_road[num] = true;
 
-	int su;
+	int curr;
 	for (int i = 0; i < v[num].size(); i++) {
-		su = v[num][i];
-		if (su == start && line >= 2) {
+		curr = v[num][i];
+		if (curr == start && line >= 2) {
 			flag_cur = true;
 			return;
 		}
 
-		if (visited[su]) continue;
-		dfs(start, su, line + 1);
+		if (visited[curr]) continue;
+		dfs(start, curr, line + 1);
 
 		if (flag_cur) return;
 	}
