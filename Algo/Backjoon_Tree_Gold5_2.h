@@ -1,10 +1,11 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <queue>
 
 using namespace std;
 
-int n, ans =0;
+int n, ans = 0;
 int arr[200001];
 vector<int> v[200001];
 

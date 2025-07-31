@@ -1478,6 +1478,9 @@
     <ClInclude Include="Backjoon_BFS_Gold2_1.h">
       <Filter>헤더 파일\Backjoon_BFS/DFS</Filter>
     </ClInclude>
+    <ClInclude Include="Backjoon_Tree_Gold5_1.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Backjoon_BFS_GuideLine.txt">
