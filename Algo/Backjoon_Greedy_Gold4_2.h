@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 
 using namespace std;
@@ -45,7 +46,7 @@ int main() {
 			sum += now * pq2.top();
 			pq2.pop();
 		}
-		else if(!cnt){
+		else if (!cnt) {
 			sum += now;
 		}
 	}
