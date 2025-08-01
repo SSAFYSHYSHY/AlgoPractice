@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <algorithm>
 #include <vector>
@@ -38,7 +39,7 @@ void Input() {
 }
 
 struct Node {
-	//ì¢Œí‘œ, í˜„ ì‹œê°„(dist ê¸°ë¡), r,g ì¸ì§€ num íŒë³„.
+	//ÁÂÇ¥, Çö ½Ã°£(dist ±â·Ï), r,g ÀÎÁö num ÆÇº°.
 	int x, y, curr, num;
 };
 
@@ -47,7 +48,7 @@ int BFS() {
 	memset(dist, -1, sizeof(dist));
 	int cnt = 0;
 	int color[51][51] = { 0, };
-	bool visited[51][51] = {false,};
+	bool visited[51][51] = { false, };
 
 	queue<Node> q;
 
@@ -70,7 +71,7 @@ int BFS() {
 			int nx = cx + dx[i];
 			int ny = cy + dy[i];
 
-			//ë²½ì´ ì•„ë‹ˆê³ , ë¬¼ì´ ë©´ ë‹¤ìŒ ì¹¸ìœ¼ë¡œ.
+			//º®ÀÌ ¾Æ´Ï°í, ¹°ÀÌ ¸é ´ÙÀ½ Ä­À¸·Î.
 			if (!InRange(nx, ny)) continue;
 			if (temp[nx][ny] == 0) continue;
 			if (visited[nx][ny]) {
@@ -127,8 +128,8 @@ int main() {
 
 	Input();
 
-	//Back ì‹œì‘. idx, depth, r, g
-	Back(0, 0,0,0);
+	//Back ½ÃÀÛ. idx, depth, r, g
+	Back(0, 0, 0, 0);
 
 	cout << ans;
 }
