@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <algorithm>
 #include <string>
@@ -13,7 +14,7 @@ int dist[3][103][103];
 
 int s_x, s_y, e_x, e_y;
 
-void Input(){
+void Input() {
 	cin >> n >> m;
 
 	for (int i = 0; i <= n + 1; i++) {
@@ -64,7 +65,7 @@ bool InRange(int x, int y) {
 
 void Dijk(int idx, int x, int y) {
 	priority_queue<Node, vector<Node>, greater<>> pq;
-	
+
 	for (int i = 0; i <= n + 1; i++) {
 		for (int j = 0; j <= m + 1; j++) {
 			dist[idx][i][j] = INT_MAX;
