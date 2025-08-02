@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <vector>
 #include <tuple>
@@ -57,7 +58,7 @@ int Dijkstra(int sx, int sy, int ex, int ey) {
         if (dist[x][y][k] < cost) continue;
         if (x == ex && y == ey) return cost;
 
-        // 1. ì í”„ ì´ë™
+        // 1. Á¡ÇÁ ÀÌµ¿
         for (int dir = 0; dir < 4; dir++) {
             for (int d = 1; d <= k; d++) {
                 int nx = x + dx[dir] * d;
@@ -84,7 +85,7 @@ int Dijkstra(int sx, int sy, int ex, int ey) {
             }
         }
 
-        // 2. ì í”„ë ¥ ì¦ê°€
+        // 2. Á¡ÇÁ·Â Áõ°¡
         if (k < 5) {
             int nk = k + 1;
             int ncost = cost + nk * nk;
@@ -94,7 +95,7 @@ int Dijkstra(int sx, int sy, int ex, int ey) {
             }
         }
 
-        // 3. ì í”„ë ¥ ê°ì†Œ
+        // 3. Á¡ÇÁ·Â °¨¼Ò
         if (k > 1) {
             int nk = k - 1;
             int ncost = cost + 1;
@@ -105,7 +106,7 @@ int Dijkstra(int sx, int sy, int ex, int ey) {
         }
     }
 
-    return -1; // ë„ë‹¬ ë¶ˆê°€
+    return -1; // µµ´Ş ºÒ°¡
 }
 
 int main() {
