@@ -1,10 +1,11 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 
 using namespace std;
 
 
-int n, m, c,ans ;
+int n, m, c, ans;
 int arr[100001];
 
 bool Calc(int mid) {

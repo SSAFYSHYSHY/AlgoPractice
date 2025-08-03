@@ -1502,6 +1502,9 @@
     <ClInclude Include="Samsung_1_Dijk_1.h">
       <Filter>헤더 파일\Samsung</Filter>
     </ClInclude>
+    <ClInclude Include="Backjoon_Parametic_Gold4_4.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Backjoon_BFS_GuideLine.txt">
