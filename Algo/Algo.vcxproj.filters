@@ -1499,6 +1499,9 @@
     <ClInclude Include="Backjoon_Greedy_Silver5_1.h">
       <Filter>헤더 파일\Backjoon_Greedy</Filter>
     </ClInclude>
+    <ClInclude Include="Samsung_1_Dijk_1.h">
+      <Filter>헤더 파일\Samsung</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Backjoon_BFS_GuideLine.txt">

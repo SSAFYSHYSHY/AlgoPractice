@@ -324,6 +324,7 @@
     <ClInclude Include="Backjoon_Parametic_Gold2_2.h" />
     <ClInclude Include="Backjoon_Parametic_Gold4_2.h" />
     <ClInclude Include="Backjoon_Parametic_Gold4_3.h" />
+    <ClInclude Include="Backjoon_Parametic_Gold4_4.h" />
     <ClInclude Include="Backjoon_Parametic_Gold5_1.h" />
     <ClInclude Include="Backjoon_Parametic_Gold5_2.h" />
     <ClInclude Include="Backjoon_Parametic_Gold5_3.h" />
