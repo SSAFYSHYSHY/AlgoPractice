@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <cstring>
 #include <vector>
@@ -72,7 +73,7 @@ int main() {
 	for (int i = 0; i < k; i++) {
 		BFS(v[i].first, v[i].second);
 
-		for (int j = i + 1; j < k;  j++) {
+		for (int j = i + 1; j < k; j++) {
 			if (!visited[v[j].first][v[j].second]) {
 				ans++;
 			}

@@ -1508,6 +1508,9 @@
     <ClInclude Include="Backjoon_Parametic_Gold4_5.h">
       <Filter>헤더 파일\Backjoon_Parametic</Filter>
     </ClInclude>
+    <ClInclude Include="Backjoon_BFS_Platinum4_3.h">
+      <Filter>헤더 파일\Backjoon_BFS/DFS</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Backjoon_BFS_GuideLine.txt">
