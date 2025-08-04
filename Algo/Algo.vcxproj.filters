@@ -1503,7 +1503,10 @@
       <Filter>헤더 파일\Samsung</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Parametic_Gold4_4.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Parametic</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Parametic_Gold4_5.h">
+      <Filter>헤더 파일\Backjoon_Parametic</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

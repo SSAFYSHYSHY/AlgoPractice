@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 #include <queue>
 #include <algorithm>
@@ -49,7 +50,7 @@ void Input() {
 }
 
 bool BFS(int left, int right) {
-    if (dist[s_x][s_y] < left || dist[s_x][s_y] > right) 
+    if (dist[s_x][s_y] < left || dist[s_x][s_y] > right)
         return false;
 
     memset(visited, false, sizeof(visited));
