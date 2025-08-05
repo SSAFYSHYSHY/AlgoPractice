@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <algorithm>
 #include <vector>
@@ -27,7 +28,7 @@ bool Calc(int mid) {
 		dist[i] = INT_MAX;
 	}
 
-	priority_queue<pair<int,int>, vector<pair<int,int>>, greater<>> pq;
+	priority_queue<pair<int, int>, vector<pair<int, int>>, greater<>> pq;
 	pq.push({ 0 , 1 });
 	dist[1] = 0;
 
