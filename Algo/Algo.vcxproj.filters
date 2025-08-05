@@ -1520,6 +1520,9 @@
     <ClInclude Include="Backjoon_Parametic_Silver1_7.h">
       <Filter>헤더 파일\Backjoon_Parametic</Filter>
     </ClInclude>
+    <ClInclude Include="Backjoon_Twopointer_Silver4_1.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Backjoon_BFS_GuideLine.txt">
