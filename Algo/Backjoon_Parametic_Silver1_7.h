@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 
 using namespace std;
@@ -9,7 +10,7 @@ long long arr[50001];
 bool Calc(long long mid) {
 	long long cnt = 0;
 	for (long long i = 0; i < n; i++) {
-		if (mid*(i+1) > arr[i]) {
+		if (mid * (i + 1) > arr[i]) {
 			return false;
 		}
 	}
