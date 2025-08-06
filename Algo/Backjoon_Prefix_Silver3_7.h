@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 
 using namespace std;
@@ -6,17 +7,12 @@ using namespace std;
 int arr[2000][2000];
 int ans = -1;
 
-int main()
-{
-    cin.tie(0)->sync_with_stdio(0);
-
+int main() {
     int n, m, a;
     cin >> n >> m;
 
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j < m; j++)
-        {
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
             cin >> arr[i][j];
         }
     }
@@ -25,10 +21,8 @@ int main()
 
     int sum = 0;
 
-    for (int j = 0; j < a; j++)
-    {
-        for (int i = 0; i < n; i++)
-        {
+    for (int j = 0; j < a; j++) {
+        for (int i = 0; i < n; i++) {
             sum += arr[i][j];
         }
     }
