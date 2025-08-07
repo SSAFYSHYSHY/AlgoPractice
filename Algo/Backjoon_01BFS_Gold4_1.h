@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <string>
 #include <vector>
@@ -10,14 +11,14 @@ using namespace std;
 
 int t;
 int f, n, m;
-int s_h, s_x, s_y, e_h , e_x, e_y;
+int s_h, s_x, s_y, e_h, e_x, e_y;
 
 vector<vector<vector<char>>> v;
 vector<vector<vector<int>>> dist;
 
-int dx[] = {-1,1,0,0};
-int dy[] = {0,0,-1,1};
-int hdx[] = {-1,0,1};
+int dx[] = { -1,1,0,0 };
+int dy[] = { 0,0,-1,1 };
+int hdx[] = { -1,0,1 };
 
 void Input() {
 	cin >> f >> n >> m;
