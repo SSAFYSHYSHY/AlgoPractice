@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <vector>
 #include <algorithm>
@@ -29,7 +30,7 @@ void Input() {
     for (int i = 1; i <= mx; i++) {
         for (int j = 1; j <= my; j++) {
             dist[i][j] = INT_MAX;
-            
+
             if (arr[i][j] != 1) {
                 arr[i][j] = 0;
             }
@@ -52,7 +53,7 @@ struct Node {
 void BFS() {
     deque<Node> dq;
     dist[sx][sy] = 0;
-    dq.push_front({sx, sy });
+    dq.push_front({ sx, sy });
 
     while (!dq.empty()) {
         int cx = dq.front().x;
