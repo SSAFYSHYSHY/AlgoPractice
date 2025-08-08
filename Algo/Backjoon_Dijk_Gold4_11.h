@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <string>
 #include <cstring>
@@ -13,8 +14,8 @@ int sx, sy, ex, ey;
 int arr[1001][1001];
 int dist[1001][1001];
 
-int dx[] = {-1,-1,0,1,1,1,0,-1};
-int dy[] = {0,1,1,1,0,-1,-1,-1};
+int dx[] = { -1,-1,0,1,1,1,0,-1 };
+int dy[] = { 0,1,1,1,0,-1,-1,-1 };
 
 void Input() {
 	cin >> n >> m;
@@ -36,7 +37,7 @@ bool InRange(int x, int y) {
 struct Node {
 	int cost, x, y;
 
-	bool operator>(const Node &other) const {
+	bool operator>(const Node& other) const {
 		return cost > other.cost;
 	}
 };
@@ -91,7 +92,7 @@ int main() {
 
 	while (t--) {
 		cin >> sx >> sy >> ex >> ey;
-		sx--; 
+		sx--;
 		sy--;
 		ex--;
 		ey--;
