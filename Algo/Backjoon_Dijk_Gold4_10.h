@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <cstring>
 #include <string>
@@ -7,7 +8,7 @@
 using namespace std;
 
 int t;
-int n, m, d, sx,sy, ex, ey;
+int n, m, d, sx, sy, ex, ey;
 char arr[501][501];
 int dist[501][501];
 
@@ -15,7 +16,7 @@ int dx[] = { -1,1,0,0 };
 int dy[] = { 0,0,-1,1 };
 
 void Input() {
-	
+
 	cin >> n >> m >> d;
 
 	for (int i = 0; i < n; i++) {
