@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 
 using namespace std;
@@ -36,7 +37,7 @@ int main() {
 
 	long long i = 1, j = 1, ans = n + m;
 	while (i <= n && j <= m) {
-		//ê°™ì€ ëˆ„ì í•©ì¸ ê²½ìš°ì—ëŠ” ê°±ì‹ .
+		//°°Àº ´©ÀûÇÕÀÎ °æ¿ì¿¡´Â °»½Å.
 		if (prefixa[i] == prefixb[j]) {
 			long long num = (n - i) + (m - j);
 

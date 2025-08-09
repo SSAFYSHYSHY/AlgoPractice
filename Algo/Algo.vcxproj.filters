@@ -1562,6 +1562,9 @@
     <ClInclude Include="Backjoon_Prefix_Silver4_11.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="Backjoon_Prefix_Silver4_12.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Backjoon_BFS_GuideLine.txt">
