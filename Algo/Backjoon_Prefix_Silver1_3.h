@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <vector>
 
@@ -18,8 +19,8 @@ int main() {
         cin >> a >> b;
 
         v[a] += 1;
-        
-        if (b < n) 
+
+        if (b < n)
             v[b + 1] -= 1;
     }
 
