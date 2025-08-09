@@ -1511,9 +1511,6 @@
     <ClInclude Include="Backjoon_BFS_Platinum4_3.h">
       <Filter>헤더 파일\Backjoon_BFS/DFS</Filter>
     </ClInclude>
-    <ClInclude Include="Backjoon_BFS_Gold3_7.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Backjoon_Parametic_Gold3_2.h">
       <Filter>헤더 파일\Backjoon_Parametic</Filter>
     </ClInclude>
@@ -1533,24 +1530,30 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_01BFS_Gold3_1_NotSolved.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_BFS/DFS</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_01BFS_Gold4_1.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_BFS/DFS</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_01BFS_Gold4_2.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_BFS/DFS</Filter>
     </ClInclude>
-    <ClInclude Include="Backjoon_Dijk_Gold4_10.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Backjoon_Dijk_Gold4_11.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="Backjoon_BFS_Gold3_7.h">
+      <Filter>헤더 파일\Backjoon_BFS/DFS</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Dijk_Gold3_4.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Backjoon_Dijk</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Dijk_Gold3_5.h">
+      <Filter>헤더 파일\Backjoon_Dijk</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Dijk_Gold4_10.h">
+      <Filter>헤더 파일\Backjoon_Dijk</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Dijk_Gold4_11.h">
+      <Filter>헤더 파일\Backjoon_Dijk</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Prefix_Silver4_9.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
