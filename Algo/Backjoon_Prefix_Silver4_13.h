@@ -1,4 +1,6 @@
-ï»¿#include <iostream>
+#pragma once
+//2Áß ¹è¿­ prefix
+#include <iostream>
 #include <algorithm>
 #include <vector>
 
@@ -36,7 +38,7 @@ int main() {
 
         auto rect_sum = [&](int y1, int x1, int y2, int x2) {
             return prefix[y2][x2] - prefix[y1 - 1][x2] - prefix[y2][x1 - 1] + prefix[y1 - 1][x1 - 1];
-        };
+            };
 
         int ans = 0;
         for (int y1 = 1; y1 <= W; y1++) {
