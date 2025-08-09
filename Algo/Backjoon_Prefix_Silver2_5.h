@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 
 using namespace std;
@@ -8,11 +9,11 @@ int main() {
     cin.tie(nullptr);
 
     int t;
-    cin >> t; 
+    cin >> t;
 
     while (t--) {
         int n, m;
-        cin >> n >> m; 
+        cin >> n >> m;
 
         vector<vector<int>> mat(n, vector<int>(n));
         vector<int> r(n), c(n);
