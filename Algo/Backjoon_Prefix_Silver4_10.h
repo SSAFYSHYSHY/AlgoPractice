@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <string>
 #include <algorithm>
 #include <vector>
@@ -25,7 +26,7 @@ int main() {
     cin >> n >> m;
     cin >> s;
 
-    int totalDays = n + m - 1; 
+    int totalDays = n + m - 1;
 
     arr[0] = 0;
     for (int i = 0; i < totalDays; i++) {
@@ -33,16 +34,16 @@ int main() {
             arr[i + 1] = 0;
         }
         else {
-            arr[i + 1] = 1; 
+            arr[i + 1] = 1;
         }
     }
 
     prefix[0] = 0;
-    for (int i = 1; i <= totalDays; i++) { 
+    for (int i = 1; i <= totalDays; i++) {
         prefix[i] = prefix[i - 1] + arr[i];
     }
 
-    for (int i = 1; i <= n; i++) { 
+    for (int i = 1; i <= n; i++) {
         int num = prefix[i + m - 1] - prefix[i - 1];
         v.push_back({ i, num });
     }
