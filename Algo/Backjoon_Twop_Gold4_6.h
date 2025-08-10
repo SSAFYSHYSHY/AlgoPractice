@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <string>
 
@@ -29,7 +30,7 @@ int main() {
 	int l = 0, r = n - 1;
 
 	while (l <= r) {
-		if (Calc(l,r)) {
+		if (Calc(l, r)) {
 			ans += arr[l];
 			l++;
 		}
