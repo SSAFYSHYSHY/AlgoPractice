@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 
 using namespace std;
@@ -19,7 +20,7 @@ int main() {
 
 	int l = 1, r = n;
 	while (l < r) {
-		
+
 		int num = (r - l - 1) * (min(arr[l], arr[r]));
 		ans = max(ans, num);
 
