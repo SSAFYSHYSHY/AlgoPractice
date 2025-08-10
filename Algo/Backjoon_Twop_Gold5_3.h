@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 
 using namespace std;
@@ -15,9 +16,9 @@ int main() {
 
 	sort(arr, arr + n);
 
-	int l = 0, r = n - 1; 
+	int l = 0, r = n - 1;
 	bool flag = false;
-	
+
 	while (l < r) {
 		if (flag) break;
 
