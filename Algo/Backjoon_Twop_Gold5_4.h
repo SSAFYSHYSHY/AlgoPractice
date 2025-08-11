@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <vector>
 
@@ -22,7 +23,7 @@ int main() {
 
     sort(v.begin(), v.end(), [](auto& a, auto& b) {
         return a.second < b.second;
-    });
+        });
 
     long long max_time = 0;
     int l = 0, r = N - 1;
@@ -31,11 +32,11 @@ int main() {
     while (l <= r) {
         max_time = max(max_time, v[l].second + v[r].second);
 
-        if (scnt + 1 > v[l].first) { // s í¬ì¸í„°ì˜ ì†Œ ìˆ˜ëŸ‰ ë‹¤ ì†Œì§„
+        if (scnt + 1 > v[l].first) { // s Æ÷ÀÎÅÍÀÇ ¼Ò ¼ö·® ´Ù ¼ÒÁø
             l++;
             scnt = 1;
         }
-        if (ecnt + 1 > v[r].first) { // e í¬ì¸í„°ì˜ ì†Œ ìˆ˜ëŸ‰ ë‹¤ ì†Œì§„
+        if (ecnt + 1 > v[r].first) { // e Æ÷ÀÎÅÍÀÇ ¼Ò ¼ö·® ´Ù ¼ÒÁø
             r--;
             ecnt = 1;
         }
