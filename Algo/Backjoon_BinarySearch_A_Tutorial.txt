@@ -1,0 +1,11 @@
+이진탐색의 문제 해결 기법은 다음과 같다.
+
+1. 값이 배열에 존재하는지 체크 : binary_search(v.begin(), v.end(), 찾고자 하는거)
+
+2. target 이상/이하 첫 위치 : lower_bound / upper_bound
+
+3. 값의 개수 찾기 : upper_bound - lower_bound
+
+4. 범위 조건 만족하는 최대 최소 : while(left <= right) mid 
+
+5. 두 정렬 배열에서 가장 가까운 값 찾기 : 투포인터.

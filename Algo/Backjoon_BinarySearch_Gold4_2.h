@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <vector>
 
@@ -17,7 +18,7 @@ int main() {
 		v.push_back(num);
 
 	}
-	//ì‚¬ëŒ€ ì •ë ¬
+	//»ç´ë Á¤·Ä
 	sort(v.begin(), v.end());
 
 	int cnt = 0;
@@ -25,15 +26,15 @@ int main() {
 		int x, y;
 		cin >> x >> y;
 
-		//xì—ì„œ ê°€ì¥ ê°€ê¹Œìš´ ì‚¬ëŒ€.
+		//x¿¡¼­ °¡Àå °¡±î¿î »ç´ë.
 		auto it = lower_bound(v.begin(), v.end(), x);
 		bool flag = false;
 
-		//ëì´ ì•„ë‹Œ x ì´ìƒì˜ ì‚¬ëŒ€ ë°”ë¡œ ì—°ì‚°.
+		//³¡ÀÌ ¾Æ´Ñ x ÀÌ»óÀÇ »ç´ë ¹Ù·Î ¿¬»ê.
 		if (it != v.end()) {
 			if (abs(*it - x) + y <= l) flag = true;
 		}
-		//ì‹œì‘ì ì´ ì•„ë‹Œ ì´ì „ ì‚¬ëŒ€ì˜ ìœ„ì¹˜ ì—°ì‚°.
+		//½ÃÀÛÁ¡ÀÌ ¾Æ´Ñ ÀÌÀü »ç´ëÀÇ À§Ä¡ ¿¬»ê.
 		if (it != v.begin()) {
 			it--;
 			if (abs(*it - x) + y <= l) flag = true;
