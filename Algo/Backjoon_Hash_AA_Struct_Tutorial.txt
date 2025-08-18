@@ -1,0 +1,44 @@
+#include <iostream>
+#include <unordered_map>
+using namespace std;
+
+// 좌표 구조체
+struct Coord {
+    int x, y;
+
+    // 좌표를 비교할 == 연산자 정의
+    bool operator==(const Coord& other) const {
+        // x와 y 값이 서로 바뀌어도 동일 취급
+        return (x == other.x && y == other.y) || (x == other.y && y == other.x);
+    }
+};
+
+// Coord 구조체용 해시 함수
+struct CoordHash {
+    size_t operator()(const Coord& c) const {
+        // x,y 순서 무관 처리: 작은 값 먼저, 큰 값 나중
+        int a = min(c.x, c.y);
+        int b = max(c.x, c.y);
+        return hash<int>()(a) ^ (hash<int>()(b) << 1);
+    }
+};
+
+int main() {
+    int n;
+    cin >> n;
+
+    unordered_map<Coord, int, CoordHash> countMap;
+
+    for (int i = 0; i < n; i++) {
+        int x, y;
+        cin >> x >> y;
+        Coord c = { x, y };
+        countMap[c]++;
+    }
+
+    // 결과 출력
+    for (auto& p : countMap) {
+        cout << min(p.first.x, p.first.y) << " , " << max(p.first.x, p.first.y)
+            << " : " << p.second << "\n";
+    }
+}

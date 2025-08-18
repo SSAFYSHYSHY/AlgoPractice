@@ -662,6 +662,7 @@
   <ItemGroup>
     <Text Include="Backjoon_BFS_GuideLine.txt" />
     <Text Include="Backjoon_BinarySearch_A_Tutorial.txt" />
+    <Text Include="Backjoon_Hash_AA_Struct_Tutorial.txt" />
     <Text Include="Backjoon_Tree_Tutorial_Algo.txt" />
     <Text Include="SQL.txt" />
   </ItemGroup>
