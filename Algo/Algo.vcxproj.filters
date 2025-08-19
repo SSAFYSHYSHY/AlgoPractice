@@ -1667,6 +1667,9 @@
     <ClInclude Include="Backjoon_BFS_Gold5_7.h">
       <Filter>헤더 파일\Backjoon_BFS</Filter>
     </ClInclude>
+    <ClInclude Include="Backjoon_Heap_Gold2_1.h">
+      <Filter>헤더 파일\Backjoon_Heap</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Backjoon_BFS_GuideLine.txt">
