@@ -245,6 +245,7 @@
     <ClInclude Include="Backjoon_Dijk_Gold5_5.h" />
     <ClInclude Include="Backjoon_Dijk_Gold5_6.h" />
     <ClInclude Include="Backjoon_Dijk_Gold5_7.h" />
+    <ClInclude Include="Backjoon_Dijk_Gold5_8.h" />
     <ClInclude Include="Backjoon_DP_Bronze1_1.h" />
     <ClInclude Include="Backjoon_DP_Bronze1_2.h" />
     <ClInclude Include="Backjoon_DP_Bronze1_3.h" />
