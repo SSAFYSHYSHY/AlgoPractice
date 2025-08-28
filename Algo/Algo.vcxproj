@@ -682,6 +682,7 @@
     <ClInclude Include="pro_test_Simul_4.h" />
     <ClInclude Include="Samsung_1_Dijk_1.h" />
     <ClInclude Include="Samsung_Dijk_1.h" />
+    <ClInclude Include="Samsung_Lv12_BFS1_R.h" />
     <ClInclude Include="Wakeup_lottery.h" />
   </ItemGroup>
   <ItemGroup>

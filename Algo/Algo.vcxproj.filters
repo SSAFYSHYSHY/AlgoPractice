@@ -1742,6 +1742,9 @@
     <ClInclude Include="Backjoon_Dijk_Platinum5_1.h">
       <Filter>헤더 파일\Backjoon_Dijk</Filter>
     </ClInclude>
+    <ClInclude Include="Samsung_Lv12_BFS1_R.h">
+      <Filter>헤더 파일\Samsung</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Backjoon_BFS_GuideLine.txt">
