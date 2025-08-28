@@ -1,6 +1,6 @@
 #pragma once
 //비트마스크 연습.
-
+//https://www.codetree.ai/ko/frequent-problems/samsung-sw/problems/mint-choco-milk/description
 #include <iostream>
 #include <vector>
 #include <string>
