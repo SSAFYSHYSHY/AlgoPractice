@@ -358,6 +358,7 @@
     <ClInclude Include="Backjoon_Hash_Silver4_21.h" />
     <ClInclude Include="Backjoon_Hash_Silver4_23.h" />
     <ClInclude Include="Backjoon_Hash_Silver4_24.h" />
+    <ClInclude Include="Backjoon_Hash_Silver4_25.h" />
     <ClInclude Include="Backjoon_Hash_Silver5_4.h" />
     <ClInclude Include="Backjoon_Hash_Silver4_2.h" />
     <ClInclude Include="Backjoon_Hash_Silver4_3.h" />
