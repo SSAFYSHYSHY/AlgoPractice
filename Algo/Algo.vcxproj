@@ -140,6 +140,7 @@
     <ClInclude Include="Backjoon_Back_Silver1_1.h" />
     <ClInclude Include="Backjoon_Back_Silver2_1.h" />
     <ClInclude Include="Backjoon_Back_Silver5_1.h" />
+    <ClInclude Include="Backjoon_BFS_Gold4_10.h" />
     <ClInclude Include="Backjoon_BFS_Gold1_1.h" />
     <ClInclude Include="Backjoon_BFS_Gold1_2.h" />
     <ClInclude Include="Backjoon_BFS_Gold1_3.h" />
