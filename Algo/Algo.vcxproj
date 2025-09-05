@@ -155,6 +155,7 @@
     <ClInclude Include="Backjoon_BFS_Gold3_6.h" />
     <ClInclude Include="Backjoon_BFS_Gold3_7.h" />
     <ClInclude Include="Backjoon_BFS_Gold4_1.h" />
+    <ClInclude Include="Backjoon_BFS_Gold4_11.h" />
     <ClInclude Include="Backjoon_BFS_Gold4_2.h" />
     <ClInclude Include="Backjoon_BFS_Gold4_3.h" />
     <ClInclude Include="Backjoon_BFS_Gold4_4.h" />

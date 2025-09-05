@@ -1808,6 +1808,9 @@
     <ClInclude Include="Backjoon_BFS_Gold4_10.h">
       <Filter>헤더 파일\Backjoon_BFS</Filter>
     </ClInclude>
+    <ClInclude Include="Backjoon_BFS_Gold4_11.h">
+      <Filter>헤더 파일\Backjoon_BFS</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Backjoon_BFS_GuideLine.txt">
