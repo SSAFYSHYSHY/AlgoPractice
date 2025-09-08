@@ -143,6 +143,7 @@
     <ClInclude Include="Backjoon_BFS_Gold3_10.h" />
     <ClInclude Include="Backjoon_BFS_Gold3_11.h" />
     <ClInclude Include="Backjoon_BFS_Gold3_11_N명플레이어.h" />
+    <ClInclude Include="Backjoon_BFS_Gold3_13.h" />
     <ClInclude Include="Backjoon_BFS_Gold3_8.h" />
     <ClInclude Include="Backjoon_BFS_Gold3_9.h" />
     <ClInclude Include="Backjoon_BFS_Gold4_10.h" />
