@@ -1,4 +1,7 @@
 #pragma once
+//동시에 움직이는 플레이어 2 명이 있는 경우 struct ax,aty,bx,by를 사용.
+//만약 따로 따로 움직여야 하는 경우 visited[][][][][] 오차원으로 마지막 배열을 플레이어 순서로 할당. 이동 가능.
+
 #include <iostream>
 #include <queue>
 #include <algorithm>
