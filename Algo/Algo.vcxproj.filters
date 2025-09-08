@@ -1841,6 +1841,9 @@
     <ClInclude Include="Backjoon_BFS_Gold3_11_N명플레이어.h">
       <Filter>헤더 파일\Backjoon_BFS</Filter>
     </ClInclude>
+    <ClInclude Include="Bakcjoon_BFS_Gold3_12.h">
+      <Filter>헤더 파일\Backjoon_BFS</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Backjoon_BFS_GuideLine.txt">
