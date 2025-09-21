@@ -1922,6 +1922,9 @@
     <ClInclude Include="Backjoon_Hash_Silver4_29.h">
       <Filter>헤더 파일\Backjoon_Hash</Filter>
     </ClInclude>
+    <ClInclude Include="Samsung_LV16_Simul1_R.h">
+      <Filter>헤더 파일\Samsung</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Backjoon_BFS_GuideLine.txt">
