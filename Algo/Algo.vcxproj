@@ -622,6 +622,7 @@
     <ClInclude Include="N개에 대한 패러매틱 탐색 기법.h" />
     <ClInclude Include="pro_kakao2018_lv1_Simul_2.h" />
     <ClInclude Include="pro_kakao2019_lv1_Simul_1.h" />
+    <ClInclude Include="pro_kakao2019_lv1_Simul_2.h" />
     <ClInclude Include="pro_lv1_Simul_22.h" />
     <ClInclude Include="pro_lv1_Simul_1.h" />
     <ClInclude Include="pro_lv1_Simul_10.h" />
