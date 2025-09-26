@@ -624,6 +624,7 @@
     <ClInclude Include="Bakcjoon_Hash_Silver3_17.h" />
     <ClInclude Include="Bakcjoon_Simul_Silver4_1.h" />
     <ClInclude Include="N개에 대한 패러매틱 탐색 기법.h" />
+    <ClInclude Include="pro_kakao2017_lv2_BFS_1.h" />
     <ClInclude Include="pro_kakao2018_lv1_Simul_2.h" />
     <ClInclude Include="pro_kakao2018_lv2_Simul_1.h" />
     <ClInclude Include="pro_kakao2019_lv1_Simul_1.h" />
