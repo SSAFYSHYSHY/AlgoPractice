@@ -1964,6 +1964,9 @@
     <ClInclude Include="Backjoon_Back_Gold5_1.h">
       <Filter>헤더 파일\Backjoon_DFS</Filter>
     </ClInclude>
+    <ClInclude Include="Backjoon_Back_Gold5_2.h">
+      <Filter>헤더 파일\Backjoon_DFS</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Backjoon_BFS_GuideLine.txt">
