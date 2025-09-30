@@ -633,6 +633,7 @@
     <ClInclude Include="pro_kakao2018_lv2_Simul_1.h" />
     <ClInclude Include="pro_kakao2019_lv1_Simul_1.h" />
     <ClInclude Include="pro_kakao2019_lv1_Simul_2.h" />
+    <ClInclude Include="pro_kakao2019_lv3_Binary_1.h" />
     <ClInclude Include="pro_kakao2022_lv3_Prefix_1.h" />
     <ClInclude Include="pro_lv1_Simul_22.h" />
     <ClInclude Include="pro_lv1_Simul_1.h" />
