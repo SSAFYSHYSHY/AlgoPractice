@@ -585,6 +585,7 @@
     <ClInclude Include="Backjoon_Stack_Gold5_1.h" />
     <ClInclude Include="Backjoon_TreeDP_Gold2_1.h" />
     <ClInclude Include="Backjoon_TreeDP_Gold3_1.h" />
+    <ClInclude Include="Backjoon_TreeDP_Gold4_1.h" />
     <ClInclude Include="Backjoon_Tree_Gold3_1.h" />
     <ClInclude Include="Backjoon_Tree_Gold4_1.h" />
     <ClInclude Include="Backjoon_Tree_Gold4_2.h" />
