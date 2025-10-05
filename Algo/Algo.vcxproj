@@ -644,6 +644,7 @@
     <ClInclude Include="pro_kakao2022_lv3_Prefix_1.h" />
     <ClInclude Include="pro_kakao2023_lv1_Simul_1_R.h" />
     <ClInclude Include="pro_kakao2023_lv2_Back_1.h" />
+    <ClInclude Include="pro_kakao2023_lv2_Greedy_1.h" />
     <ClInclude Include="pro_lv1_Simul_22.h" />
     <ClInclude Include="pro_lv1_Simul_1.h" />
     <ClInclude Include="pro_lv1_Simul_10.h" />
