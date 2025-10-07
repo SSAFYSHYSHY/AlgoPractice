@@ -2012,6 +2012,9 @@
     <ClInclude Include="Backjoon_Greedy_Silver1_1.h">
       <Filter>헤더 파일\Backjoon_Greedy</Filter>
     </ClInclude>
+    <ClInclude Include="Backjoon_Greedy_Silver1_2.h">
+      <Filter>헤더 파일\Backjoon_Greedy</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Backjoon_BFS_GuideLine.txt">
