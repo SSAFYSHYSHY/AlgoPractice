@@ -2027,7 +2027,10 @@
     <ClInclude Include="pro_kakao2018_lv2_Simul_4.h">
       <Filter>헤더 파일\pro_Simul</Filter>
     </ClInclude>
-    <ClInclude Include="pro_kakao2018_lv3_Tree_1.h">
+    <ClInclude Include="pro_kakao2018_lv3_Trie_1.h">
+      <Filter>헤더 파일\pro_Simul</Filter>
+    </ClInclude>
+    <ClInclude Include="pro_kakao2018_lv4_Binary_1.h">
       <Filter>헤더 파일\pro_Simul</Filter>
     </ClInclude>
   </ItemGroup>
