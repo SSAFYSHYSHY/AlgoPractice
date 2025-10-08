@@ -641,6 +641,7 @@
     <ClInclude Include="pro_kakao2018_lv1_Simul_2.h" />
     <ClInclude Include="pro_kakao2018_lv2_Hash_1_R.h" />
     <ClInclude Include="pro_kakao2018_lv2_Simul_1.h" />
+    <ClInclude Include="pro_kakao2018_lv2_Simul_3.h" />
     <ClInclude Include="pro_kakao2019_lv1_Simul_1.h" />
     <ClInclude Include="pro_kakao2019_lv1_Simul_2.h" />
     <ClInclude Include="pro_kakao2019_lv1_Simul_3.h" />
