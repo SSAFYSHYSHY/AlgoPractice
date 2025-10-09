@@ -8,6 +8,7 @@ using namespace std;
 
 int n, m;
 int arr[1000005];
+vector<int> truth;
 
 int Find(int n) {
 	if (arr[n] == n) return n;
