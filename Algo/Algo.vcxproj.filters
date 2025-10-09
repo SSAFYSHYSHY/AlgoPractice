@@ -76,6 +76,9 @@
     <Filter Include="헤더 파일\Backjoon_BFS">
       <UniqueIdentifier>{f48f0331-00e1-4762-87d1-064b9d4b1511}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\Backjoon_Trie">
+      <UniqueIdentifier>{2266c56e-c833-4bfd-8110-da976772b35a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -2032,6 +2035,9 @@
     </ClInclude>
     <ClInclude Include="pro_kakao2018_lv4_Binary_1.h">
       <Filter>헤더 파일\pro_Simul</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Trie_Plat5_1.h">
+      <Filter>헤더 파일\Backjoon_Trie</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
