@@ -606,6 +606,7 @@
     <ClInclude Include="Backjoon_Trie_Gold4_2.h" />
     <ClInclude Include="Backjoon_Trie_Gold4_1.h" />
     <ClInclude Include="Backjoon_Trie_Plat5_1.h" />
+    <ClInclude Include="Backjoon_Trie_Silver4_1.h" />
     <ClInclude Include="Backjoon_Twop_Gold4_5.h" />
     <ClInclude Include="Backjoon_Twop_Gold4_6.h" />
     <ClInclude Include="Backjoon_Twop_Gold5_3.h" />
