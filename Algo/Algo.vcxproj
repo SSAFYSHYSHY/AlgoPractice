@@ -644,6 +644,7 @@
     <ClInclude Include="Backjoon_Union_Gold4_2.h" />
     <ClInclude Include="Backjoon_Union_Gold5_1.h" />
     <ClInclude Include="Backjoon_Simul_Bronze5_4.h" />
+    <ClInclude Include="Backjoon_Union_Silver1_1.h" />
     <ClInclude Include="Backjoon_Union_Silver2_1.h" />
     <ClInclude Include="Backjoon_Union_Silver4_1.h" />
     <ClInclude Include="Bakcjoon_Hash_Silver3_17.h" />
