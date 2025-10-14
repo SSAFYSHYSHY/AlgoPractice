@@ -2081,6 +2081,9 @@
     <ClInclude Include="Backjoon_Union_Silver1_4.h">
       <Filter>헤더 파일\Backjoon_Union</Filter>
     </ClInclude>
+    <ClInclude Include="Backjoon_Union_Gold5_2.h">
+      <Filter>헤더 파일\Backjoon_Union</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Backjoon_BFS_GuideLine.txt">
