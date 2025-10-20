@@ -1,14 +1,15 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 
 using namespace std;
 
 int dx[2];
 int n, tar;
-bool visited[2001] = {false,};
+bool visited[2001] = { false, };
 
 void BFS(int num) {
-	queue<pair<int,int>> q;
+	queue<pair<int, int>> q;
 	q.push({ num,0 });
 	visited[num + 1000] = true;
 
