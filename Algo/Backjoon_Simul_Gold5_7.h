@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <vector>
 
@@ -12,7 +13,7 @@ long double Calc(int i, int j) {
 	long double c = v[i].first, d = v[i].second;
 	long double e = v[j].first, f = v[j].second;
 
-	return (a * d + c * f + e * b - c * b - e * d - a * f)/ 2;
+	return (a * d + c * f + e * b - c * b - e * d - a * f) / 2;
 }
 
 int main() {
