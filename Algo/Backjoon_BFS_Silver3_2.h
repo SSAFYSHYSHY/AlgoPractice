@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <algorithm>
 #include <vector>
@@ -47,7 +48,7 @@ int main() {
 			v[b].push_back(a);
 		}
 
-		//BFS 체크.
+		//BFS üũ.
 		int cnt = 0;
 		for (int i = 0; i < n; i++) {
 			if (!visited[i]) {
@@ -62,7 +63,7 @@ int main() {
 		else {
 			cout << "Connected.\n";
 		}
-		
+
 		for (int i = 0; i < n; i++) {
 			v[i].clear();
 		}
