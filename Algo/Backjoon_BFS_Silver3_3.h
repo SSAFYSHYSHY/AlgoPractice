@@ -1,11 +1,12 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <vector>
 #include <algorithm>
 
 using namespace std;
 
-bool visited[100001] = {false,};
+bool visited[100001] = { false, };
 vector<int> v[1000001];
 
 int n;
@@ -53,5 +54,5 @@ int main() {
 	int start, endi;
 	cin >> start >> endi;
 
-	cout <<start << " " << endi << " " << BFS(start, endi) - 1;
+	cout << start << " " << endi << " " << BFS(start, endi) - 1;
 }
