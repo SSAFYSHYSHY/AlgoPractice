@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <string>
 #include <vector>
@@ -6,7 +7,7 @@
 using namespace std;
 
 string findSmallestMultiple(int n) {
-    vector<bool> visited(n, false); // ë‚˜ë¨¸ì§€ ë°©ë¬¸ ì—¬ë¶€
+    vector<bool> visited(n, false); // ³ª¸ÓÁö ¹æ¹® ¿©ºÎ
     queue<pair<int, string>> q;
     q.push({ 1 % n, "1" });
     visited[1 % n] = true;
@@ -15,16 +16,16 @@ string findSmallestMultiple(int n) {
         auto [rem, num] = q.front();
         q.pop();
 
-        if (rem == 0) return num; // ë‚˜ëˆ„ì–´ë–¨ì–´ì§ â†’ ì •ë‹µ
+        if (rem == 0) return num; // ³ª´©¾î¶³¾îÁü ¡æ Á¤´ä
 
-        // 0ì„ ë¶™ì¸ ê²½ìš°
+        // 0À» ºÙÀÎ °æ¿ì
         int next0 = (rem * 10) % n;
         if (!visited[next0]) {
             visited[next0] = true;
             q.push({ next0, num + "0" });
         }
 
-        // 1ì„ ë¶™ì¸ ê²½ìš°
+        // 1À» ºÙÀÎ °æ¿ì
         int next1 = (rem * 10 + 1) % n;
         if (!visited[next1]) {
             visited[next1] = true;
