@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <string>
 #include <vector>
@@ -20,13 +21,13 @@ int main() {
     vector<vector<char>> vis(R, vector<char>(C, 0));
     int islands = 0;
 
-    // 8ë°©í–¥(ìƒ, í•˜, ì¢Œ, ìš°, ëŒ€ê°ì„  4ê°œ)
+    // 8¹æÇâ(»ó, ÇÏ, ÁÂ, ¿ì, ´ë°¢¼± 4°³)
     int dx[8] = { -1,-1,-1,0,0,1,1,1 };
     int dy[8] = { -1,0,1,-1,1,-1,0,1 };
 
     for (int i = 0; i < R; ++i) {
         for (int j = 0; j < C; ++j) {
-            // ê³ ë„ > 0 ì´ê³  ì•„ì§ ë°©ë¬¸í•˜ì§€ ì•Šì•˜ë‹¤ë©´ ìƒˆë¡œìš´ ì„¬ ë°œê²¬
+            // °íµµ > 0 ÀÌ°í ¾ÆÁ÷ ¹æ¹®ÇÏÁö ¾Ê¾Ò´Ù¸é »õ·Î¿î ¼¶ ¹ß°ß
             if (a[i][j] > 0 && !vis[i][j]) {
                 ++islands;
                 queue<pair<int, int>> q;
