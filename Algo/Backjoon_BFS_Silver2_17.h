@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <vector>
 #include <algorithm>
@@ -6,7 +7,7 @@ using namespace std;
 
 vector<int> v[5001];
 bool visited[5001];
-int parent[5001];  // ê²½ë¡œ ì¶”ì ìš©
+int parent[5001];  // °æ·Î ÃßÀû¿ë
 
 int p, ns, t;
 
@@ -14,26 +15,26 @@ void BFS() {
     queue<int> q;
     q.push(1);
     visited[1] = true;
-    parent[1] = -1; // ì‹œì‘ì ì€ ë¶€ëª¨ ì—†ìŒ
+    parent[1] = -1; // ½ÃÀÛÁ¡Àº ºÎ¸ğ ¾øÀ½
 
     while (!q.empty()) {
         int curr = q.front();
         q.pop();
 
-        if (curr == t) break; // ëª©ì ì§€ ë„ë‹¬ ì‹œ ì¤‘ë‹¨
+        if (curr == t) break; // ¸ñÀûÁö µµ´Ş ½Ã Áß´Ü
 
         for (int next : v[curr]) {
             if (!visited[next]) {
                 visited[next] = true;
-                parent[next] = curr; // curr â†’ next
+                parent[next] = curr; // curr ¡æ next
                 q.push(next);
             }
         }
     }
 
-    // ê²½ë¡œ ë³µì›
+    // °æ·Î º¹¿ø
     if (!visited[t]) {
-        cout << -1 << "\n"; // ë„ë‹¬ ë¶ˆê°€ëŠ¥
+        cout << -1 << "\n"; // µµ´Ş ºÒ°¡´É
         return;
     }
 
@@ -61,7 +62,7 @@ int main() {
         v[a].push_back(b);
         v[a].push_back(c);
 
-        // ì–‘ë°©í–¥ ê·¸ë˜í”„ (ë¬¸ì œì—ì„œ "split" êµ¬ì¡°ì§€ë§Œ, ê²½ë¡œ íƒìƒ‰ì€ ì–‘ë°©í–¥ì´ í•„ìš”)
+        // ¾ç¹æÇâ ±×·¡ÇÁ (¹®Á¦¿¡¼­ "split" ±¸Á¶Áö¸¸, °æ·Î Å½»öÀº ¾ç¹æÇâÀÌ ÇÊ¿ä)
         v[b].push_back(a);
         v[c].push_back(a);
     }
