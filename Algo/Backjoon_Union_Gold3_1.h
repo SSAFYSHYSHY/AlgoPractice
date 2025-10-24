@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <algorithm>
 #include <string>
