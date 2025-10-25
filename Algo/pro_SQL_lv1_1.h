@@ -1,3 +1,4 @@
-ï»¿//ê°œìˆ˜ íŒë³„
+#pragma once
+//°³¼ö ÆÇº°
 SELECT COUNT(*) as count
 FROM ANIMAL_INS
