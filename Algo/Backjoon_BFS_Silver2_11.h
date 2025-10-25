@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <cstring>
 #include <queue>
@@ -7,13 +8,13 @@
 using namespace std;
 
 int n, m;
-bool visited[100001] = {false,};
+bool visited[100001] = { false, };
 vector<int> v[100001];
 int path[100001];
 
 void BFS() {
-	queue<pair<int,int>> q;
-	q.push({ 1, 1});
+	queue<pair<int, int>> q;
+	q.push({ 1, 1 });
 	visited[1] = true;
 	path[1] = 1;
 
