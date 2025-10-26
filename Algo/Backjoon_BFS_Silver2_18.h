@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <vector>
 #include <algorithm>
@@ -8,7 +9,7 @@ using namespace std;
 
 int n;
 vector<int> v[100001];
-bool visited[100001] = {false,};
+bool visited[100001] = { false, };
 
 int BFS(int start, int endi) {
 	visited[start] = true;
@@ -49,7 +50,7 @@ int main() {
 
 	while (1) {
 		memset(visited, false, sizeof(visited));
-		
+
 		int a, b;
 		cin >> a >> b;
 
