@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <string>
 #include <cstring>
@@ -38,7 +39,7 @@ int main() {
 		}
 
 		for (int i = 0; i < n; i++) {
-			for (int j : {0, n-1}) {
+			for (int j : {0, n - 1}) {
 				if (arr[i][j] == '.' && !visited[i][j]) {
 					visited[i][j] = true;
 					q.push({ i,j });
@@ -69,7 +70,7 @@ int main() {
 					visited[nx][ny] = true;
 					q.push({ nx,ny });
 				}
-			} 
+			}
 		}
 
 		int area = 0;
