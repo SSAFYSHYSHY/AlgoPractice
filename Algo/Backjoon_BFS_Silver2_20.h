@@ -1,4 +1,6 @@
-﻿#include <iostream>
+#pragma once
+
+#include <iostream>
 #include <algorithm>
 #include <queue>
 #include <cstring>
@@ -65,7 +67,7 @@ int main() {
 			}
 		}
 
-		cout << "Case #" << t << ": " << ans <<"\n";
+		cout << "Case #" << t << ": " << ans << "\n";
 		t++;
 
 	}
