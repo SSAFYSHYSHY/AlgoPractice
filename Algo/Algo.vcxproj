@@ -809,6 +809,7 @@
     <ClInclude Include="pro_lv2_BFS_8.h" />
     <ClInclude Include="pro_SQL_lv1_1.h" />
     <ClInclude Include="pro_SQL_lv1_2.h" />
+    <ClInclude Include="pro_SQL_lv1_3.h" />
     <ClInclude Include="pro_SQL_lv2_1.h" />
     <ClInclude Include="pro_test_BFS1.h" />
     <ClInclude Include="pro_test_Parametic.h" />
