@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <algorithm>
 #include <vector>
@@ -7,8 +8,8 @@
 
 using namespace std;
 
-int dx[] = {-1,-1,-1,0,0,1,1,1};
-int dy[] = {-1,0,1,-1,1,-1,0,1};
+int dx[] = { -1,-1,-1,0,0,1,1,1 };
+int dy[] = { -1,0,1,-1,1,-1,0,1 };
 
 int t;
 int n;
