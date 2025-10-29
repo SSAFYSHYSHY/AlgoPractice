@@ -214,6 +214,7 @@
     <ClInclude Include="Backjoon_BFS_Silver2_21.h" />
     <ClInclude Include="Backjoon_BFS_Silver2_22.h" />
     <ClInclude Include="Backjoon_BFS_Silver2_23.h" />
+    <ClInclude Include="Backjoon_BFS_Silver2_24.h" />
     <ClInclude Include="Backjoon_BFS_Silver2_3.h" />
     <ClInclude Include="Backjoon_BFS_Silver2_4.h" />
     <ClInclude Include="Backjoon_BFS_Silver2_5.h" />

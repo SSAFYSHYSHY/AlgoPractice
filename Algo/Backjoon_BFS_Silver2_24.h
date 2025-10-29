@@ -1,15 +1,16 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <algorithm>
 
 using namespace std;
 
 int n, m;
-bool visited[200001] = {false,};
+bool visited[200001] = { false, };
 vector<int> v[200001];
 
 int BFS() {
-	queue<pair<int,int>> q;
+	queue<pair<int, int>> q;
 	q.push({ 1,0 });
 	visited[1] = true;
 
