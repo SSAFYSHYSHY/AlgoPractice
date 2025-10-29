@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <string>
 #include <cstring>
 #include <queue>
@@ -34,7 +35,7 @@ int BFS() {
 			int ny = cy + dy[i];
 
 			if (arr[nx][ny] == '#') continue;
-			if (InRange(nx,ny) && !visited[nx][ny] && arr[nx][ny] == '.') {
+			if (InRange(nx, ny) && !visited[nx][ny] && arr[nx][ny] == '.') {
 				q.push({ nx,ny });
 				visited[nx][ny] = true;
 				cnt++;
@@ -49,7 +50,7 @@ int main() {
 	while (1) {
 		memset(visited, false, sizeof(visited));
 		memset(arr, '.', sizeof(arr));
-		
+
 		cin >> m >> n;
 
 		if (n == 0 && m == 0) break;
@@ -60,7 +61,7 @@ int main() {
 
 			for (int j = 0; j < s.length(); j++) {
 				arr[i][j] = s[j];
-				
+
 				if (arr[i][j] == 'A') {
 					s_x = i;
 					s_y = j;
