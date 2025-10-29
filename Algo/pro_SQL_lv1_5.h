@@ -1,0 +1,5 @@
+#pragma once
+//오름 차순 내림 차순이면 DESC
+SELECT ANIMAL_ID, NAME
+FROM ANIMAL_INS
+ORDER BY ANIMAL_ID ASC, NAME
