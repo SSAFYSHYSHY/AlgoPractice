@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <string>
 #include <queue>
 #include <algorithm>
@@ -20,7 +21,7 @@ int BFS(int start, vector<vector<int>>& v) {
         int dist = q.front().second;
         q.pop();
 
-        if (dist == 2) continue; // 2ë‹¨ê³„ê¹Œì§€ë§Œ í—ˆìš©
+        if (dist == 2) continue; // 2´Ü°è±îÁö¸¸ Çã¿ë
 
         for (int next : v[curr]) {
             if (!visited[next]) {
