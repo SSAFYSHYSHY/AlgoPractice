@@ -1,4 +1,4 @@
-ï»¿//ê°€ìž¥ ìš°ì„ ì ìœ¼ë¡œ ë“¤ì–´ì˜¨ ë°ì´í„°ë¥¼ ë½‘ì•„ë‚¸ë‹¤.
+//°¡Àå ¿ì¼±ÀûÀ¸·Î µé¾î¿Â µ¥ÀÌÅÍ¸¦ »Ì¾Æ³½´Ù.
 SELECT NAME
 FROM ANIMAL_INS
 WHERE DATETIME = (
