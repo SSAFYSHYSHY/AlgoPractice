@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <unordered_set>
 #include <queue>
 #include <string>
@@ -37,10 +38,10 @@ int main() {
     vector<string> all_words;
     unordered_set<string> unique_words;
 
-    // ëª¨ë“  ì‹œì‘ ì§€ì ì—ì„œ BFS ì‹œì‘
+    // ¸ğµç ½ÃÀÛ ÁöÁ¡¿¡¼­ BFS ½ÃÀÛ
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++) {
-            if (Forbidden(arr[i][j])) continue; // ê¸ˆì§€ ì•ŒíŒŒë²³ì€ ì‹œì‘ ë¶ˆê°€
+            if (Forbidden(arr[i][j])) continue; // ±İÁö ¾ËÆÄºªÀº ½ÃÀÛ ºÒ°¡
 
             queue<pair<pair<int, int>, string>> q;
             q.push({ {i, j}, string(1, arr[i][j]) });
@@ -56,10 +57,10 @@ int main() {
                 if ((int)path.size() == l) {
                     all_words.push_back(path);
                     unique_words.insert(path);
-                    continue; // ë” í™•ì¥ ë¶ˆê°€
+                    continue; // ´õ È®Àå ºÒ°¡
                 }
 
-                // ìƒí•˜ì¢Œìš° ì´ë™
+                // »óÇÏÁÂ¿ì ÀÌµ¿
                 for (int dir = 0; dir < 4; dir++) {
                     int nx = x + dx[dir];
                     int ny = y + dy[dir];
