@@ -1,0 +1,6 @@
+#pragma once
+//이름이 공백이 아니고 우선 순위 정렬 sql 명령어
+SELECT ANIMAL_ID
+FROM ANIMAL_INS
+WHERE NAME IS NOT NULL
+ORDER BY ANIMAL_ID ASC
