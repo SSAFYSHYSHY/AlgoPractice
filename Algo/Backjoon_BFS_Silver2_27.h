@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <queue>
 #include <cstring>
@@ -7,12 +8,12 @@
 using namespace std;
 
 int t;
-bool visited[100001] = {false,};
+bool visited[100001] = { false, };
 vector<int> v[100001];
 
 int BFS(int starti) {
 	memset(visited, false, sizeof(visited));
-	
+
 	queue<int> q;
 	int cnt = 1;
 	q.push(starti);
@@ -41,7 +42,7 @@ int main() {
 
 	for (int tc = 1; tc <= t; tc++) {
 		memset(visited, false, sizeof(visited));
-		
+
 		int n;
 		cin >> n;
 
