@@ -1,11 +1,12 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <algorithm>
 #include <string>
 
 using namespace std;
 
-int n, m, ans =0;
+int n, m, ans = 0;
 char arr[101][101];
 bool visited[101][101] = { false, };
 
