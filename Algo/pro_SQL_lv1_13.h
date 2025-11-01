@@ -1,4 +1,5 @@
-Ôªø//ÏÉÅÏÑ∏ Ï°∞Í±¥ Ï≤¥ÌÅ¨ WHERE
+#pragma once
+//ªÛºº ¡∂∞« √º≈© WHERE
 SELECT ANIMAL_ID, NAME
 FROM ANIMAL_INS
 WHERE INTAKE_CONDITION = 'Sick'
