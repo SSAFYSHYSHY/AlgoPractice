@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 #include <queue>
 #include <algorithm>
@@ -6,7 +7,7 @@
 
 using namespace std;
 
-bool visited[10001] = {false,};
+bool visited[10001] = { false, };
 bool isEnd[10001];
 vector<int> v[10001];
 int n;
