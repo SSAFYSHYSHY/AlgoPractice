@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <string>
 #include <vector>
 #include <unordered_map>
@@ -23,7 +24,7 @@ int BFS(int starti, int node_count) {
         q.pop();
 
         for (int next : adj[cur]) {
-            if (next == starti) return dist + 1; // ëŒì•„ì˜´
+            if (next == starti) return dist + 1; // µ¹¾Æ¿È
             if (!visited[next]) {
                 visited[next] = true;
                 q.push({ next, dist + 1 });
