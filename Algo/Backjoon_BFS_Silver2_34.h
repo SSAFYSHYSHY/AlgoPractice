@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <cstring>
 #include <string>
@@ -12,7 +13,7 @@ bool visited[1001][1001] = { false, };
 int dx[] = { -1,1,0,0 };
 int dy[] = { 0,0,-1,1 };
 int ans = 0;
-int n, m, sx,sy;
+int n, m, sx, sy;
 
 bool InRange(int x, int y) {
 	return 0 <= x && x < n && 0 <= y && y < m;
