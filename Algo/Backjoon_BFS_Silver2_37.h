@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <queue>
 #include <vector>
@@ -9,7 +10,7 @@ using namespace std;
 
 int n, m;
 int dx[21];
-bool visited[2000001]; // ì¶©ë¶„íˆ í¬ê²Œ (ìµœëŒ€ 1000 * 10 = 10000 ì´ìƒ ê°€ëŠ¥)
+bool visited[2000001]; // ÃæºĞÈ÷ Å©°Ô (ÃÖ´ë 1000 * 10 = 10000 ÀÌ»ó °¡´É)
 
 int main() {
     ios::sync_with_stdio(false);
@@ -22,7 +23,7 @@ int main() {
     const int MAX = dx[n - 1] * m;
     memset(visited, false, sizeof(visited));
 
-    queue<pair<int, int>> q; // (í˜„ì¬ ê¸ˆì•¡, ì‚¬ìš©í•œ ìš°í‘œ ìˆ˜)
+    queue<pair<int, int>> q; // (ÇöÀç ±İ¾×, »ç¿ëÇÑ ¿ìÇ¥ ¼ö)
     q.push({ 0, 0 });
     visited[0] = true;
 
