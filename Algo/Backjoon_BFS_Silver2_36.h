@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <algorithm>
 
@@ -7,7 +8,7 @@ using namespace std;
 int n, m, k;
 
 int arr[101][101];
-bool visited[101][101] = {false,};
+bool visited[101][101] = { false, };
 
 int dx[] = { -1,1,0,0 };
 int dy[] = { 0,0,-1,1 };
