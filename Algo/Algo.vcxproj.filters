@@ -2306,6 +2306,9 @@
     <ClInclude Include="pro_SQL_lv1_24.h">
       <Filter>헤더 파일\pro_SQL</Filter>
     </ClInclude>
+    <ClInclude Include="pro_SQL_lv1_25.h">
+      <Filter>헤더 파일\pro_SQL</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Backjoon_BFS_GuideLine.txt">
