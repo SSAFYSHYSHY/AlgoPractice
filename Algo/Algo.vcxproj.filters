@@ -1112,9 +1112,6 @@
     <ClInclude Include="Backjoon_Simul_Bronze5_17.h">
       <Filter>헤더 파일\Backjoon_Simul</Filter>
     </ClInclude>
-    <ClInclude Include="Wakeup_lottery.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Backjoon_Simul_Bronze4_5.h">
       <Filter>헤더 파일\Backjoon_Simul</Filter>
     </ClInclude>
@@ -2296,6 +2293,9 @@
     </ClInclude>
     <ClInclude Include="pro_SQL_lv1_22.h">
       <Filter>헤더 파일\pro_SQL</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_BFS_Silver1_3.h">
+      <Filter>헤더 파일\Backjoon_BFS</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

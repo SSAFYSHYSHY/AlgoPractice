@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <algorithm>
 #include <cstring>
@@ -8,8 +9,8 @@ using namespace std;
 int dx[] = { -1,-1,0,0,1,1 };
 int dy[] = { 0,1,-1,1,0,1 };
 
-int dx2[] = {-1,-1,0,0,1,1};
-int dy2[] = {-1,0,-1,1,-1,0};
+int dx2[] = { -1,-1,0,0,1,1 };
+int dy2[] = { -1,0,-1,1,-1,0 };
 
 int n, m, k;
 int arr[1001][1001];
