@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 #include <queue>
 #include <cstring>
@@ -13,7 +14,7 @@ int dist[100001];
 int BFS() {
     queue<int> q;
     q.push(1);
-    dist[1] = 1; 
+    dist[1] = 1;
 
     while (!q.empty()) {
         int cur = q.front();
@@ -52,5 +53,5 @@ int main() {
     fill(dist, dist + n + 1, INF);
 
     int ans = BFS();
-    cout << (ans == INF ? -1 : ans) << "\n"; 
+    cout << (ans == INF ? -1 : ans) << "\n";
 }

@@ -131,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Backjoon_BFS_Silver1_3.h" />
+    <ClInclude Include="Backjoon_BFS_Silver1_4.h" />
     <ClInclude Include="Backjoon_BFS_Silver2_20.h" />
     <ClInclude Include="Backjoon_01BFS_Gold3_1_NotSolved.h" />
     <ClInclude Include="Backjoon_01BFS_Gold4_3.h" />
