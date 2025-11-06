@@ -856,6 +856,7 @@
     <ClInclude Include="pro_SQL_lv1_33.h" />
     <ClInclude Include="pro_SQL_lv1_34.h" />
     <ClInclude Include="pro_SQL_lv1_35.h" />
+    <ClInclude Include="pro_SQL_lv1_36.h" />
     <ClInclude Include="pro_SQL_lv1_4.h" />
     <ClInclude Include="pro_SQL_lv1_5.h" />
     <ClInclude Include="pro_SQL_lv1_6.h" />
