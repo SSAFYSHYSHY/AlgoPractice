@@ -1,4 +1,5 @@
 #pragma once
+//특정 조건을 만족시키는가.
 SELECT COUNT(*) AS COUNT
 FROM ECOLI_DATA
 WHERE 1 = 1
