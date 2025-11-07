@@ -88,6 +88,9 @@
     <Filter Include="헤더 파일\Backjoon_01BFS">
       <UniqueIdentifier>{b6b8756b-5506-486e-83cc-894a82a8b391}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\Backjoon_LinkedList">
+      <UniqueIdentifier>{aae32a5d-3ce9-4395-8a37-cb89c8b1a0df}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -2347,6 +2350,9 @@
     </ClInclude>
     <ClInclude Include="Backjoon_Simul_Silver4_7.h">
       <Filter>헤더 파일\Backjoon_Simul</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Linked_Silver2_1.h">
+      <Filter>헤더 파일\Backjoon_LinkedList</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
