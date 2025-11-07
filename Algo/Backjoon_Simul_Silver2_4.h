@@ -1,11 +1,12 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <string>
 #include <algorithm>
 #include <vector>
 
 using namespace std;
 
-int n, m, sx,sy;
+int n, m, sx, sy;
 char arr[11][11];
 bool visited[11][11] = { false, };
 vector<int> v;
@@ -13,7 +14,7 @@ vector<int> v;
 int dx[] = { 1,-1,0,0 };
 int dy[] = { 0,0,-1,1 };
 
-string dir[] = {"dolje", "gore", "lijevo", "desno"};
+string dir[] = { "dolje", "gore", "lijevo", "desno" };
 
 bool InRange(int x, int y) {
 	return 0 <= x && x < n && 0 <= y && y < m;

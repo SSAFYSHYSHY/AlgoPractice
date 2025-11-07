@@ -546,6 +546,7 @@
     <ClInclude Include="Backjoon_Prefix_Silver5_6.h" />
     <ClInclude Include="Backjoon_BFS_Silver3_1.h" />
     <ClInclude Include="Backjoon_Simul_Gold5_7.h" />
+    <ClInclude Include="Backjoon_Simul_Silver2_4.h" />
     <ClInclude Include="Backjoon_Simul_Silver4_5.h" />
     <ClInclude Include="Backjoon_Simul_Silver4_7.h" />
     <ClInclude Include="Backjoon_Stack_Gold5_2.h" />
