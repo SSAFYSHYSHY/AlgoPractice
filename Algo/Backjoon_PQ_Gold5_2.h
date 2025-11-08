@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <algorithm>
 
@@ -20,7 +21,7 @@ int main() {
 
 		while (sum >= m) {
 			ans++;
-			sum -= (pq.top()*2);
+			sum -= (pq.top() * 2);
 			pq.pop();
 		}
 	}
