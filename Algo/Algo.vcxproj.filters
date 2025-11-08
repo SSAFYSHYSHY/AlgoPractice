@@ -91,6 +91,9 @@
     <Filter Include="헤더 파일\Backjoon_LinkedList">
       <UniqueIdentifier>{aae32a5d-3ce9-4395-8a37-cb89c8b1a0df}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\Backjoon_Prioirty_queue">
+      <UniqueIdentifier>{4e9353b6-a2b4-4017-8f91-0344d1dec6f0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -2356,6 +2359,9 @@
     </ClInclude>
     <ClInclude Include="Backjoon_Simul_Silver2_4.h">
       <Filter>헤더 파일\Backjoon_Simul</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_PQ_Gold5_1.h">
+      <Filter>헤더 파일\Backjoon_Prioirty_queue</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
