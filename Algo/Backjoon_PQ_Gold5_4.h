@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 #include <queue>
 #include <algorithm>
@@ -12,7 +13,7 @@ int main() {
 	int N, M;
 	cin >> N >> M;
 
-	priority_queue<pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>>> pq;
+	priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
 
 	for (int i = 0; i < N; i++) {
 		int num;
@@ -25,7 +26,7 @@ int main() {
 		cin >> v[i];
 	}
 
-	vector<pair<int,int>> v2(M + 1);
+	vector<pair<int, int>> v2(M + 1);
 	queue<int>q;
 	int ans = 0, num;
 
