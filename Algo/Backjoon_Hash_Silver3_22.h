@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <map>
 #include <algorithm>
 
@@ -11,7 +12,7 @@ int main() {
 	int X, T, C;
 	map<int, long long>::iterator it;
 	long long answer = 0;
-	
+
 	cin >> N;
 	for (int i = 0; i < N; i++) {
 		cin >> X >> T >> C;
