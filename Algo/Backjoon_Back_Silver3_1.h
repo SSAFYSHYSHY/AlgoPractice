@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 #include <algorithm>
 using namespace std;
@@ -22,9 +23,9 @@ int main() {
             cin >> w[i] >> c[i] >> f[i];
         }
 
-        int ans = 1e9;   // ë§¤ìš° í° ê°’ìœ¼ë¡œ ì‹œì‘
+        int ans = 1e9;   // ¸Å¿ì Å« °ªÀ¸·Î ½ÃÀÛ
 
-        // ë¶€ë¶„ì§‘í•© ì™„ì „íƒìƒ‰: 0 ~ (1<<N)-1
+        // ºÎºĞÁıÇÕ ¿ÏÀüÅ½»ö: 0 ~ (1<<N)-1
         for (int mask = 0; mask < (1 << N); mask++) {
             int sumW = 0, sumC = 0, sumF = 0;
             int cnt = 0;
