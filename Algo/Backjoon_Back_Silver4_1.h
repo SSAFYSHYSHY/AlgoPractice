@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 
 using namespace std;
@@ -15,10 +16,10 @@ void backtrack(int idx, long long sum) {
         return;
     }
 
-    //í˜„ì¬ íŒ©ì„ ì„ íƒí•˜ëŠ” ê²½ìš°
+    //ÇöÀç ÆÑÀ» ¼±ÅÃÇÏ´Â °æ¿ì
     backtrack(idx + 1, sum + a[idx]);
 
-    //í˜„ì¬ íŒ©ì„ ì„ íƒí•˜ì§€ ì•ŠëŠ” ê²½ìš°
+    //ÇöÀç ÆÑÀ» ¼±ÅÃÇÏÁö ¾Ê´Â °æ¿ì
     backtrack(idx + 1, sum);
 }
 
