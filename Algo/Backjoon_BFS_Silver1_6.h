@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 #include <queue>
 #include <cstring>
@@ -6,9 +7,9 @@
 using namespace std;
 
 int K, N, M;
-vector<int> adj[1001];       
-bool reachable[1001][101];   
-int cow[101];               
+vector<int> adj[1001];
+bool reachable[1001][101];
+int cow[101];
 
 void bfs(int cow_idx) {
     int start = cow[cow_idx];
