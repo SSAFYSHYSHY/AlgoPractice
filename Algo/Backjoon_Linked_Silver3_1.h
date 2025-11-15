@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 #include <algorithm>
 
@@ -6,7 +7,7 @@ using namespace std;
 
 struct Node {
 	int data;
-	struct Node *prev, *next;
+	struct Node* prev, * next;
 };
 
 int main() {
@@ -23,5 +24,5 @@ int main() {
 		else nodes[i].next = NULL;
 	}
 
-	for(int i = 0; i < k ; i++) {}
+	for (int i = 0; i < k; i++) {}
 }
