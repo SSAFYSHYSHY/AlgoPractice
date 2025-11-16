@@ -2414,6 +2414,9 @@
     <ClInclude Include="Backjoon_BFS_Silver1_8.h">
       <Filter>헤더 파일\Backjoon_BFS</Filter>
     </ClInclude>
+    <ClInclude Include="Backjoon_Linked_Silver3_2.h">
+      <Filter>헤더 파일\Backjoon_LinkedList</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Backjoon_BFS_GuideLine.txt">

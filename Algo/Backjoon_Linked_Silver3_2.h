@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <string>
 #include <vector>
@@ -17,7 +18,7 @@ struct Node {
 int len;
 
 int main() {
-	
+
 	int cnt = 1;
 	while (1) {
 		cin >> len;
@@ -53,7 +54,7 @@ int main() {
 				mp[idx] = node;
 				used += size;
 
-				//넘어가는 책.
+				//�Ѿ�� å.
 				while (used > len) {
 					Node* last = tail->prev;
 					if (last == head) break;
@@ -83,7 +84,7 @@ int main() {
 					delete curr;
 				}
 			}
-		} 
+		}
 
 		cout << "PROBLEM " << cnt++ << ":";
 		Node* curr = head->next;
