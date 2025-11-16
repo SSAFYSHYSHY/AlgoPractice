@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <queue>
 #include <cstring>
@@ -11,8 +12,8 @@ bool visited[9][9] = { false, };
 string a, b;
 int sx, sy, ex, ey;
 
-int dx[] = {-1,-2,-2,-1,1,2,2,1};
-int dy[] = {-2,-1,1,2,2,1,-1,-2};
+int dx[] = { -1,-2,-2,-1,1,2,2,1 };
+int dy[] = { -2,-1,1,2,2,1,-1,-2 };
 
 bool InRange(int x, int y) {
 	return 1 <= x && x <= 8 && 1 <= y && y <= 8;
@@ -57,14 +58,14 @@ int main() {
 	while (cin >> a >> b) {
 		memset(visited, false, sizeof(visited));
 
-		int sx = (a[0] - 'a')+ 1;
+		int sx = (a[0] - 'a') + 1;
 		int sy = a[1] - '0';
 
 		int ex = (b[0] - 'a') + 1;
 		int ey = b[1] - '0';
 
 		int ans = -1;
-		ans = BFS(sx,sy,ex,ey);
+		ans = BFS(sx, sy, ex, ey);
 
 		cout << "To get from " << a << " to " << b << " takes " << ans << " knight moves.\n";
 
