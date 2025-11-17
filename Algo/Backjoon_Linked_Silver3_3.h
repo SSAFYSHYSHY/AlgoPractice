@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <cstring>
 #include <vector>
@@ -29,11 +30,11 @@ int main() {
 			v[i] = new Node(i);
 		}
 
-		//ì–‘ì˜† ì—°ê²°
+		//¾ç¿· ¿¬°á
 		for (int i = 1; i <= s; i++) {
 			v[i]->prev = v[i - 1];
 			v[i]->next = v[i + 1];
- 		}
+		}
 
 		int l, r;
 		while (b--) {
