@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <algorithm>
 #include <string>
@@ -48,7 +49,7 @@ int BFS(int x, int y, int num) {
 			}
 		}
 	}
- 
+
 	return ans;
 }
 
