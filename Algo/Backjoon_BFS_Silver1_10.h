@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <string>
 #include <cstring>
 #include <vector>
@@ -9,14 +10,14 @@ using namespace std;
 
 int n, m;
 int arr[51][51];
-bool visited[51][51] = {false,};
+bool visited[51][51] = { false, };
 
 int dx[] = { -1,1,0,0 };
 int dy[] = { 0,0,-1,1 };
 
 struct Node {
-	int size;   
-	vector<pair<int, int>> path; 
+	int size;
+	vector<pair<int, int>> path;
 };
 
 vector<Node> v;
