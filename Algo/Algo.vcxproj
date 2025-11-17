@@ -138,6 +138,7 @@
     <ClInclude Include="Backjoon_BFS_Silver1_6.h" />
     <ClInclude Include="Backjoon_BFS_Silver1_7.h" />
     <ClInclude Include="Backjoon_BFS_Silver1_8.h" />
+    <ClInclude Include="Backjoon_BFS_Silver1_9.h" />
     <ClInclude Include="Backjoon_BFS_Silver2_20.h" />
     <ClInclude Include="Backjoon_01BFS_Gold3_1_NotSolved.h" />
     <ClInclude Include="Backjoon_01BFS_Gold4_3.h" />

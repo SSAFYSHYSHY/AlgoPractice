@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <algorithm>
 #include <cstring>
@@ -6,7 +7,7 @@
 
 using namespace std;
 
-char dir[] = { 'N','S','W','E'};
+char dir[] = { 'N','S','W','E' };
 
 int dx[] = { -1,1,0,0 };
 int dy[] = { 0,0,-1,1 };
@@ -14,7 +15,7 @@ int dy[] = { 0,0,-1,1 };
 vector<pair<int, int>> v[122][122];
 bool visited[122][122] = { false, };
 
-int cx,cy , sx, sy, ex, ey;
+int cx, cy, sx, sy, ex, ey;
 int t;
 
 struct Node {
