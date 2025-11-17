@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <queue>
 #include <string>
@@ -11,8 +12,8 @@ int n, m;
 char arr[1001][1001];
 bool visited[1001][1001] = { false, };
 
-int dx[] = {1,1,-1,-1,2,2,-2,-2};
-int dy[] = {2,-2,2,-2,1,-1,1,-1};
+int dx[] = { 1,1,-1,-1,2,2,-2,-2 };
+int dy[] = { 2,-2,2,-2,1,-1,1,-1 };
 int sx, sy, ex, ey;
 
 struct Node {
@@ -34,7 +35,7 @@ int BFS(int sx, int sy, int ex, int ey) {
 		int ccnt = q.front().cnt;
 		q.pop();
 
-		if(cx == ex && cy == ey) {
+		if (cx == ex && cy == ey) {
 			return ccnt;
 		}
 
@@ -75,7 +76,7 @@ int main() {
 		}
 	}
 
-	int ans = BFS(sx,sy,ex,ey);
+	int ans = BFS(sx, sy, ex, ey);
 	if (ans == -1) {
 		cout << "NIE";
 	}
