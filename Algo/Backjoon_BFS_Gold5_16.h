@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <queue>
 #include <vector>
@@ -21,7 +22,7 @@ void BFS(int x, int y, int num) {
 	queue<pair<int, int>> q;
 	q.push({ x,y });
 	visited[x][y] = true;
-	
+
 	while (!q.empty()) {
 		int cx = q.front().first;
 		int cy = q.front().second;
