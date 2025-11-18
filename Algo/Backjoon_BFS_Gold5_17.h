@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <string>
 #include <cstring>
@@ -22,7 +23,7 @@ int main() {
 
         vector<vector<int>> arr(Y, vector<int>(X));
 
-        // ì´ˆê¸° ëª¨ë˜ ìƒíƒœ ì…ë ¥
+        // ÃÊ±â ¸ğ·¡ »óÅÂ ÀÔ·Â
         for (int i = 0; i < Y; i++) {
             string s;
             cin >> s;
@@ -31,7 +32,7 @@ int main() {
             }
         }
 
-        // në²ˆ ë‚™í•˜ ì²˜ë¦¬
+        // n¹ø ³«ÇÏ Ã³¸®
         while (N--) {
             int r, c;
             cin >> r >> c;
@@ -42,9 +43,9 @@ int main() {
             arr[r][c]++;
             if (arr[r][c] > H) q.push({ r,c });
 
-            // ì—°ì‡„ Toppling
+            // ¿¬¼â Toppling
             while (!q.empty()) {
-                int y = q.front().first; 
+                int y = q.front().first;
                 int x = q.front().second;
                 q.pop();
 
