@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 #include <unordered_set>
 #include <algorithm>
@@ -24,7 +25,7 @@ bool InRange(int nx) {
 
 int main() {
 	cin >> n >> m >> k;
-	
+
 	for (int i = 1; i <= n; i++) {
 		int num;
 		cin >> num;
@@ -75,7 +76,7 @@ int main() {
 			}
 			else if (op == '/') {
 				if (v == 0) continue;
-				
+
 				nx = cur.num / v;
 			}
 
