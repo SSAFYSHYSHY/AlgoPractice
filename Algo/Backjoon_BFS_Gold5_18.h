@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <queue>
 #include <string>
@@ -14,8 +15,8 @@ int ewx, ewy, ebx, eby;
 
 bool flag = false;
 
-int dx[] = {-1,-2,-2,-1,1,2,2,1};
-int dy[] = {-2,-1,1,2,2,1,-1,-2};
+int dx[] = { -1,-2,-2,-1,1,2,2,1 };
+int dy[] = { -2,-1,1,2,2,1,-1,-2 };
 
 struct Node {
 	int wx, wy, bx, by;
@@ -43,7 +44,7 @@ void BFS(int swx, int swy, int sbx, int sby, int ewx, int ewy, int ebx, int eby)
 		int cby = q.front().by;
 		q.pop();
 
-		if (cwx == ewx && cwy == ewy && cbx == ebx && cby == eby){
+		if (cwx == ewx && cwy == ewy && cbx == ebx && cby == eby) {
 			flag = true;
 			break;
 		}
@@ -55,7 +56,7 @@ void BFS(int swx, int swy, int sbx, int sby, int ewx, int ewy, int ebx, int eby)
 
 			if (!InRange(nwx, nwy)) continue;
 			if (nwx == cbx && nwy == cby) continue;
-			
+
 			if (!visited[nwx][nwy][cbx][cby]) {
 				visited[nwx][nwy][cbx][cby] = true;
 				parent_state[nwx][nwy][cbx][cby] = { cwx,cwy,cbx,cby, 'W' };
@@ -70,7 +71,7 @@ void BFS(int swx, int swy, int sbx, int sby, int ewx, int ewy, int ebx, int eby)
 
 			if (!InRange(nbx, nby)) continue;
 			if (nbx == cwx && nby == cwy) continue;
-			
+
 			if (!visited[cwx][cwy][nbx][nby]) {
 				visited[cwx][cwy][nbx][nby] = true;
 				parent_state[cwx][cwy][nbx][nby] = { cwx,cwy,cbx,cby,'B' };
