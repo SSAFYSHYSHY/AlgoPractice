@@ -1,12 +1,13 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <queue>
 #include <string>
-#include <cstring> // memsetì„ ì“°ë ¤ë©´ í•„ìš”í•¨
+#include <cstring> // memsetÀ» ¾²·Á¸é ÇÊ¿äÇÔ
 
 using namespace std;
 
-int n, m; // n: ë†’ì´(í–‰), m: ë„ˆë¹„(ì—´) -> ë¬¸ì œ ì…ë ¥ ìˆœì„œ ì£¼ì˜!
+int n, m; // n: ³ôÀÌ(Çà), m: ³Êºñ(¿­) -> ¹®Á¦ ÀÔ·Â ¼ø¼­ ÁÖÀÇ!
 char arr[51][51];
 bool visited[51][51];
 
@@ -14,7 +15,7 @@ int dx[] = { -1,1,0,0 };
 int dy[] = { 0,0,-1,1 };
 int sx, sy, ans = 0;
 
-// ë²”ìœ„ ì²´í¬ í•¨ìˆ˜
+// ¹üÀ§ Ã¼Å© ÇÔ¼ö
 bool InRange(int x, int y) {
     return 0 <= x && x < n && 0 <= y && y < m;
 }
@@ -29,11 +30,11 @@ void BFS() {
         int cy = q.front().second;
         q.pop();
 
-        // 1. í˜„ì¬ ìœ„ì¹˜ì— ê¸ˆì´ ìˆìœ¼ë©´ íšë“
+        // 1. ÇöÀç À§Ä¡¿¡ ±İÀÌ ÀÖÀ¸¸é È¹µæ
         if (arr[cx][cy] == 'G') ans++;
 
-        // [ìˆ˜ì •ëœ ë¶€ë¶„ 1] ì™¸í’(Draft) ê°ì§€ ë‹¨ê³„
-        // íì— ë„£ê¸° ì „ì—, ë‚´ ì£¼ë³€ì— Tê°€ í•˜ë‚˜ë¼ë„ ìˆëŠ”ì§€ 'ë¨¼ì €' í™•ì¸í•´ì•¼ í•¨
+        // [¼öÁ¤µÈ ºÎºĞ 1] ¿ÜÇ³(Draft) °¨Áö ´Ü°è
+        // Å¥¿¡ ³Ö±â Àü¿¡, ³» ÁÖº¯¿¡ T°¡ ÇÏ³ª¶óµµ ÀÖ´ÂÁö '¸ÕÀú' È®ÀÎÇØ¾ß ÇÔ
         bool is_drafty = false;
         for (int i = 0; i < 4; i++) {
             int nx = cx + dx[i];
@@ -41,17 +42,17 @@ void BFS() {
 
             if (InRange(nx, ny)) {
                 if (arr[nx][ny] == 'T') {
-                    is_drafty = true; // í•¨ì • ë°œê²¬!
-                    break; // ë” ë³¼ ê²ƒë„ ì—†ì´ ì™¸í’ í™•ì •
+                    is_drafty = true; // ÇÔÁ¤ ¹ß°ß!
+                    break; // ´õ º¼ °Íµµ ¾øÀÌ ¿ÜÇ³ È®Á¤
                 }
             }
         }
 
-        // [ìˆ˜ì •ëœ ë¶€ë¶„ 2] ì™¸í’ì´ ë¶ˆë©´ ì—¬ê¸°ì„œ ë©ˆì¶¤ (ì´ì›ƒ íƒìƒ‰ ì•ˆ í•¨)
+        // [¼öÁ¤µÈ ºÎºĞ 2] ¿ÜÇ³ÀÌ ºÒ¸é ¿©±â¼­ ¸ØÃã (ÀÌ¿ô Å½»ö ¾È ÇÔ)
         if (is_drafty) continue;
 
 
-        // [ìˆ˜ì •ëœ ë¶€ë¶„ 3] ì•ˆì „í•œ ê²½ìš°ì—ë§Œ ì´ë™(í™•ì¥)
+        // [¼öÁ¤µÈ ºÎºĞ 3] ¾ÈÀüÇÑ °æ¿ì¿¡¸¸ ÀÌµ¿(È®Àå)
         for (int i = 0; i < 4; i++) {
             int nx = cx + dx[i];
             int ny = cy + dy[i];
@@ -60,8 +61,8 @@ void BFS() {
             if (visited[nx][ny]) continue;
             if (arr[nx][ny] == '#') continue;
 
-            // ì´ë¯¸ ìœ„ì—ì„œ draft ì²´í¬ë¥¼ í†µê³¼í–ˆìœ¼ë¯€ë¡œ, 
-            // ì¸ì ‘í•œ ì¹¸ì€ Tê°€ ì•„ë‹˜ì´ ë³´ì¥ë¨. ì•ˆì‹¬í•˜ê³  ì´ë™.
+            // ÀÌ¹Ì À§¿¡¼­ draft Ã¼Å©¸¦ Åë°úÇßÀ¸¹Ç·Î, 
+            // ÀÎÁ¢ÇÑ Ä­Àº T°¡ ¾Æ´ÔÀÌ º¸ÀåµÊ. ¾È½ÉÇÏ°í ÀÌµ¿.
 
             visited[nx][ny] = true;
             q.push({ nx,ny });
@@ -70,19 +71,19 @@ void BFS() {
 }
 
 int main() {
-    // ë¹ ë¥¸ ì…ì¶œë ¥
+    // ºü¸¥ ÀÔÃâ·Â
     ios::sync_with_stdio(false);
     cin.tie(NULL);
 
-    // ì…ë ¥ ë°›ê¸°
-    cin >> m >> n; // ë¬¸ì œ ì¡°ê±´: W(ë„ˆë¹„,ì—´), H(ë†’ì´,í–‰) ìˆœì„œ ì…ë ¥
+    // ÀÔ·Â ¹Ş±â
+    cin >> m >> n; // ¹®Á¦ Á¶°Ç: W(³Êºñ,¿­), H(³ôÀÌ,Çà) ¼ø¼­ ÀÔ·Â
 
     memset(visited, false, sizeof(visited));
 
-    for (int i = 0; i < n; i++) { // í–‰(ë†’ì´) ë°˜ë³µ
+    for (int i = 0; i < n; i++) { // Çà(³ôÀÌ) ¹İº¹
         string s;
         cin >> s;
-        for (int j = 0; j < m; j++) { // ì—´(ë„ˆë¹„) ë°˜ë³µ
+        for (int j = 0; j < m; j++) { // ¿­(³Êºñ) ¹İº¹
             arr[i][j] = s[j];
             if (arr[i][j] == 'P') {
                 sx = i;
