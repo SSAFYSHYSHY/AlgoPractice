@@ -2450,6 +2450,9 @@
     <ClInclude Include="Backjoon_BFS_Gold4_12.h">
       <Filter>헤더 파일\Backjoon_BFS</Filter>
     </ClInclude>
+    <ClInclude Include="Backjoon_Hash_Gold4_1.h">
+      <Filter>헤더 파일\Backjoon_Hash</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Backjoon_BFS_GuideLine.txt">

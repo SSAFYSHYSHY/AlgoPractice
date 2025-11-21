@@ -399,6 +399,7 @@
     <ClInclude Include="Backjoon_Greedy_Silver4_2.h" />
     <ClInclude Include="Backjoon_Greedy_Silver5_1.h" />
     <ClInclude Include="Backjoon_Hash_Bronze1_1.h" />
+    <ClInclude Include="Backjoon_Hash_Gold4_1.h" />
     <ClInclude Include="Backjoon_Hash_Gold5_2.h" />
     <ClInclude Include="Backjoon_Hash_Gold5_1.h" />
     <ClInclude Include="Backjoon_Hash_Silver1_1.h" />

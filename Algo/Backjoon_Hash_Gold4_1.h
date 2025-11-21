@@ -1,4 +1,5 @@
-ï»¿#include <bits/stdc++.h>
+#pragma once
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
@@ -13,13 +14,13 @@ int main() {
     int result = 0;
     int size = s.length();
 
-    // ê° ë¬¸ìì— ëŒ€í•´ ìˆœì„œ(index) ë¶€ì—¬
+    // °¢ ¹®ÀÚ¿¡ ´ëÇØ ¼ø¼­(index) ºÎ¿©
     for (int i = 0; i < (int)s.length(); ++i) {
         int index = s[i] - '!';
         if (arr[index] == 0) arr[index] = i + 1;
     }
 
-    // í•´ì‹œ ê³„ì‚°
+    // ÇØ½Ã °è»ê
     for (int i = 0; i < (int)code.length(); ++i) {
         int index = code[i] - '!';
         result *= size;
