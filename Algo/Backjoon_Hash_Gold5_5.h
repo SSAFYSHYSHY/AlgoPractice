@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <vector>
 #include <string>
@@ -21,7 +22,7 @@ int main() {
     vector<string> dictionary;
     dictionary.reserve(N);
 
-    // ì‚¬ì „ ë‹¨ì–´ ì…ë ¥
+    // »çÀü ´Ü¾î ÀÔ·Â
     for (int i = 0; i < N; i++) {
         string word;
         cin >> word;
@@ -38,7 +39,7 @@ int main() {
         vector<string> words;
         string temp;
 
-        // ë¬¸ì¥ ë‹¨ì–´ ë¶„ë¦¬
+        // ¹®Àå ´Ü¾î ºĞ¸®
         for (char c : sentence) {
             if (c == ' ') {
                 words.push_back(normalize(temp));
@@ -51,7 +52,7 @@ int main() {
         if (!temp.empty())
             words.push_back(normalize(temp));
 
-        // ì‚¬ì „ì— ì¼ì¹˜í•˜ëŠ” ê°œìˆ˜ ê³±í•˜ê¸°
+        // »çÀü¿¡ ÀÏÄ¡ÇÏ´Â °³¼ö °öÇÏ±â
         long long result = 1;
         for (auto& w : words) {
             int cnt = 0;
