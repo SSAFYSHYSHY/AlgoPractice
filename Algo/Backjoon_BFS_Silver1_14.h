@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <string>
 #include <queue>
 
@@ -7,8 +8,8 @@ using namespace std;
 bool visited[9][9] = { false, };
 int sx, sy, ex, ey;
 
-int dx[] = {-1,-2,-2,-1,1,2,2,1};
-int dy[] = {-2,-1,1,2,2,1,-1,-2};
+int dx[] = { -1,-2,-2,-1,1,2,2,1 };
+int dy[] = { -2,-1,1,2,2,1,-1,-2 };
 
 struct Node {
 	int x, y, cnt;
@@ -38,7 +39,7 @@ int BFS(int sx, int sy, int ex, int ey) {
 			int ny = cy + dy[i];
 
 			if (InRange(nx, ny) && !visited[nx][ny]) {
-				q.push({ nx,ny, ccnt+1 });
+				q.push({ nx,ny, ccnt + 1 });
 				visited[nx][ny] = true;
 			}
 		}
