@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 #include <cstring>
 #include <algorithm>
@@ -30,7 +31,7 @@ void dfs(int cur, int par, int d, int dist) {
 int lca(int a, int b) {
     if (depth[a] < depth[b]) swap(a, b);
 
-    // 1) ê¹Šì´ë¥¼ ë§ì¶˜ë‹¤
+    // 1) ±íÀÌ¸¦ ¸ÂÃá´Ù
     int diff = depth[a] - depth[b];
     for (int i = 0; i < LOG; i++)
         if (diff & (1 << i))
@@ -38,7 +39,7 @@ int lca(int a, int b) {
 
     if (a == b) return a;
 
-    // 2) ê°™ì´ ìœ„ë¡œ ì˜¬ë¦°ë‹¤
+    // 2) °°ÀÌ À§·Î ¿Ã¸°´Ù
     for (int i = LOG - 1; i >= 0; i--) {
         if (parent[a][i] != parent[b][i]) {
             a = parent[a][i];
@@ -58,7 +59,7 @@ int main() {
         adj[y].push_back({ x,w });
     }
 
-    // íŠ¸ë¦¬ ë£¨íŠ¸ëŠ” 1ë¡œ ì¡ìŒ
+    // Æ®¸® ·çÆ®´Â 1·Î ÀâÀ½
     dfs(1, 0, 0, 0);
 
     // LCA parent DP
