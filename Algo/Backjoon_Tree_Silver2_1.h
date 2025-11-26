@@ -1,11 +1,12 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 #include <algorithm>
 
 using namespace std;
 
 vector<int> v[100001];
-bool visited[100001] = {false,};
+bool visited[100001] = { false, };
 int cost[100001];
 
 int n, k, ans = 0;
