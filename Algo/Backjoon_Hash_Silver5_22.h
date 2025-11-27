@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <string>
 #include <unordered_map>
 
@@ -26,7 +27,7 @@ int main() {
 
 	long long ans = 0;
 	for (auto& p : a) {
-		const string &result = p.first;
+		const string& result = p.first;
 		int a_cnt = p.second;
 		int b_cnt = b[result];
 
