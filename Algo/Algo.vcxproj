@@ -739,6 +739,7 @@
     <ClInclude Include="Backjoon_Union_Silver1_4.h" />
     <ClInclude Include="Backjoon_Union_Silver2_1.h" />
     <ClInclude Include="Backjoon_Union_Silver4_1.h" />
+    <ClInclude Include="Backjoon_DP_Silver5_4.h" />
     <ClInclude Include="Bakcjoon_Hash_Silver3_17.h" />
     <ClInclude Include="Bakcjoon_Simul_Silver4_1.h" />
     <ClInclude Include="N개에 대한 패러매틱 탐색 기법.h" />
