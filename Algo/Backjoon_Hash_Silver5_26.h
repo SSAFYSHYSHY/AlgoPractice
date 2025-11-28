@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <unordered_map>
 #include <unordered_set>
@@ -36,7 +37,7 @@ int main() {
 			map[s] = true;
 		}
 
-		if (cnt >= (n+1) / 2 && !flag) {
+		if (cnt >= (n + 1) / 2 && !flag) {
 			ans = i;
 			flag = true;
 		}
