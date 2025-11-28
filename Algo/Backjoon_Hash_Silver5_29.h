@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <unordered_set>
 #include <string>
 #include <algorithm>
@@ -9,8 +10,8 @@ int main() {
     int n;
     cin >> n;
 
-    vector<string> result;          
-    unordered_set<string> used;     
+    vector<string> result;
+    unordered_set<string> used;
 
     for (int i = 0; i < n; i++) {
         int m;
