@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Calc.cpp" />
+    <ClCompile Include="CalcEx.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -937,6 +938,7 @@
     <ClInclude Include="Silver_Hash_Silver5_6.h" />
     <ClInclude Include="Bakcjoon_BFS_Gold3_12.h" />
     <ClInclude Include="Test.h" />
+    <ClInclude Include="Test2.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Backjoon_BFS_GuideLine.txt" />
