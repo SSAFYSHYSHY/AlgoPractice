@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Calc.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -458,6 +459,7 @@
     <ClInclude Include="Backjoon_Hash_Silver4_27.h" />
     <ClInclude Include="Backjoon_Hash_Silver4_28.h" />
     <ClInclude Include="Backjoon_Hash_Silver4_29.h" />
+    <ClInclude Include="Backjoon_Hash_Silver4_30.h" />
     <ClInclude Include="Backjoon_Hash_Silver5_10.h" />
     <ClInclude Include="Backjoon_Hash_Silver5_11.h" />
     <ClInclude Include="Backjoon_Hash_Silver5_13.h" />
@@ -930,6 +932,7 @@
     <ClInclude Include="Samsung_LV16_Simul1_R.h" />
     <ClInclude Include="Silver_Hash_Silver5_6.h" />
     <ClInclude Include="Bakcjoon_BFS_Gold3_12.h" />
+    <ClInclude Include="Test.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Backjoon_BFS_GuideLine.txt" />

@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <string>
 #include <algorithm>
 #include <vector>
@@ -36,7 +37,7 @@ int main() {
 		if (!map[t.univ]) {
 			map[t.univ] = true;
 			ans.push_back(t.name);
-			
+
 			if (ans.size() == k) {
 				break;
 			}

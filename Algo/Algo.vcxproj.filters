@@ -99,6 +99,9 @@
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Calc.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Backjoon_Dijk_Gold4_1.h">
@@ -2499,6 +2502,12 @@
       <Filter>헤더 파일\Backjoon_Hash</Filter>
     </ClInclude>
     <ClInclude Include="Backjoon_Hash_Silver5_29.h">
+      <Filter>헤더 파일\Backjoon_Hash</Filter>
+    </ClInclude>
+    <ClInclude Include="Test.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Backjoon_Hash_Silver4_30.h">
       <Filter>헤더 파일\Backjoon_Hash</Filter>
     </ClInclude>
   </ItemGroup>
