@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <string>
 #include <unordered_map>
 #include <vector>
@@ -9,8 +10,8 @@ int main() {
     int N;
     cin >> N;
 
-    unordered_map<string, int> price;   // ìƒí’ˆëª… â†’ ê°€ê²©
-    vector<string> names;               // ìƒí’ˆëª… ë¦¬ìŠ¤íŠ¸
+    unordered_map<string, int> price;   // »óÇ°¸í ¡æ °¡°İ
+    vector<string> names;               // »óÇ°¸í ¸®½ºÆ®
 
     names.reserve(N);
 
@@ -25,14 +26,14 @@ int main() {
     int M;
     cin >> M;
 
-    unordered_map<string, int> cnt;     // ìƒí’ˆëª… â†’ ë“±ì¥ íšŸìˆ˜
+    unordered_map<string, int> cnt;     // »óÇ°¸í ¡æ µîÀå È½¼ö
     for (int i = 0; i < M; i++) {
         string name;
         cin >> name;
         cnt[name]++;
     }
 
-    // í˜„ì¬ ì´ ë¹„ìš© ê³„ì‚°
+    // ÇöÀç ÃÑ ºñ¿ë °è»ê
     long long original = 0;
     for (auto& nm : names) {
         original += 1LL * cnt[nm] * price[nm];
@@ -40,7 +41,7 @@ int main() {
 
     long long best = original;
 
-    // ëª¨ë“  ìƒí’ˆ ìŒì„ ì‹œë„
+    // ¸ğµç »óÇ° ½ÖÀ» ½Ãµµ
     for (int i = 0; i < N; i++) {
         for (int j = i + 1; j < N; j++) {
             const string& a = names[i];
@@ -51,7 +52,7 @@ int main() {
             long long ca = cnt[a];
             long long cb = cnt[b];
 
-            // (a â†” b) ê°€ê²© êµí™˜í–ˆì„ ë•Œ ë³€ë™ëŸ‰ ê³„ì‚°
+            // (a ¡ê b) °¡°İ ±³È¯ÇßÀ» ¶§ º¯µ¿·® °è»ê
             long long diff =
                 ca * (pb - pa) +
                 cb * (pa - pb);
