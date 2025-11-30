@@ -434,6 +434,7 @@
     <ClInclude Include="Backjoon_Hash_Silver3_21.h" />
     <ClInclude Include="Backjoon_Hash_Silver3_22.h" />
     <ClInclude Include="Backjoon_Hash_Silver3_3.h" />
+    <ClInclude Include="Backjoon_Hash_Silver5_34.h" />
     <ClInclude Include="Backjoon_Hash_Silver3_4.h" />
     <ClInclude Include="Backjoon_Hash_Silver3_5.h" />
     <ClInclude Include="Backjoon_Hash_Silver3_6.h" />
