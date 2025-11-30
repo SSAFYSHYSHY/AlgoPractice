@@ -1,4 +1,7 @@
-癤�#include <iostream>
+#pragma once
+//이중 배열을 유니온-파인드로 조합하는 방법.
+
+#include <iostream>
 #include <algorithm>
 #include <unordered_set>
 
