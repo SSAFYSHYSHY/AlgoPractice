@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <unordered_set>
 #include <vector>
 #include <string>
@@ -9,7 +10,7 @@ int main() {
     int n, m;
     cin >> n;
 
-    unordered_set<string> dictionary; // ì‚¬ì „
+    unordered_set<string> dictionary; // »çÀü
     for (int i = 0; i < n; i++) {
         string word;
         cin >> word;
