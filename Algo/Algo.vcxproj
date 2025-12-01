@@ -609,6 +609,7 @@
     <ClInclude Include="Backjoon_Tree_Silver1_1.h" />
     <ClInclude Include="Backjoon_Tree_Silver2_1.h" />
     <ClInclude Include="Backjoon_Union_Gold2_1.h" />
+    <ClInclude Include="Backjoon_Union_Gold2_2.h" />
     <ClInclude Include="Backjoon_Union_Gold3_1.h" />
     <ClInclude Include="Backjoon_Union_Gold3_2.h" />
     <ClInclude Include="Backjoon_Union_Gold4_10.h" />
