@@ -2552,6 +2552,9 @@
     <ClInclude Include="Backjoon_Union_Gold2_2.h">
       <Filter>헤더 파일\Backjoon_Union</Filter>
     </ClInclude>
+    <ClInclude Include="Backjoon_PQ_Gold5_5.h">
+      <Filter>헤더 파일\Backjoon_Prioirty_queue</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Backjoon_BFS_GuideLine.txt">
