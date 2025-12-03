@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <unordered_map>
 #include <string>
@@ -22,7 +23,7 @@ int main() {
         unordered_map<string, Product> table;
         table.reserve(N);
 
-        // ì œí’ˆ ì •ë³´ ì…ë ¥
+        // Á¦Ç° Á¤º¸ ÀÔ·Â
         for (int i = 0; i < N; i++) {
             string name;
             int p, d;
@@ -33,7 +34,7 @@ int main() {
         int C;
         cin >> C;
 
-        int discontent = 0;   // ë¶ˆë§Œì¡± ê³ ê° ìˆ˜
+        int discontent = 0;   // ºÒ¸¸Á· °í°´ ¼ö
 
         while (C--) {
             int custNo, P, M;
@@ -48,7 +49,7 @@ int main() {
 
                 auto& prod = table[item];
 
-                // ë°°ì†¡ì¼ì´ í—ˆìš© ë²”ìœ„ ë‚´ì¸ì§€ í™•ì¸
+                // ¹è¼ÛÀÏÀÌ Çã¿ë ¹üÀ§ ³»ÀÎÁö È®ÀÎ
                 if (prod.days <= M) {
                     total += prod.points;
                 }
@@ -57,7 +58,7 @@ int main() {
                 }
             }
 
-            // ì¶œë ¥
+            // Ãâ·Â
             if (unhappy) discontent++;
 
             cout << custNo << " " << total;
