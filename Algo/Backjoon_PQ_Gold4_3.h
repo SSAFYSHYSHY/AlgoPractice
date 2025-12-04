@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 #include <queue>
 #include <string>
@@ -28,7 +29,7 @@ queue<info> arr[100000];
 int cnt = 0;
 
 int main() {
-	cin >> N >> M >> K; 
+	cin >> N >> M >> K;
 
 	for (int i = 0; i < N; i++) {
 		cin >> d >> h;

@@ -2564,6 +2564,9 @@
     <ClInclude Include="Backjoon_Hash_Silver5_38.h">
       <Filter>헤더 파일\Backjoon_Hash</Filter>
     </ClInclude>
+    <ClInclude Include="Backjoon_PQ_Gold4_3.h">
+      <Filter>헤더 파일\Backjoon_Prioirty_queue</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Backjoon_BFS_GuideLine.txt">
