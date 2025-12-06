@@ -564,6 +564,7 @@
     <ClInclude Include="Backjoon_PQ_Gold5_5.h" />
     <ClInclude Include="Backjoon_PQ_Gold5_6.h" />
     <ClInclude Include="Backjoon_PQ_Gold5_7.h" />
+    <ClInclude Include="Backjoon_PQ_Silver1_1.h" />
     <ClInclude Include="Backjoon_PQ_Silver2_1.h" />
     <ClInclude Include="Backjoon_Prefix_Gold4_2.h" />
     <ClInclude Include="Backjoon_Prefix_Gold4_1.h" />
