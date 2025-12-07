@@ -2585,6 +2585,9 @@
     <ClInclude Include="Backjoon_PQ_Gold4_6.h">
       <Filter>헤더 파일\Backjoon_Prioirty_queue</Filter>
     </ClInclude>
+    <ClInclude Include="Backjoon_PQ_Gold4_7.h">
+      <Filter>헤더 파일\Backjoon_Prioirty_queue</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Backjoon_BFS_GuideLine.txt">

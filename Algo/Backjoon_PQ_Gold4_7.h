@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <algorithm>
 #include <vector>
@@ -43,12 +44,12 @@ int main() {
             cin >> x >> y;
 
             rec[x] = y;
-            // ìƒˆ ê°’ push (lazy update)
+            // »õ °ª push (lazy update)
             if (x <= n) NS.push({ y, x });
             else MS.push({ y, x });
         }
         else {
-            // ìµœì‹  ê°’ì´ ì•„ë‹ ê²½ìš° pop
+            // ÃÖ½Å °ªÀÌ ¾Æ´Ò °æ¿ì pop
             while (NS.top().val != rec[NS.top().idx]) NS.pop();
             while (MS.top().val != rec[MS.top().idx]) MS.pop();
 
