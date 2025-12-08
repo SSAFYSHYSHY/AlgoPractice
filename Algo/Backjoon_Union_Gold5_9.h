@@ -1,11 +1,12 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <string>
 #include <vector>
 #include <map>
 
 using namespace std;
 
-int parent[200001], cnt =0;
+int parent[200001], cnt = 0;
 std::map<string, int> arr;
 
 int Calc(string s) {
