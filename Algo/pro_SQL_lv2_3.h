@@ -1,0 +1,6 @@
+#pragma once
+
+//독립된 이름의 개수. 공백이 아닌 경우.
+SELECT COUNT(DISTINCT NAME)
+FROM ANIMAL_INS
+WHERE NAME IS NOT NULL
