@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <queue>
 #include <vector>
 #include <algorithm>
@@ -34,7 +35,7 @@ int main() {
 		pq.pop();
 
 		cout << curr << " ";
-		
+
 		for (int i = 0; i < v[curr].size(); i++) {
 			if (--arr[v[curr][i]] == 0) {
 				pq.push(v[curr][i]);
