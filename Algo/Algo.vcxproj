@@ -952,6 +952,7 @@
     <ClInclude Include="pro_SQL_lv2_4.h" />
     <ClInclude Include="pro_SQL_lv2_5.h" />
     <ClInclude Include="pro_SQL_lv2_6.h" />
+    <ClInclude Include="pro_SQL_lv2_7.h" />
     <ClInclude Include="pro_test_BFS1.h" />
     <ClInclude Include="pro_test_Parametic.h" />
     <ClInclude Include="pro_test_Simul_1.h" />
