@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <string>
 #include <cstring>
 #include <vector>
@@ -6,7 +7,7 @@
 
 using namespace std;
 
-bool visited[1001][1001] = {false,};
+bool visited[1001][1001] = { false, };
 char arr[1001][1001];
 int n, m, sx, sy, ex, ey;
 
@@ -55,7 +56,7 @@ int main() {
 		memset(arr, ' ', sizeof(arr));
 
 		cin >> m >> n >> sy >> sx >> ey >> ex;
-		
+
 		sy--;
 		sx--;
 
