@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <string>
 #include <vector>
 #include <algorithm>
@@ -6,22 +7,22 @@
 
 using namespace std;
 
-map<string, string> toWhom;         
-vector<string> order;               
-map<string, bool> visited;          
-map<string, bool> seen;            
+map<string, string> toWhom;
+vector<string> order;
+map<string, bool> visited;
+map<string, bool> seen;
 
 void findCycle(const string& start) {
     string cur = start;
-    seen.clear();                  
+    seen.clear();
     vector<string> path;
 
     while (true) {
         path.push_back(cur);
         seen[cur] = true;
-        cur = toWhom[cur];           
+        cur = toWhom[cur];
 
-        if (seen[cur]) {            
+        if (seen[cur]) {
             cout << cur;
             string x = toWhom[cur];
             while (x != cur) {
@@ -53,7 +54,7 @@ int main() {
 
         string a, b;
         if (!(cin >> a)) return 0;
-        if (a == "#") return 0;    
+        if (a == "#") return 0;
         cin >> b;
 
         toWhom[a] = b;
@@ -61,7 +62,7 @@ int main() {
 
         while (true) {
             cin >> a;
-            if (a == "#") break;     
+            if (a == "#") break;
             cin >> b;
             if (toWhom.count(a) == 0)
                 order.push_back(a);
