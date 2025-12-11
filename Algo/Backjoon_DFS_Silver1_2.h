@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <vector>
 #include <cstring>
@@ -7,13 +8,13 @@ using namespace std;
 
 int n, m;
 
-// ê°„ì„  ëª©ë¡
+// °£¼± ¸ñ·Ï
 pair<int, int> edge[30];
 
-// ê° ë…¸ë“œì— ì—°ê²°ëœ ê°„ì„  ID ì €ì¥ (ë‹¹ì‹ ì˜ v ë°°ì—´ì„ ì´ëŸ° êµ¬ì¡°ë¡œ ì‚¬ìš©)
+// °¢ ³ëµå¿¡ ¿¬°áµÈ °£¼± ID ÀúÀå (´ç½ÅÀÇ v ¹è¿­À» ÀÌ·± ±¸Á¶·Î »ç¿ë)
 vector<int> v[27];
 
-// ê°„ì„  ë°©ë¬¸ ì—¬ë¶€
+// °£¼± ¹æ¹® ¿©ºÎ
 bool used[30];
 
 int DFS(int idx) {
@@ -49,7 +50,7 @@ int main() {
 
             edge[i] = { x, y };
 
-            // ê°„ì„  ID(i)ë¥¼ ê° ë…¸ë“œì— ì €ì¥
+            // °£¼± ID(i)¸¦ °¢ ³ëµå¿¡ ÀúÀå
             v[x].push_back(i);
             v[y].push_back(i);
         }
