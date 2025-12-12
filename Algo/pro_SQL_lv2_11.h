@@ -1,0 +1,7 @@
+#pragma once
+
+//상품의 2개만 잘라서 사용하고, 카운트를 해준다. 카운트는 함수 내의 Group by로 묶을 수 있다.
+SELECT SUBSTRING(PRODUCT_CODE, 1, 2) AS CATEGORY, COUNT(*) AS PRODUCTS
+FROM PRODUCT
+GROUP BY SUBSTRING(PRODUCT_CODE, 1, 2)
+ORDER BY CATEGORY
