@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <string>
 #include <set>
 
@@ -18,7 +19,7 @@ int main() {
 	}
 
 	string ans;
-	for(int i =0 ; i < n - 1; i++) {
+	for (int i = 0; i < n - 1; i++) {
 		string s;
 		cin >> s;
 
