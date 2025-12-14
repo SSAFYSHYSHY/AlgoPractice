@@ -1,11 +1,12 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <string>
 #include <cstring>
 
 using namespace std;
 
-bool visited[2002][2002] = {false, };
+bool visited[2002][2002] = { false, };
 
 int dx[] = { -1,1,0,0 };
 int dy[] = { 0,0,-1,1 };
