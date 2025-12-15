@@ -630,6 +630,7 @@
     <ClInclude Include="Backjoon_Simul_Silver2_4.h" />
     <ClInclude Include="Backjoon_Simul_Silver4_5.h" />
     <ClInclude Include="Backjoon_Simul_Silver4_7.h" />
+    <ClInclude Include="Backjoon_Tree_Silver3_1.h" />
     <ClInclude Include="pro_SQL_lv2_10.h" />
     <ClInclude Include="pro_SQL_lv2_11.h" />
     <ClInclude Include="pro_SQL_lv2_12.h" />
@@ -637,6 +638,7 @@
     <ClInclude Include="pro_SQL_lv2_14.h" />
     <ClInclude Include="pro_SQL_lv2_15.h" />
     <ClInclude Include="pro_SQL_lv2_16.h" />
+    <ClInclude Include="pro_SQL_lv2_17.h" />
     <ClInclude Include="pro_SQL_lv2_8.h" />
     <ClInclude Include="pro_SQL_lv2_9.h" />
     <ClInclude Include="Backjoon_Stack_Gold5_2.h" />

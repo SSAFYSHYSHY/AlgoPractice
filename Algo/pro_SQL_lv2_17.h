@@ -1,0 +1,8 @@
+#pragma once
+//Join From First A, join Second B, on A.class = B.class , DateFormat()
+SELECT A.BOOK_ID, B.AUTHOR_NAME, DATE_FORMAT(A.PUBLISHED_DATE, '%Y-%m-%d')
+FROM BOOK A
+JOIN AUTHOR B
+ON A.AUTHOR_ID = B.AUTHOR_ID
+WHERE A.CATEGORY = '∞Ê¡¶'
+ORDER BY PUBLISHED_DATE ASC
