@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <algorithm>
 #include <unordered_map>
 #include <vector>
@@ -28,15 +29,15 @@ int main() {
 
     sort(v.begin(), v.end());
 
-    // í‰ê· 
+    // Æò±Õ
     double sum = 0;
     for (int x : v) sum += x;
     cout << (int)round(sum / n) << "\n";
 
-    // ì¤‘ì•™ê°’
+    // Áß¾Ó°ª
     cout << v[n / 2] << "\n";
 
-    // ìµœë¹ˆê°’
+    // ÃÖºó°ª
     vector<pair<int, int>> v2;
     for (auto& p : mp)
         v2.push_back(p);
@@ -54,6 +55,6 @@ int main() {
     else
         cout << modes[1] << "\n";
 
-    // ë²”ìœ„
+    // ¹üÀ§
     cout << v.back() - v.front() << "\n";
 }
