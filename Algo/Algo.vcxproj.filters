@@ -2702,6 +2702,9 @@
     <ClInclude Include="Backjoon_TreeDP_Gold3_2.h">
       <Filter>헤더 파일\Backjoon_Tree</Filter>
     </ClInclude>
+    <ClInclude Include="Backjoon_Stack_Silver4_1.h">
+      <Filter>헤더 파일\Backjoon_Stack</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Backjoon_BFS_GuideLine.txt">
