@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 #include <algorithm>
 
@@ -8,10 +9,10 @@ int n;
 vector<int> B, A;
 vector<int> seg;
 
-// ì„¸ê·¸ë¨¼íŠ¸ íŠ¸ë¦¬ ì´ˆê¸°í™”
+// ¼¼±×¸ÕÆ® Æ®¸® ÃÊ±âÈ­
 void build(int node, int l, int r) {
     if (l == r) {
-        seg[node] = 1; // ì•„ì§ ì‚¬ìš© ì•ˆ ë¨
+        seg[node] = 1; // ¾ÆÁ÷ »ç¿ë ¾È µÊ
         return;
     }
     int mid = (l + r) / 2;
@@ -20,7 +21,7 @@ void build(int node, int l, int r) {
     seg[node] = seg[node * 2] + seg[node * 2 + 1];
 }
 
-// kë²ˆì§¸ (1-indexed) ë‚¨ì•„ìˆëŠ” ìˆ˜ ì°¾ê¸°
+// k¹øÂ° (1-indexed) ³²¾ÆÀÖ´Â ¼ö Ã£±â
 int query(int node, int l, int r, int k) {
     if (l == r) return l;
     int mid = (l + r) / 2;
@@ -30,7 +31,7 @@ int query(int node, int l, int r, int k) {
         return query(node * 2 + 1, mid + 1, r, k - seg[node * 2]);
 }
 
-// í•´ë‹¹ ìˆ«ì ì œê±°
+// ÇØ´ç ¼ıÀÚ Á¦°Å
 void update(int node, int l, int r, int idx) {
     if (l == r) {
         seg[node] = 0;
@@ -61,9 +62,9 @@ int main() {
 
     build(1, 1, n);
 
-    // ë’¤ì—ì„œë¶€í„° ë³µì›
+    // µÚ¿¡¼­ºÎÅÍ º¹¿ø
     for (int i = n; i >= 1; i--) {
-        int k = seg[1] - B[i]; // (bi+1)ë²ˆì§¸ í° ìˆ˜
+        int k = seg[1] - B[i]; // (bi+1)¹øÂ° Å« ¼ö
         if (k <= 0 || k > seg[1]) {
             cout << "NIE\n";
             return 0;
