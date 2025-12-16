@@ -640,6 +640,7 @@
     <ClInclude Include="pro_SQL_lv2_15.h" />
     <ClInclude Include="pro_SQL_lv2_16.h" />
     <ClInclude Include="pro_SQL_lv2_17.h" />
+    <ClInclude Include="pro_SQL_lv2_18.h" />
     <ClInclude Include="pro_SQL_lv2_8.h" />
     <ClInclude Include="pro_SQL_lv2_9.h" />
     <ClInclude Include="Backjoon_Stack_Gold5_2.h" />
