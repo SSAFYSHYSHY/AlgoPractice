@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <cmath>
 #include <algorithm>
 
@@ -19,7 +20,7 @@ int main() {
         cin >> arr[i];
     }
 
-    sort(arr, arr + n);   
+    sort(arr, arr + n);
     int cut = round(n * 0.15);
 
     int sum = 0, cnt = 0;
