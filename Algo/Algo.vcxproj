@@ -632,6 +632,7 @@
     <ClInclude Include="Backjoon_Simul_Silver4_5.h" />
     <ClInclude Include="Backjoon_Simul_Silver4_7.h" />
     <ClInclude Include="Backjoon_Simul_Silver4_8.h" />
+    <ClInclude Include="Backjoon_Simul_Silver5_11.h" />
     <ClInclude Include="Backjoon_Stack_Silver4_1.h" />
     <ClInclude Include="Backjoon_Stack_Silver4_2.h" />
     <ClInclude Include="Backjoon_TreeDP_Gold3_2.h" />

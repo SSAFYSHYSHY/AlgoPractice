@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 using namespace std;
 
 bool vowel(char c) {
