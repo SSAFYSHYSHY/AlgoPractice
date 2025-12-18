@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <string>
 #include <algorithm>
 
@@ -6,7 +7,7 @@ using namespace std;
 
 char arr[101][101];
 int n;
-int x = 0 , y =0;
+int x = 0, y = 0;
 
 int main() {
 	cin >> n;
@@ -20,7 +21,7 @@ int main() {
 		}
 	}
 
-	//ê°€ë¡œ
+	//°¡·Î
 	for (int i = 0; i < n; i++) {
 		int cnt = 0;
 		for (int j = 0; j < n; j++) {
@@ -36,7 +37,7 @@ int main() {
 		if (cnt >= 2) x++;
 	}
 
-	//ì„¸ë¡œ
+	//¼¼·Î
 	for (int j = 0; j < n; j++) {
 		int cnt = 0;
 		for (int i = 0; i < n; i++) {
