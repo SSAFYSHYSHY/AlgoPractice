@@ -1,33 +1,42 @@
 ﻿#include <iostream>
+#include <algorithm>
 
 using namespace std;
 
-int N, M, J;
+int n, m;
+long long arr[300001];
+long long prefix[300001];
 
 int main() {
-    cin >> N >> M >> J;
+	ios::sync_with_stdio(false);
+	cin.tie(0);
+	cout.tie(0);
 
-    int cnt = 0;
+	cin >> n >> m;
 
-    int start = 1, end = M;
+	for (int i = 1; i <= n; i++) {
+		cin >> arr[i];
+	}
 
-    while (J--) {
-        int x;
-        cin >> x;
+	prefix[0] = 0;
+	for (int i = 1; i <= n; i++) {
+		prefix[i] = prefix[i - 1] + arr[i]; 
+	}
 
-        bool flag = true;
-        while (flag) {
-            if (start <= x && x <= end) {
-                flag = false;
-            }
-            else if (start > x) {
-                start--; end--; cnt++;
-            }
-            else {
-                start++; end++; cnt++;
-            }
-        }
-    }
 
-    cout << cnt;
+	for (int i = 0; i < m; i++) {
+		long long a;
+		cin >> a;
+
+		if (prefix[m] < a) {
+			cout << "Go away!\n";
+			continue;
+		}
+
+		long long idx = lower_bound(prefix + 1, prefix + m + 1, a) - prefix;
+		cout << idx << "\n";
+	}
+
+
+		 
 }
